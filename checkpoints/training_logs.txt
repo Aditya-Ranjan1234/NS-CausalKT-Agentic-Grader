@@ -1,0 +1,68 @@
+2026-04-21 04:41:38,880 - Using device: cuda
+2026-04-21 04:41:38,882 - Loading original ASSISTments 2009 dataset...
+2026-04-21 04:41:42,075 - Starting Training Loop...
+2026-04-21 04:41:52,151 - Epoch 1 Results: AUC=0.7895, RMSE=0.4128, ACC=0.7512, IC@5=0.6275
+2026-04-21 04:41:52,239 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:44:17,474 - Using device: cuda
+2026-04-21 04:44:17,475 - Loading original ASSISTments 2009 dataset...
+2026-04-21 04:44:20,503 - Loading checkpoint from checkpoints\latest.pt
+2026-04-21 04:44:20,588 - Resuming from epoch 1
+2026-04-21 04:44:20,588 - Starting Training Loop...
+2026-04-21 04:44:30,976 - Epoch 2 Results: AUC=0.7914, RMSE=0.4125, ACC=0.7488, IC@5=0.4902
+2026-04-21 04:44:31,079 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:44:41,265 - Epoch 3 Results: AUC=0.7943, RMSE=0.4111, ACC=0.7518, IC@5=0.5686
+2026-04-21 04:44:41,346 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:44:50,593 - Epoch 4 Results: AUC=0.7962, RMSE=0.4093, ACC=0.7535, IC@5=0.4902
+2026-04-21 04:44:50,688 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:45:00,076 - Epoch 5 Results: AUC=0.7977, RMSE=0.4086, ACC=0.7551, IC@5=0.4902
+2026-04-21 04:45:00,148 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:45:10,012 - Epoch 6 Results: AUC=0.7985, RMSE=0.4082, ACC=0.7559, IC@5=0.4314
+2026-04-21 04:45:10,087 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:45:19,723 - Epoch 7 Results: AUC=0.7992, RMSE=0.4077, ACC=0.7569, IC@5=0.6275
+2026-04-21 04:45:19,794 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:45:29,269 - Epoch 8 Results: AUC=0.7997, RMSE=0.4075, ACC=0.7571, IC@5=0.4510
+2026-04-21 04:45:29,352 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:45:39,032 - Epoch 9 Results: AUC=0.7998, RMSE=0.4074, ACC=0.7573, IC@5=0.4510
+2026-04-21 04:45:39,110 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:45:48,704 - Epoch 10 Results: AUC=0.7999, RMSE=0.4074, ACC=0.7567, IC@5=0.4118
+2026-04-21 04:45:48,778 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:45:58,538 - Epoch 11 Results: AUC=0.8017, RMSE=0.4067, ACC=0.7584, IC@5=0.6863
+2026-04-21 04:45:58,609 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:46:08,217 - Epoch 12 Results: AUC=0.8037, RMSE=0.4057, ACC=0.7608, IC@5=0.4706
+2026-04-21 04:46:08,287 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:46:17,990 - Epoch 13 Results: AUC=0.8049, RMSE=0.4050, ACC=0.7620, IC@5=0.5098
+2026-04-21 04:46:18,061 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:46:27,524 - Epoch 14 Results: AUC=0.8065, RMSE=0.4043, ACC=0.7626, IC@5=0.5686
+2026-04-21 04:46:27,621 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:46:37,401 - Epoch 15 Results: AUC=0.8072, RMSE=0.4038, ACC=0.7634, IC@5=0.5490
+2026-04-21 04:46:37,474 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:46:47,275 - Epoch 16 Results: AUC=0.8081, RMSE=0.4034, ACC=0.7644, IC@5=0.5098
+2026-04-21 04:46:47,364 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:46:56,871 - Epoch 17 Results: AUC=0.8084, RMSE=0.4030, ACC=0.7643, IC@5=0.4118
+2026-04-21 04:46:56,946 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:47:06,525 - Epoch 18 Results: AUC=0.8085, RMSE=0.4030, ACC=0.7640, IC@5=0.5098
+2026-04-21 04:47:06,596 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:47:16,340 - Epoch 19 Results: AUC=0.8091, RMSE=0.4027, ACC=0.7641, IC@5=0.5294
+2026-04-21 04:47:16,412 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:47:26,201 - Epoch 20 Results: AUC=0.8090, RMSE=0.4028, ACC=0.7641, IC@5=0.4706
+2026-04-21 04:47:26,284 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:47:35,662 - Epoch 21 Results: AUC=0.8098, RMSE=0.4024, ACC=0.7645, IC@5=0.5294
+2026-04-21 04:47:35,734 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:47:45,382 - Epoch 22 Results: AUC=0.8111, RMSE=0.4018, ACC=0.7651, IC@5=0.4902
+2026-04-21 04:47:45,454 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:47:54,938 - Epoch 23 Results: AUC=0.8119, RMSE=0.4012, ACC=0.7665, IC@5=0.5294
+2026-04-21 04:47:55,014 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:48:04,632 - Epoch 24 Results: AUC=0.8124, RMSE=0.4013, ACC=0.7650, IC@5=0.5098
+2026-04-21 04:48:04,734 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:48:14,813 - Epoch 25 Results: AUC=0.8131, RMSE=0.4012, ACC=0.7655, IC@5=0.4118
+2026-04-21 04:48:14,882 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:48:24,326 - Epoch 26 Results: AUC=0.8124, RMSE=0.4009, ACC=0.7663, IC@5=0.4118
+2026-04-21 04:48:24,401 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:48:33,678 - Epoch 27 Results: AUC=0.8138, RMSE=0.4000, ACC=0.7672, IC@5=0.5490
+2026-04-21 04:48:33,753 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:48:43,097 - Epoch 28 Results: AUC=0.8134, RMSE=0.4003, ACC=0.7669, IC@5=0.5098
+2026-04-21 04:48:43,171 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:48:52,825 - Epoch 29 Results: AUC=0.8139, RMSE=0.4002, ACC=0.7670, IC@5=0.3725
+2026-04-21 04:48:52,896 - Checkpoint saved to checkpoints\latest.pt
+2026-04-21 04:49:02,341 - Epoch 30 Results: AUC=0.8137, RMSE=0.4001, ACC=0.7668, IC@5=0.4314
+2026-04-21 04:49:02,411 - Checkpoint saved to checkpoints\latest.pt

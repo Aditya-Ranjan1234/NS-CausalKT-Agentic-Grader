@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic Grading System - NS-CausalKT</title>
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <nav class="top-nav">
+            <div class="logo">
+                <h1>NS-CausalKT</h1>
+            </div>
+            <div class="nav-tabs">
+                <a href="dashboard.html" class="nav-tab">Dashboard</a>
+                <a href="causal.html" class="nav-tab">Causal Analysis</a>
+                <a href="inference.html" class="nav-tab active">Inference</a>
+            </div>
+            <div class="status-bar">
+                <span id="system-status" class="status-indicator ready">● System Ready</span>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <h2>Agentic Grading System</h2>
+            </header>
+
+            <div class="main-layout">
+                <section class="upload-section" id="uploadSection">
+                    <div class="upload-container" id="dropzone">
+                        <div class="upload-icon">📄</div>
+                        <h2>Upload Your Answer Sheet</h2>
+                        <p class="upload-hint">Drag & drop PDF or images here, or click to browse</p>
+                        <input type="file" id="fileInput" accept=".pdf,.png,.jpg,.jpeg" multiple>
+                        <button class="btn btn-primary" id="browseBtn">Browse Files</button>
+                    </div>
+
+                    <div class="uploaded-files" id="uploadedFiles"></div>
+
+                    <div class="preview-section" id="previewSection" style="display: none; margin-top: 24px;">
+                        <h3 style="color: #cbd5e1; margin-bottom: 16px;">File Preview</h3>
+                        <div class="file-preview" id="filePreview"></div>
+                    </div>
+
+                    <button class="btn btn-large btn-primary" id="startAnalysisBtn" disabled style="margin-top: 24px;">🚀 Start Agentic Analysis</button>
+                </section>
+
+                <section class="analysis-section" id="analysisSection" style="display: none;">
+                    <div class="viewer-panel">
+                        <div class="viewer-header">
+                            <h3>Answer Sheet</h3>
+                            <div class="page-controls">
+                                <button class="btn btn-sm" id="prevPage">← Prev</button>
+                                <span id="pageIndicator">1 / 1</span>
+                                <button class="btn btn-sm" id="nextPage">Next →</button>
+                            </div>
+                        </div>
+                        <div class="document-viewer" id="documentViewer">
+                            <canvas id="pdfCanvas"></canvas>
+                            <div id="boundingBoxes"></div>
+                        </div>
+                    </div>
+
+                    <div class="feedback-panel">
+                        <!-- Tabs removed for vertical layout -->
+
+                        <div class="tab-content active" id="overview-tab">
+                            <div class="overview-grid">
+                                    <div class="score-circle">
+                                        <span class="score-value" id="overallScore">--</span>
+                                    </div>
+                                    <h4>Overall Score</h4>
+                                </div>
+                                <div class="feedback-scroll-container">
+                        <!-- Overview Section -->
+                        <div class="feedback-section">
+                            <div class="analysis-header">
+                                <h3>KT-Model Insights</h3>
+                                <span id="modelStatus" class="status-badge">KT-Model: Initializing...</span>
+                            </div>
+                            <div class="summary-box">
+                                <p id="summaryText">Analysis summary will appear here...</p>
+                            </div>
+                        </div>
+
+                        <!-- Mistakes Section -->
+                        <div class="feedback-section mt-4">
+                            <h3><i class="fas fa-times-circle mr-2"></i>Detected Mistakes</h3>
+                            <div class="feedback-list" id="mistakesList"></div>
+                        </div>
+
+                        <!-- Corrections Section -->
+                        <div class="feedback-section mt-4">
+                            <h3><i class="fas fa-check-circle mr-2"></i>Recommended Corrections</h3>
+                            <div class="feedback-list" id="correctionsList"></div>
+                        </div>
+
+                        <!-- Strengths Section -->
+                        <div class="feedback-section mt-4">
+                            <h3><i class="fas fa-fist-raised mr-2"></i>Student Strengths</h3>
+                            <div class="feedback-list" id="strengthsList"></div>
+                        </div>
+
+                        <!-- Weaknesses Section -->
+                        <div class="feedback-section mt-4">
+                            <h3><i class="fas fa-exclamation-triangle mr-2"></i>Weakness Detection (SCM Layer)</h3>
+                            <div class="feedback-list" id="weaknessesList"></div>
+                        </div>
+
+                        <!-- Focus Areas Section -->
+                        <div class="feedback-section mt-4">
+                            <h3><i class="fas fa-bullseye mr-2"></i>ACE-Based Root Cause</h3>
+                            <div class="feedback-list" id="focusList"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SVG Overlay for Arrows -->
+                <svg id="arrowOverlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 99;"></svg>
+
+                <section class="loading-section" id="loadingSection" style="display: none;">
+                    <div class="loading-spinner"></div>
+                    <h2>Agentic Analysis in Progress...</h2>
+                    <p id="loadingStatus">Initializing...</p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

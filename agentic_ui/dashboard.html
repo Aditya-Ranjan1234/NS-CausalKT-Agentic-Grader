@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NS-CausalKT - Dashboard</title>
+    <link rel="stylesheet" href="css/shared.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <nav class="top-nav">
+            <div class="logo">
+                <h1>NS-CausalKT</h1>
+            </div>
+            <div class="nav-tabs">
+                <a href="dashboard.html" class="nav-tab active">Dashboard</a>
+                <a href="causal.html" class="nav-tab">Causal Analysis</a>
+                <a href="inference.html" class="nav-tab">Inference</a>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <h2>Model Dashboard</h2>
+                <div class="user-controls">
+                    <button class="btn btn-secondary" id="refreshBtn">🔄 Refresh Data</button>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <div class="card metric-card">
+                    <h3>Classification Capability</h3>
+                    <div class="metric-value" id="auc-score">--</div>
+                    <div class="metric-label">AUC Score</div>
+                </div>
+                <div class="card metric-card">
+                    <h3>Prediction Error</h3>
+                    <div class="metric-value" id="rmse">--</div>
+                    <div class="metric-label">RMSE</div>
+                </div>
+                <div class="card metric-card">
+                    <h3>Accuracy</h3>
+                    <div class="metric-value" id="accuracy">--</div>
+                    <div class="metric-label">ACC</div>
+                </div>
+                <div class="card metric-card">
+                    <h3>Epochs Trained</h3>
+                    <div class="metric-value" id="epochs">--</div>
+                    <div class="metric-label">Training Epochs</div>
+                </div>
+
+                <div class="card large-card">
+                    <h3>Training Curves</h3>
+                    <canvas id="trainingChart" height="200"></canvas>
+                </div>
+
+                <div class="card large-card">
+                    <h3>Neural Student Model State</h3>
+                    <div class="placeholder-img" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); display: flex; align-items: center; justify-content: center;">
+                        <div style="text-align: center; padding: 20px;">
+                            <h4 style="color: #06b6d4; margin-bottom: 10px;">Knowledge State Embedding</h4>
+                            <p style="color: #94a3b8; font-size: 14px;">Latent representation of student knowledge captured by the neural model</p>
+                        </div>
+                    </div>
+                    <div class="model-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Latent Space Orthogonality</span>
+                            <span class="stat-value" id="latent-ortho">--</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Knowledge Forgetting Rate</span>
+                            <span class="stat-value" id="forget-rate">--</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Symbolic Concept Layer</h3>
+                    <div class="concept-list" id="concept-list">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Sample Students</h3>
+                    <div class="sample-selector">
+                        <select id="studentSelect" class="student-select">
+                            <option value="0">Student 1</option>
+                            <option value="1">Student 2</option>
+                            <option value="2">Student 3</option>
+                        </select>
+                    </div>
+                    <canvas id="studentChart" height="180"></canvas>
+                </div>
+
+                <div class="card large-card">
+                    <h3>Mathematical Objectives</h3>
+                    <div class="math-formula">
+                        <p>L_causal = E[||Y - f(X, do(Z))||²] + λ·d(G)</p>
+                        <p class="formula-desc">Minimizing intervention loss while regularizing the structural graph G for sparse hole density.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        let dashboardData = null;
+        let trainingChart = null;
+        let studentChart = null;
+
+        async function loadDashboardData() {
+            try {
+                const response = await fetch('/api/dashboard');
+                dashboardData = await response.json();
+                
+                document.getElementById('auc-score').textContent = dashboardData.auc_score.toFixed(3);
+                document.getElementById('rmse').textContent = dashboardData.rmse.toFixed(3);
+                document.getElementById('accuracy').textContent = (dashboardData.accuracy * 100).toFixed(1) + '%';
+                document.getElementById('epochs').textContent = dashboardData.epochs_trained;
+                document.getElementById('latent-ortho').textContent = dashboardData.latent_orthogonality.toFixed(2);
+                document.getElementById('forget-rate').textContent = dashboardData.forgetting_rate.toFixed(3);
+                
+                const conceptList = document.getElementById('concept-list');
+                conceptList.innerHTML = '';
+                dashboardData.concepts.forEach(concept => {
+                    const el = document.createElement('div');
+                    el.className = 'concept-item';
+                    el.innerHTML = `
+                        <span>${concept.name}</span>
+                        <span class="concept-proficiency">${concept.proficiency}%</span>
+                    `;
+                    conceptList.appendChild(el);
+                });
+
+                renderTrainingChart();
+                renderStudentChart(0);
+            } catch (e) {
+                console.error('Failed to load dashboard data:', e);
+            }
+        }
+
+        function renderTrainingChart() {
+            const ctx = document.getElementById('trainingChart').getContext('2d');
+            if (trainingChart) trainingChart.destroy();
+            
+            trainingChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: dashboardData.training_curves.epochs,
+                    datasets: [
+                        {
+                            label: 'AUC',
+                            data: dashboardData.training_curves.auc,
+                            borderColor: '#06b6d4',
+                            backgroundColor: 'rgba(6, 182, 212, 0.1)',
+                            tension: 0.3,
+                            fill: true
+                        },
+                        {
+                            label: 'Accuracy',
+                            data: dashboardData.training_curves.acc,
+                            borderColor: '#22d3ee',
+                            backgroundColor: 'rgba(34, 211, 238, 0.1)',
+                            tension: 0.3,
+                            fill: true
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#e2e8f0' }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            ticks: { color: '#94a3b8' },
+                            grid: { color: '#1e293b' }
+                        },
+                        y: {
+                            min: 0.5,
+                            max: 1,
+                            ticks: { color: '#94a3b8' },
+                            grid: { color: '#1e293b' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderStudentChart(studentIndex) {
+            const ctx = document.getElementById('studentChart').getContext('2d');
+            if (studentChart) studentChart.destroy();
+            
+            const student = dashboardData.sample_students[studentIndex];
+            const labels = student.predictions.map((_, i) => `Q${i+1}`);
+            
+            studentChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels.slice(0, 20),
+                    datasets: [
+                        {
+                            label: 'Predicted',
+                            data: student.predictions.slice(0, 20),
+                            backgroundColor: 'rgba(6, 182, 212, 0.6)',
+                            borderColor: '#06b6d4',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Actual',
+                            data: student.actuals.slice(0, 20),
+                            backgroundColor: 'rgba(245, 158, 11, 0.6)',
+                            borderColor: '#f59e0b',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#e2e8f0' }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            ticks: { color: '#94a3b8' },
+                            grid: { color: '#1e293b' }
+                        },
+                        y: {
+                            min: 0,
+                            max: 1,
+                            ticks: { color: '#94a3b8' },
+                            grid: { color: '#1e293b' }
+                        }
+                    }
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadDashboardData();
+            
+            document.getElementById('refreshBtn').addEventListener('click', loadDashboardData);
+            
+            document.getElementById('studentSelect').addEventListener('change', (e) => {
+                renderStudentChart(parseInt(e.target.value));
+            });
+        });
+    </script>
+</body>
+</html>

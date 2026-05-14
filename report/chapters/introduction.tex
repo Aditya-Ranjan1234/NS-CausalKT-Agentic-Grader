@@ -1,0 +1,27 @@
+\chapter{Introduction}
+
+\section{Background}
+The rapid growth of online learning platforms and Intelligent Tutoring Systems (ITS) has generated massive amounts of educational data. At the heart of these systems is the task of Knowledge Tracing (KT), which involves tracking a student's mastery of specific concepts or skills over time based on their sequence of interactions with the system. Accurately modeling a student's knowledge is essential for personalizing learning paths, recommending the next best content, and providing timely interventions.
+
+\section{Motivation}
+Despite the success of deep learning in KT, most state-of-the-art models operate as "black boxes." While models like Deep Knowledge Tracing (DKT) and Attentive Knowledge Tracing (AKT) can predict with high accuracy whether a student will answer the next question correctly, they cannot explain the underlying reason for failure. In educational contexts, understanding "why" a student failed is often more important than knowing "that" they will fail. Specifically, existing models lack:
+\begin{itemize}
+    \item \textbf{Causal Interpretability}: They cannot distinguish between mere correlation and actual causation in skill mastery.
+    \item \textbf{Symbolic Grounding}: They often ignore the structured domain knowledge, such as prerequisite relationships between math concepts.
+    \item \textbf{Intervention Support}: They cannot simulate the effect of teaching a specific concept before another (counterfactual reasoning).
+\end{itemize}
+
+\section{Problem Statement}
+The core problem addressed in this project is the lack of causal transparency and logical consistency in current Knowledge Tracing architectures. We aim to develop a model that not only predicts student performance but also identifies the root causes of learning gaps and allows for "what-if" simulations through causal interventions.
+
+\section{Objectives}
+The primary objectives of this project are:
+\begin{enumerate}
+    \item To design and implement **NS-CausalKT**, a Neuro-Symbolic Causal Knowledge Tracing framework.
+    \item To integrate symbolic prerequisite rules into a neural transformer architecture using Logic Tensor Networks (LTN).
+    \item To implement a Structural Causal Model (SCM) capable of performing do-calculus interventions.
+    \item To develop an **Agentic UI** prototype that uses multimodal AI for automated, diagnostic grading.
+\end{enumerate}
+
+\section{Project Scope}
+This project covers the full lifecycle of a machine learning system, from data preprocessing of the ASSISTments 2009 dataset to the deployment of a full-stack web application. The scope includes model architecture design, training optimization, causal metric evaluation, and frontend development for data visualization.

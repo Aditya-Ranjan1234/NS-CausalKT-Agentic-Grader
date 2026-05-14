@@ -1,0 +1,11 @@
+flask
+flask-cors
+torch
+torchvision
+torchaudio
+numpy
+pandas
+pypdf2
+pillow
+openai
+python-dotenv

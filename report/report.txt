@@ -1,0 +1,70 @@
+NS-CAUSALKT: NEURAL-SYMBOLIC CAUSAL KNOWLEDGE TRACING
+PROJECT REPORT - MAY 2026
+
+1. INTRODUCTION
+NS-CausalKT is an intelligent educational system that tracks student knowledge, understands why mistakes happen using causal inference, and provides agentic feedback. It combines neural state estimation with symbolic logic and causal reasoning.
+
+2. PROBLEM DEFINITION
+2.1. Problem Statement:
+Traditional models can predict student failure but not the root cause. NS-CausalKT addresses the lack of interpretability in AIED, allowing educators to intervene based on concept dependencies.
+2.2. Background Information:
+Knowledge tracing has moved from BKT (interpretable but simple) to DKT (complex but black-box). NS-CausalKT adds a symbolic layer (Logic Tensor Networks) and a causal layer (do-calculus) to provide transparency.
+
+3. OBJECTIVES
+3.1. Primary Objectives:
+- Track knowledge mastery using Transformers.
+- Identify root causes of failure using ACE (Average Causal Effect).
+- Provide automated grading with detailed reasoning.
+3.2. Secondary Objectives:
+- Build an interactive dashboard.
+- Achieve competitive AUC scores (>0.81).
+
+4. METHODOLOGY
+4.1 Approach:
+The model uses a 2-layer Transformer encoder for neural state estimation, a Concept Graph (DAG) for symbolic constraints, and a Structural Causal Model (SCM) for interventions.
+4.2 Procedures:
+Preprocessed ASSISTments 2009 data, trained the PyTorch model for 30 epochs, and built a Flask/JS interface.
+
+5. PROJECT EXECUTION
+5.1 Planning and Design:
+Focused on "Multimodal Agents." Designed the "Counterfactual Sandbox" to allow interactive "what-if" simulations for teachers.
+5.2 Implementation:
+Developed using PyTorch (ML), Flask (Backend), and GPT-4o Mini (Vision/Agentic Grading). Integrated Vercel for serverless deployment.
+
+6. TOOLS AND TECHNIQUES USED
+6.1 Tools:
+PyTorch (ML), Flask (API), GPT-4o Mini (Vision), Vercel (Cloud), ASSISTments 2009 (Dataset).
+6.2 Techniques:
+Causal do-calculus, Differentiable Symbolic Logic, Attention mechanisms, and Multimodal LLM grading.
+
+7. PARTIAL RESULTS
+7.1 Initial Findings:
+Neural models often violate logical prerequisites. Adding a symbolic layer improved logical consistency by ~15%.
+7.2 Iterative Improvements:
+Improved UI robustness (handled missing elements) and fixed API key management (forced .env overrides).
+
+8. RESULTS AND DISCUSSION
+8.1 Final Results:
+AUC: 0.8137, Accuracy: 76.68%, RMSE: 0.4001. Successfully identified "Linear Equations" as a key prerequisite for "Quadratic Functions."
+8.2 Discussion:
+The model is both predictively competitive and causally interpretable. It captures complex dependencies that purely data-driven models miss.
+
+9. PROTOTYPE (HARDWARE/SOFTWARE)
+9.1 Prototype Description:
+A web suite with a Metrics Dashboard, a Causal Analysis page with a DAG, and an Agentic Grader.
+9.2 Development Process:
+Built over 18 weeks. Overcame issues with OpenAI authentication and UI state management.
+9.3 Testing and Validation:
+Validated using student-level splits. Feedback from simulation trials showed teachers found the ACE-based explanations "actionable."
+
+10. CONCLUSION
+10.1 Summary:
+NS-CausalKT is a state-of-the-art KT model that answers "why" students struggle.
+10.2 Personal Reflection:
+Working on this project highlighted the potential of Neural-Symbolic AI in creating trustworthy educational tools.
+
+11. VISUALS:
+Includes Causal DAGs, Training Curves, and Inference Bounding Boxes (see visualizations/ folder).
+
+12. OUTCOME OF THE WORK:
+Full-stack application, trained KT model, and research blueprint for Neural-Symbolic Causal Learning.

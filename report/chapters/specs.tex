@@ -1,0 +1,33 @@
+\chapter{Technical Specifications}
+
+\section{Project Directory Structure}
+The project is organized to separate model logic from the web interface.
+\begin{lstlisting}[language=bash]
+main el - causal/
+├── agentic_ui/           # Frontend (HTML/CSS/JS)
+├── backend/              # Local Flask Server
+├── models/               # PyTorch Model Definitions (NS-CausalKT, DKT, AKT)
+├── checkpoints/          # Trained weights and logs
+├── data/                 # ASSISTments dataset
+├── report/               # This documentation and assets
+└── train.py/eval.py      # Core scripts
+\end{lstlisting}
+
+\section{Dependency List}
+The following Python packages are required to run the full pipeline:
+\begin{itemize}
+    \item \texttt{torch >= 2.3.0}: Deep learning framework.
+    \item \texttt{torch-geometric}: Graph Convolutional Network support.
+    \item \texttt{flask}: Web backend.
+    \item \texttt{openai}: Multimodal agent integration.
+    \item \texttt{pandas / numpy}: Data manipulation.
+    \item \texttt{matplotlib / seaborn}: Causal visualization generation.
+\end{itemize}
+
+\section{Hardware Requirements}
+For optimal training performance, the following hardware is recommended:
+\begin{itemize}
+    \item **GPU**: NVIDIA GeForce RTX 3060 or higher (8GB VRAM).
+    \item **RAM**: 16GB.
+    \item **Storage**: 2GB for dataset and checkpoints.
+\end{itemize}

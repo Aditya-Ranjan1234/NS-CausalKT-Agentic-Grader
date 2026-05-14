@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "agentic_ui/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "api/**/*.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "agentic_ui/index.html"
+    },
+    {
+      "src": "/dashboard",
+      "dest": "agentic_ui/dashboard.html"
+    },
+    {
+      "src": "/causal",
+      "dest": "agentic_ui/causal.html"
+    },
+    {
+      "src": "/inference",
+      "dest": "agentic_ui/inference.html"
+    },
+    {
+      "src": "/css/(.*)",
+      "dest": "agentic_ui/css/$1"
+    },
+    {
+      "src": "/js/(.*)",
+      "dest": "agentic_ui/js/$1"
+    },
+    {
+      "src": "/api/dashboard",
+      "dest": "api/dashboard.py"
+    },
+    {
+      "src": "/api/causal",
+      "dest": "api/causal.py"
+    },
+    {
+      "src": "/api/analyze",
+      "dest": "api/analyze.py"
+    }
+  ]
+}

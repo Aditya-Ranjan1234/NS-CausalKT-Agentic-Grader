@@ -1,0 +1,22 @@
+\chapter{Literature Review}
+
+\section{Evolution of Knowledge Tracing}
+Knowledge Tracing has been a core research topic in educational technology for over three decades. The field has transitioned from simple probabilistic models to complex deep learning architectures.
+
+\subsection{Bayesian Knowledge Tracing (BKT)}
+Introduced by Corbett and Anderson in 1994, BKT is a Hidden Markov Model (HMM) where each skill is modeled as a binary latent variable (known or unknown). BKT uses four parameters: $P(L_0)$ (initial knowledge), $P(T)$ (learning rate), $P(G)$ (guess), and $P(S)$ (slip). While BKT is highly interpretable, it struggles with modeling multiple skills simultaneously and ignores the order of interactions.
+
+\subsection{Deep Knowledge Tracing (DKT)}
+In 2015, Piech et al. introduced DKT, the first model to use Recurrent Neural Networks (LSTMs) for KT. DKT treats the whole interaction history as a single sequence, allowing it to capture complex learning patterns that BKT misses. However, DKT is criticized for being a "black box" and for having "noisy" latent states that sometimes violate logical prerequisites.
+
+\section{Attention-Based Models}
+To address the limitations of LSTMs in handling long-term dependencies, researchers introduced Attention mechanisms to KT.
+
+\subsection{SAKT and AKT}
+SAKT (Self-Attentive Knowledge Tracing) and AKT (Attentive Knowledge Tracing) use the Transformer architecture. AKT, in particular, introduced context-aware embeddings that consider the time elapsed between interactions. These models significantly improved AUC scores on benchmarks like ASSISTments 2009 but remained purely correlational.
+
+\section{Causal Inference in Education}
+Causal inference, pioneered by Judea Pearl, provides a mathematical framework for understanding cause-and-effect through the Structural Causal Model (SCM). In education, causality is vital for identifying whether a student's failure in Algebra is \textit{caused} by a gap in Fractions or just correlated with it.
+
+\section{Neuro-Symbolic AI}
+Neuro-symbolic systems combine the robust learning capabilities of neural networks with the hard logical constraints of symbolic reasoning. Logic Tensor Networks (LTN) are a prominent technique in this area, allowing logical formulas to be used as differentiable terms in a loss function. This project leverages LTNs to ensure that the student's predicted knowledge state respects the curriculum's prerequisite graph.

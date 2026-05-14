@@ -1,0 +1,56 @@
+\chapter{Implementation \& Prototype}
+
+\section{Technology Stack}
+The system is built as a full-stack web application. The core logic is implemented in Python, while the user interface is developed using modern web technologies.
+
+\subsection{Backend}
+The backend is a **Flask** application that provides several API endpoints:
+\begin{itemize}
+    \item \texttt{/api/dashboard}: Returns real-time metrics (AUC, ACC) and training logs.
+    \item \texttt{/api/causal}: Provides data for the causal DAG and ACE rankings.
+    \item \texttt{/api/analyze}: The core endpoint for the "Agentic Grader," which processes images using GPT-4o Mini.
+\end{itemize}
+
+\subsection{Frontend}
+The frontend is built using **HTML5, Vanilla CSS, and JavaScript**. We avoided heavy frameworks like React to ensure maximum performance and maintainability. Key components include:
+\begin{itemize}
+    \item **Interactive Charts**: Using CSS-based bars and custom SVG visualizations for the concept mastery timeline.
+    \item **Live Document Viewer**: A PDF/Image viewer that overlays "bounding boxes" detected by the AI.
+\end{itemize}
+
+\section{Agentic Grading System}
+The "Agentic" part of the project leverages the multimodal capabilities of **OpenAI's GPT-4o Mini**. When a teacher uploads an answer sheet:
+\begin{enumerate}
+    \item The image is encoded to Base64 and sent to the backend.
+    \item The backend injects the student's mastery insights (from NS-CausalKT) into the prompt.
+    \item GPT-4o Mini performs "multimodal analysis," identifying specific handwriting errors and mapping them to concept gaps.
+    \item The result is returned as a structured JSON object containing bounding box coordinates and diagnostic feedback.
+\end{enumerate}
+
+\section{User Manual}
+The NS-CausalKT platform is designed for both researchers and educators. Below is a step-by-step guide for using each module.
+
+\subsection{Metrics Dashboard}
+The dashboard provides a high-level overview of the model's performance.
+\begin{enumerate}
+    \item **Real-time Stats**: View AUC, Accuracy, and RMSE from the latest training session.
+    \item **Mastery Charts**: Monitor the "Knowledge Forgetting Rate" and "Concept Proficiency" across the whole class.
+    \item **Student Selector**: Use the dropdown to select a specific student and see their predicted success probability for future questions.
+\end{enumerate}
+
+\subsection{Causal Analysis Suite}
+This module is for in-depth diagnostic analysis.
+\begin{enumerate}
+    \item **DAG Visualization**: Hover over nodes in the Directed Acyclic Graph to see concept prerequisites.
+    \item **Counterfactual Sandbox**: Move the mastery sliders for foundational concepts (e.g., Fractions).
+    \item **Locked Interventions**: Click the "Lock Intervention" button to save a specific pedagogical scenario and see how it affects the student's long-term success probability.
+\end{enumerate}
+
+\subsection{Agentic Grader (Inference)}
+This is the most interactive part of the prototype.
+\begin{enumerate}
+    \item **File Upload**: Drag and drop a student's answer sheet (PDF or Image).
+    \item **Document Preview**: Verify the upload in the live viewer.
+    \item **Start Analysis**: Click the "Start Agentic Analysis" button. The system will crop the image and send it to the AI agent.
+    \item **Review Feedback**: Switch between tabs (Mistakes, Corrections, Strengths, Weaknesses) to see granular diagnostics.
+\end{enumerate}

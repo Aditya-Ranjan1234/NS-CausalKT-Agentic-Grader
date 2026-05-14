@@ -1,0 +1,27 @@
+\chapter{Conclusion \& Future Work}
+
+\section{Summary}
+In this project, we developed **NS-CausalKT**, a Neuro-Symbolic Causal Knowledge Tracing framework. We successfully integrated deep learning with symbolic logic and causal reasoning to create a model that is both accurate and interpretable. Our system provides:
+\begin{itemize}
+    \item **Explainable Diagnostics**: Identifying root causes of failure through ACE rankings.
+    \item **Interactive Simulations**: Simulating pedagogical interventions through do-calculus.
+    \item **Agentic Feedback**: Automated grading of handwritten work with diagnostic depth.
+\end{itemize}
+
+\section{Limitations}
+While NS-CausalKT shows promising results, it has some limitations:
+\begin{itemize}
+    \item **Computational Cost**: The joint training of three layers is more computationally intensive than pure DKT.
+    \item **Prerequisite Dependency**: The model relies on a high-quality prerequisite graph. If the graph contains errors, the symbolic layer may enforce incorrect mastery patterns.
+\end{itemize}
+
+\section{Future Work}
+Future research could explore:
+\begin{itemize}
+    \item **Dynamic Graph Learning**: Automatically learning the prerequisite graph from raw data instead of relying on domain experts.
+    \item **Multimodal Knowledge Tracing**: Integrating student's facial expressions or gaze data to further refine the knowledge state estimate.
+    \item **Reinforcement Learning (RL)**: Using the causal engine as a reward function for an RL agent to generate optimal learning paths.
+\end{itemize}
+
+\section{Personal Reflections}
+This project has been a valuable learning experience in building a complex, integrated AI system. Handling challenges like API authentication, dataset preprocessing, and neuro-symbolic integration has provided deep insights into the future of trustworthy and interpretable Artificial Intelligence.

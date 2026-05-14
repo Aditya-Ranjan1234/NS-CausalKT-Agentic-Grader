@@ -1,0 +1,8 @@
+flask
+flask-cors
+torch
+numpy
+pypdf2
+pytesseract
+pillow
+openai

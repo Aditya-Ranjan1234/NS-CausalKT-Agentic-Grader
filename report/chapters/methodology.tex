@@ -1,0 +1,46 @@
+\chapter{Methodology}
+
+\section{System Architecture}
+The NS-CausalKT model is designed as a three-layered architecture. Each layer addresses a specific aspect of the learning process: neural sequence modeling, symbolic constraint enforcement, and causal intervention.
+
+\subsection{Neural Student Model (NSM)}
+The NSM uses a 2-layer Transformer encoder with multi-head attention. For each student interaction $(q_t, a_t)$, we create an embedding $e_t$:
+\begin{equation}
+    e_t = \text{Embed}(q_t) \oplus \text{Embed}(a_t) \oplus \text{Embed}(c_t) \oplus \Delta t_t
+\end{equation}
+The Transformer output $H$ is then refined through a GRU to capture temporal dynamics like the spacing effect (forgetting curves).
+
+\subsection{Symbolic Concept Layer (SCL)}
+The SCL ensures that the latent knowledge state $\mu_t$ follows the rules of the domain. We define a Directed Acyclic Graph (DAG) $G$ representing concept prerequisites. We use **Logic Tensor Networks (LTN)** to define soft rules. For example, the "Prerequisite Necessity" rule states:
+\begin{equation}
+    \forall s, t: \text{masters}(s, c_i, t) \implies \text{masters}(s, c_j, t) \text{ if } (c_j \to c_i) \in E
+\end{equation}
+This rule is enforced using the Łukasiewicz t-norm, making the logic differentiable and suitable for gradient-based training.
+
+\subsection{Causal SCM Layer (CSL)}
+The CSL implements a Structural Causal Model (SCM). The Average Causal Effect (ACE) of a concept $c_j$ on the student's performance $a_{t+1}$ is computed using Pearl's do-calculus:
+\begin{equation}
+    \text{ACE}(c_j \to a_{t+1}) = E[a_{t+1} | do(c_j=1)] - E[a_{t+1} | do(c_j=0)]
+\end{equation}
+By computing ACE for all prerequisite concepts, we can identify the "Root Cause" of a student's failure.
+
+\section{Loss Functions}
+The model is trained end-to-end using a joint objective function $L_{total}$:
+\begin{equation}
+    L_{total} = L_{pred} + \lambda_1 L_{sym} + \lambda_2 L_{causal} + \lambda_3 L_{smooth}
+\end{equation}
+Where:
+\begin{itemize}
+    \item $L_{pred}$ is the Binary Cross-Entropy loss for performance prediction.
+    \item $L_{sym}$ ensures consistency with the prerequisite graph.
+    \item $L_{causal}$ regularizes the mastery state based on causal constraints.
+    \item $L_{smooth}$ penalizes sudden, unrealistic jumps in knowledge mastery.
+\end{itemize}
+
+\section{Data Preprocessing}
+The ASSISTments 2009 dataset was preprocessed to remove noise and ensure consistency.
+\begin{itemize}
+    \item \textbf{Sequence Length}: Sequences were truncated or padded to a fixed length of 200 interactions.
+    \item \textbf{Concept Mapping}: Each problem was mapped to a unique skill ID.
+    \item \textbf{Splitting}: A student-level 80/20 split was used for training and validation to prevent data leakage.
+\end{itemize}

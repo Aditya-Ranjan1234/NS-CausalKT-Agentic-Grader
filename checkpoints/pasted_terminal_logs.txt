@@ -1,0 +1,221 @@
+python train.py --epochs 30 --batch_size 64
+Using device: cuda
+Loading original ASSISTments 2009 dataset...
+Data already exists at data\skill_builder_data.csv
+Preprocessing real ASSISTments 09 logs...
+D:\6th Sem\main el - causal\dataset.py:42: DtypeWarning: Columns (17) have mixed types. Specify dtype option on import or set low_memory=False.
+Resuming from epoch 1
+Starting Training Loop...
+Epoch 2/30 [Train]: 100%|████| 52/52 [00:06<00:00,  7.51it/s, loss=0.0080, l_pred=0.0077]
+Epoch 2/30 [Val]: 100%|██████████████████████████████████| 13/13 [00:00<00:00, 15.83it/s]
+Epoch 2 Results: AUC=1.0000, RMSE=0.0084, ACC=1.0000, IC@5=0.0000
+...
+Epoch 30/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.60it/s, loss=0.0003, l_pred=0.0003]
+Epoch 30/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.55it/s]
+Epoch 30 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+
+
+
+
+PS D:\6th Sem\main el - causal>
+
+PS D:\6th Sem\main el - causal>
+
+
+
+PS D:\6th Sem\main el - causal>
+
+
+PS D:\6th Sem\main el - causal>
+
+PS D:\6th Sem\main el - causal>
+PS D:\6th Sem\main el - causal>
+PS D:\6th Sem\main el - causal> .\.venv\Scripts\activate
+>> python train.py --epochs 30 --batch_size 64
+Using device: cuda
+Loading original ASSISTments 2009 dataset...
+Data already exists at data\skill_builder_data.csv
+Preprocessing real ASSISTments 09 logs...
+D:\6th Sem\main el - causal\dataset.py:42: DtypeWarning: Columns (17) have mixed types. Specify dtype option on import or set low_memory=False.
+eights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.     
+  checkpoint = torch.load(checkpoint_path, map_location=args.device)
+Resuming from epoch 1
+Starting Training Loop...
+Epoch 2/30 [Train]: 100%|████| 52/52 [00:06<00:00,  7.51it/s, loss=0.0080, l_pred=0.0077]
+Epoch 2/30 [Val]: 100%|██████████████████████████████████| 13/13 [00:00<00:00, 15.83it/s]
+Epoch 2 Results: AUC=1.0000, RMSE=0.0084, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 3/30 [Train]: 100%|████████████| 52/52 [00:06<00:00,  7.66it/s, loss=0.0047, l_pred=0.0044]
+Epoch 3/30 [Val]: 100%|██████████████████████████████████████████████████████████████| 13/13 [00:01<00:00, 12.56it/s]
+Epoch 3 Results: AUC=1.0000, RMSE=0.0045, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 4/30 [Train]: 100%|████████████████████████████████| 52/52 [00:07<00:00,  7.33it/s, loss=0.0035, l_pred=0.0029]
+Epoch 4/30 [Val]: 100%|██████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.84it/s]
+Epoch 4 Results: AUC=1.0000, RMSE=0.0031, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 5/30 [Train]: 100%|████████████████████████████████| 52/52 [00:06<00:00,  7.62it/s, loss=0.0028, l_pred=0.0023]
+Epoch 5/30 [Val]: 100%|██████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.43it/s]
+Epoch 5 Results: AUC=1.0000, RMSE=0.0024, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 6/30 [Train]: 100%|████████████████████████████████| 52/52 [00:07<00:00,  6.68it/s, loss=0.0023, l_pred=0.0018]
+Epoch 6/30 [Val]: 100%|██████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 14.45it/s]
+Epoch 6 Results: AUC=1.0000, RMSE=0.0020, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 7/30 [Train]: 100%|████████████████████████████████| 52/52 [00:13<00:00,  3.91it/s, loss=0.0021, l_pred=0.0018]
+Epoch 7/30 [Val]: 100%|██████████████████████████████████████████████████████████████| 13/13 [00:02<00:00,  5.44it/s] 
+Epoch 7 Results: AUC=1.0000, RMSE=0.0018, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 8/30 [Train]: 100%|████████████████████████████████| 52/52 [00:11<00:00,  4.71it/s, loss=0.0019, l_pred=0.0015]
+Epoch 8/30 [Val]: 100%|██████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 14.68it/s] 
+Epoch 8 Results: AUC=1.0000, RMSE=0.0017, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 9/30 [Train]: 100%|████████████████████████████████| 52/52 [00:06<00:00,  7.80it/s, loss=0.0018, l_pred=0.0015]
+Epoch 9/30 [Val]: 100%|██████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.49it/s] 
+Epoch 9 Results: AUC=1.0000, RMSE=0.0017, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 10/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.84it/s, loss=0.0018, l_pred=0.0016]
+Epoch 10/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.77it/s] 
+Epoch 10 Results: AUC=1.0000, RMSE=0.0017, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 11/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.85it/s, loss=0.0015, l_pred=0.0012]
+Epoch 11/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.70it/s] 
+Epoch 11 Results: AUC=1.0000, RMSE=0.0013, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 12/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.87it/s, loss=0.0013, l_pred=0.0009]
+Epoch 12/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.58it/s] 
+Epoch 12 Results: AUC=1.0000, RMSE=0.0010, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 13/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.70it/s, loss=0.0010, l_pred=0.0008]
+Epoch 13/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.27it/s] 
+Epoch 13 Results: AUC=1.0000, RMSE=0.0009, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 14/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  8.04it/s, loss=0.0009, l_pred=0.0007]
+Epoch 14/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.97it/s] 
+Epoch 14 Results: AUC=1.0000, RMSE=0.0008, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 15/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.83it/s, loss=0.0008, l_pred=0.0007]
+Epoch 15/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.44it/s] 
+Epoch 15 Results: AUC=1.0000, RMSE=0.0007, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 16/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.67it/s, loss=0.0008, l_pred=0.0006]
+Epoch 16/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 16.01it/s] 
+Epoch 16 Results: AUC=1.0000, RMSE=0.0006, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 17/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  8.01it/s, loss=0.0007, l_pred=0.0006]
+Epoch 17/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.98it/s] 
+Epoch 17 Results: AUC=1.0000, RMSE=0.0006, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 18/30 [Train]: 100%|███████████████████████████████| 52/52 [00:11<00:00,  4.65it/s, loss=0.0007, l_pred=0.0006]
+Epoch 18/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 14.94it/s] 
+Epoch 18 Results: AUC=1.0000, RMSE=0.0006, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 19/30 [Train]: 100%|███████████████████████████████| 52/52 [00:07<00:00,  6.92it/s, loss=0.0007, l_pred=0.0005]
+Epoch 19/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.88it/s] 
+Epoch 19 Results: AUC=1.0000, RMSE=0.0006, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 20/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.82it/s, loss=0.0007, l_pred=0.0006]
+Epoch 20/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 16.11it/s] 
+Epoch 20 Results: AUC=1.0000, RMSE=0.0006, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 21/30 [Train]: 100%|███████████████████████████████| 52/52 [00:11<00:00,  4.71it/s, loss=0.0006, l_pred=0.0005]
+Epoch 21/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:02<00:00,  5.27it/s] 
+Epoch 21 Results: AUC=1.0000, RMSE=0.0005, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 22/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.44it/s, loss=0.0005, l_pred=0.0005]
+Epoch 22/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 16.34it/s] 
+Epoch 22 Results: AUC=1.0000, RMSE=0.0004, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 23/30 [Train]: 100%|███████████████████████████████| 52/52 [00:08<00:00,  6.29it/s, loss=0.0004, l_pred=0.0004]
+Epoch 23/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 13.51it/s] 
+Epoch 23 Results: AUC=1.0000, RMSE=0.0004, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 24/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.99it/s, loss=0.0004, l_pred=0.0003]
+Epoch 24/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.99it/s] 
+Epoch 24 Results: AUC=1.0000, RMSE=0.0004, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 25/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.73it/s, loss=0.0004, l_pred=0.0003]
+Epoch 25/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.76it/s] 
+Epoch 25 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 24/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.99it/s, loss=0.0004, l_pred=0.0003] 
+Epoch 24/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.99it/s] 
+Epoch 24 Results: AUC=1.0000, RMSE=0.0004, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 25/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.73it/s, loss=0.0004, l_pred=0.0003] 
+Epoch 25/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.76it/s] 
+Epoch 25 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Epoch 24/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.99it/s] 
+Epoch 24 Results: AUC=1.0000, RMSE=0.0004, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 25/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.73it/s, loss=0.0004, l_pred=0.0003] 
+Epoch 25/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.76it/s] 
+Epoch 25 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Epoch 24 Results: AUC=1.0000, RMSE=0.0004, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 25/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.73it/s, loss=0.0004, l_pred=0.0003] 
+Epoch 25/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.76it/s] 
+Epoch 25 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Epoch 25/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.73it/s, loss=0.0004, l_pred=0.0003] 
+Epoch 25/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.76it/s] 
+Epoch 25 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Epoch 25/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.76it/s] 
+Epoch 25 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Epoch 25 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 26/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  8.00it/s, loss=0.0003, l_pred=0.0003] 
+Epoch 26/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.80it/s] 
+Epoch 26 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 27/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.79it/s, loss=0.0003, l_pred=0.0003] 
+Epoch 27/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.82it/s]Checkpoint saved to checkpoints\latest.pt
+Epoch 26/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  8.00it/s, loss=0.0003, l_pred=0.0003]
+Epoch 26/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.80it/s]
+Epoch 26 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 27/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.79it/s, loss=0.0003, l_pred=0.0003]
+Epoch 27/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00Checkpoint saved to checkpoints\latest.pt
+Epoch 26/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  8.00it/s, loss=0.0003, l_pred=0.0003]
+Epoch 26/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.80it/s]
+Epoch 26 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 27/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.79it/s, loss=0.0003, l_pred=0.0003]
+Epoch 27/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.82it/s]
+Epoch 27 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Epoch 26/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  8.00it/s, loss=0.0003, l_pred=0.0003]
+Epoch 26/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.80it/s]
+Epoch 26 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 27/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.79it/s, loss=0.0003, l_pred=0.0003]
+Epoch 27/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.82it/s]
+Epoch 27 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Epoch 26/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.80it/s]
+Epoch 26 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 27/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.79it/s, loss=0.0003, l_pred=0.0003]
+Epoch 27/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.82it/s]
+Epoch 27 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 27/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.79it/s, loss=0.0003, l_pred=0.0003]
+Epoch 27/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.82it/s]
+Epoch 27 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Epoch 27/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.82it/s]
+Epoch 27 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 27 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Checkpoint saved to checkpoints\latest.pt
+Epoch 28/30 [Train]: 100%|███████████████████████████████| 52/52 [00:13<00:00,  3.99it/s, loss=0.0003, l_pred=0.0003]
+Epoch 28/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:02<00:00,  5.66it/s]
+Epoch 28 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 29/30 [Train]: 100%|███████████████████████████████| 52/52 [00:14<00:00,  3.68it/s, loss=0.0004, l_pred=0.0003]
+Epoch 29/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:01<00:00,  6.61it/s]
+Epoch 29 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+Epoch 30/30 [Train]: 100%|███████████████████████████████| 52/52 [00:06<00:00,  7.60it/s, loss=0.0003, l_pred=0.0003]
+Epoch 30/30 [Val]: 100%|█████████████████████████████████████████████████████████████| 13/13 [00:00<00:00, 15.55it/s]
+Epoch 30 Results: AUC=1.0000, RMSE=0.0003, ACC=1.0000, IC@5=0.0000
+Checkpoint saved to checkpoints\latest.pt
+(.venv) PS D:\6th Sem\main el - causal>
+

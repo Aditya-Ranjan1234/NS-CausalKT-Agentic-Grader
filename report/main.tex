@@ -1,0 +1,80 @@
+\documentclass[12pt,a4paper,oneside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\geometry{margin=1in}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=cyan}
+
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{green!60!black},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+\title{\textbf{NS-CausalKT: Neural-Symbolic Causal Knowledge Tracing for Intelligent Tutoring Systems}}
+\author{Your Name}
+\date{May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Knowledge Tracing (KT) is a critical task in personalized education, aimed at modeling student knowledge states over time. While deep learning models have significantly improved predictive performance, they lack causal interpretability and symbolic grounding. This report presents NS-CausalKT, a novel Neuro-Symbolic Causal Knowledge Tracing framework. Our model integrates a Transformer-based neural encoder with a Symbolic Concept Layer for prerequisite enforcement and a Causal SCM Layer for intervention simulation. Experimental results on the ASSISTments 2009 dataset demonstrate that NS-CausalKT achieves a competitive AUC of 0.8137 while providing actionable causal insights. We also introduce an "Agentic Grader" prototype that leverages multimodal LLMs for automated feedback.
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+
+\newpage
+\include{chapters/introduction}
+\include{chapters/literature_review}
+\include{chapters/methodology}
+\include{chapters/implementation}
+\include{chapters/results}
+\include{chapters/specs}
+\include{chapters/conclusion}
+
+\bibliographystyle{plain}
+\begin{thebibliography}{99}
+\bibitem{dkt} Piech, C., Bassen, J., Huang, J., Ganguli, S., Sahami, M., Guibas, L. J., \& Sohl-Dickstein, J. (2015). Deep knowledge tracing. Advances in neural information processing systems, 28.
+\bibitem{akt} Ghosh, A., Heffernan, N., \& Lan, A. S. (2020). Context-aware attentive knowledge tracing. In Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery \& data mining.
+\bibitem{pearl} Pearl, J. (2009). Causality. Cambridge university press.
+\bibitem{ltn} Serafini, L., \& Garcez, A. D. (2016). Logic tensor networks: Deep learning and logical reasoning from data and knowledge. arXiv preprint arXiv:1606.04422.
+\end{thebibliography}
+
+\end{document}
