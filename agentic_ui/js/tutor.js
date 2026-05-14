@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 let currentUser = null;
-let currentUserId = 'aditya_ranjan';
+let currentUserId = localStorage.getItem('qa_user_id') || 'aditya_ranjan';
 
 async function initTutor() {
     await fetchUsers();
@@ -32,6 +32,7 @@ async function fetchUsers() {
             });
             select.addEventListener('change', async (e) => {
                 currentUserId = e.target.value;
+                localStorage.setItem('qa_user_id', currentUserId);
                 await fetchProfile();
                 await fetchGraph();
             });
@@ -57,21 +58,24 @@ function updateProfileUI() {
     if (!currentUser) return;
     
     document.getElementById('userName').textContent = currentUser.name;
-    document.getElementById('currentGoal').textContent = currentUser.learning_goals[0] || 'No goal set';
+    const currentGoal = document.getElementById('currentGoal');
+    if (currentGoal) {
+        currentGoal.textContent = currentUser.learning_goals?.[0] || 'No goal set';
+    }
     
     const masterList = document.getElementById('masteredList');
     masterList.innerHTML = '';
-    currentUser.concepts_learned.forEach(c => {
+    (currentUser.concepts_learned || []).forEach(c => {
         const li = document.createElement('li');
-        li.textContent = c;
+        li.textContent = formatConceptWithMastery(c);
         masterList.appendChild(li);
     });
     
     const weakList = document.getElementById('weakList');
     weakList.innerHTML = '';
-    currentUser.weak_areas.forEach(c => {
+    (currentUser.weak_areas || []).forEach(c => {
         const li = document.createElement('li');
-        li.textContent = c;
+        li.textContent = formatConceptWithMastery(c);
         weakList.appendChild(li);
     });
     
@@ -82,15 +86,21 @@ function updateProfileUI() {
         chatHistory.removeChild(chatHistory.lastChild);
     }
     
-    currentUser.interaction_history.forEach(interaction => {
+    (currentUser.interaction_history || []).forEach(interaction => {
         appendMessage('user', interaction.user);
         appendMessage('bot', interaction.bot);
     });
 }
 
+function formatConceptWithMastery(concept) {
+    const mastery = currentUser?.mastery?.[concept];
+    if (typeof mastery !== 'number') return concept;
+    return `${concept} - ${Math.round(mastery * 100)}%`;
+}
+
 async function fetchGraph() {
     try {
-        const response = await fetch('/api/tutor/graph');
+        const response = await fetch(`/api/tutor/graph?user_id=${currentUserId}`);
         if (response.ok) {
             const data = await response.json();
             document.getElementById('recommendedNext').textContent = data.recommended_next;
@@ -107,6 +117,14 @@ async function sendMessage() {
     if (!msg) return;
     
     input.value = '';
+
+    if (msg.includes('?')) {
+        localStorage.setItem('qa_seed_question', msg);
+        localStorage.setItem('qa_user_id', currentUserId);
+        window.location.href = 'qanswer.html';
+        return;
+    }
+
     appendMessage('user', msg);
     
     // Show a temporary loading message
@@ -138,6 +156,7 @@ async function sendMessage() {
     }
 }
 
+
 function appendMessage(sender, text) {
     const chatHistory = document.getElementById('chatHistory');
     const msgDiv = document.createElement('div');
@@ -157,6 +176,15 @@ function drawDAG(nodes, edges) {
     
     const width = container.clientWidth;
     const height = container.clientHeight;
+    const margin = 70;
+
+    nodes.forEach((node, index) => {
+        const columns = Math.max(3, Math.ceil(Math.sqrt(nodes.length)));
+        const row = Math.floor(index / columns);
+        const col = index % columns;
+        node.x = margin + (col * (width - margin * 2)) / Math.max(1, columns - 1);
+        node.y = margin + (row * 120);
+    });
     
     const svg = d3.select("#dagContainer").append("svg")
         .attr("width", width)
@@ -178,10 +206,12 @@ function drawDAG(nodes, edges) {
         .style('stroke','none');
 
     const simulation = d3.forceSimulation(nodes)
-        .force("link", d3.forceLink(edges).id(d => d.id).distance(100))
-        .force("charge", d3.forceManyBody().strength(-300))
+        .force("link", d3.forceLink(edges).id(d => d.id).distance(120))
+        .force("charge", d3.forceManyBody().strength(-220))
         .force("center", d3.forceCenter(width / 2, height / 2))
-        .force("collide", d3.forceCollide().radius(40));
+        .force("x", d3.forceX(width / 2).strength(0.04))
+        .force("y", d3.forceY(height / 2).strength(0.04))
+        .force("collide", d3.forceCollide().radius(58));
 
     const link = svg.append("g")
         .selectAll("line")
@@ -208,6 +238,11 @@ function drawDAG(nodes, edges) {
         .text(d => d.id);
 
     simulation.on("tick", () => {
+        nodes.forEach(d => {
+            d.x = Math.max(margin, Math.min(width - margin, d.x));
+            d.y = Math.max(margin, Math.min(height - margin, d.y));
+        });
+
         link
             .attr("x1", d => d.source.x)
             .attr("y1", d => d.source.y)

@@ -25,8 +25,8 @@ class AgenticGraderUI {
         this.uploadSection = document.querySelector('.upload-section');
         this.loadingSection = document.getElementById('loadingSection');
         this.analysisSection = document.getElementById('analysisSection');
+        this.imageCanvasContainer = document.getElementById('documentViewer');
         this.pdfCanvas = document.getElementById('pdfCanvas');
-        this.boundingBoxesContainer = document.getElementById('boundingBoxes');
         this.prevPageBtn = document.getElementById('prevPage');
         this.nextPageBtn = document.getElementById('nextPage');
         this.pageIndicator = document.getElementById('pageIndicator');
@@ -180,7 +180,7 @@ class AgenticGraderUI {
             "Initializing...",
             "Processing files...",
             "Running NS-CausalKT...",
-            "Analyzing with GPT-4o Mini...",
+            "Analyzing response...",
             "Generating feedback..."
         ];
         
@@ -255,7 +255,6 @@ class AgenticGraderUI {
         };
         
         await page.render(renderContext).promise;
-        this.renderBoundingBoxes();
     }
 
     loadImage(file) {
@@ -290,7 +289,6 @@ class AgenticGraderUI {
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
                 
                 ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
-                this.renderBoundingBoxes();
             };
             img.src = e.target.result;
         };
@@ -310,76 +308,6 @@ class AgenticGraderUI {
         this.pageIndicator.textContent = `${this.currentPage} / ${this.totalPages}`;
         this.prevPageBtn.disabled = this.currentPage === 1;
         this.nextPageBtn.disabled = this.currentPage === this.totalPages;
-    }
-
-    renderBoundingBoxes() {
-        this.boundingBoxesContainer.innerHTML = '';
-        const arrowOverlay = document.getElementById('arrowOverlay');
-        if (arrowOverlay) arrowOverlay.innerHTML = '';
-        
-        if (!this.analysisResults || !this.analysisResults.bounding_boxes) {
-            return;
-        }
-        
-        const boxes = this.analysisResults.bounding_boxes.filter(box => box.page === this.currentPage);
-        const containerRect = this.imageCanvasContainer.getBoundingClientRect();
-        
-        boxes.forEach((box, index) => {
-            // 1. Draw Bounding Box
-            const boxEl = document.createElement('div');
-            boxEl.className = `bounding-box ${box.type || 'mistake'}`;
-            boxEl.style.left = `${box.x}px`;
-            boxEl.style.top = `${box.y}px`;
-            boxEl.style.width = `${box.width}px`;
-            boxEl.style.height = `${box.height}px`;
-            this.boundingBoxesContainer.appendChild(boxEl);
-
-            // 2. Create Dialogue Box
-            const dialogue = document.createElement('div');
-            dialogue.className = 'dialogue-box';
-            // Alternating sides for dialogue boxes
-            const isRight = index % 2 === 0;
-            dialogue.style.top = `${box.y}px`;
-            if (isRight) {
-                dialogue.style.left = `${box.x + box.width + 40}px`;
-            } else {
-                dialogue.style.left = `${box.x - 220}px`;
-            }
-            
-            dialogue.innerHTML = `
-                <span class="dialogue-tag">P${index + 1}: ${box.type || 'Error'}</span>
-                ${box.description}
-            `;
-            this.boundingBoxesContainer.appendChild(dialogue);
-
-            // 3. Draw Arrow (Line) using SVG
-            if (arrowOverlay) {
-                const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
-                const startX = isRight ? box.x + box.width : box.x;
-                const startY = box.y + (box.height / 2);
-                const endX = isRight ? box.x + box.width + 40 : box.x - 20;
-                const endY = box.y + 20;
-
-                line.setAttribute("x1", startX);
-                line.setAttribute("y1", startY);
-                line.setAttribute("x2", endX);
-                line.setAttribute("y2", endY);
-                line.setAttribute("class", "arrow-line");
-                line.setAttribute("marker-end", "url(#arrowhead)");
-                arrowOverlay.appendChild(line);
-            }
-        });
-
-        // Add arrowhead definition if missing
-        if (arrowOverlay && !arrowOverlay.querySelector('marker')) {
-            const defs = document.createElementNS("http://www.w3.org/2000/svg", "defs");
-            defs.innerHTML = `
-                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                    <polygon points="0 0, 10 3.5, 0 7" fill="var(--primary)"/>
-                </marker>
-            `;
-            arrowOverlay.prepend(defs);
-        }
     }
 
     populateFeedback() {
@@ -412,8 +340,6 @@ class AgenticGraderUI {
         this.renderFeedbackList('weaknessesList', data.weaknesses || [], 'warning');
         this.renderFeedbackList('focusList', data.focus_areas || [], 'warning');
         
-        // Trigger bounding box rendering with arrows
-        this.renderBoundingBoxes();
     }
 
     renderFeedbackList(containerId, items, type) {

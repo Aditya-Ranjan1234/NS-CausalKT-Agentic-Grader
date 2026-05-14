@@ -18,6 +18,7 @@
                 <a href="dashboard.html" class="nav-tab">Dashboard</a>
                 <a href="causal.html" class="nav-tab">Causal Analysis</a>
                 <a href="inference.html" class="nav-tab active">Inference</a>
+                <a href="qanswer.html" class="nav-tab">Q Answer</a>
                 <a href="tutor.html" class="nav-tab">AI Tutor</a>
             </div>
             <div class="status-bar">
@@ -70,7 +71,6 @@
                         </div>
                         <div class="document-viewer" id="documentViewer">
                             <canvas id="pdfCanvas"></canvas>
-                            <div id="boundingBoxes"></div>
                         </div>
                     </div>
 
@@ -127,9 +127,6 @@
                         </div>
                     </div>
                 </section>
-
-                <!-- SVG Overlay for Arrows -->
-                <svg id="arrowOverlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 99;"></svg>
 
                 <section class="loading-section" id="loadingSection" style="display: none;">
                     <div class="loading-spinner"></div>

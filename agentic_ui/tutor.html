@@ -97,6 +97,7 @@
         }
         .node.mastered circle { fill: #059669; stroke: #10b981; }
         .node.pending circle { fill: #1e293b; stroke: #475569; }
+        .node.intermediate circle { fill: #000000; stroke: #94a3b8; }
         .node.weak circle { fill: #b91c1c; stroke: #ef4444; }
         .node text {
             fill: #e2e8f0;
@@ -112,7 +113,7 @@
         }
         #dagContainer {
             width: 100%;
-            height: 400px;
+            height: 520px;
             background: #000;
             border: 1px solid rgba(34, 211, 238, 0.2);
             border-radius: 12px;
@@ -142,6 +143,7 @@
                 <a href="dashboard.html" class="nav-tab">Dashboard</a>
                 <a href="causal.html" class="nav-tab">Causal Analysis</a>
                 <a href="inference.html" class="nav-tab">Inference</a>
+                <a href="qanswer.html" class="nav-tab">Q Answer</a>
                 <a href="tutor.html" class="nav-tab active">AI Tutor</a>
             </div>
             <div class="status-bar">
@@ -172,7 +174,7 @@
                     </div>
                     
                     <div class="chat-input-container">
-                        <input type="text" id="chatInput" class="chat-input" placeholder="Type your message here... e.g., 'Explain Linear Equations'">
+                        <input type="text" id="chatInput" class="chat-input" placeholder="Ask a question to practice, or type a tutor message...">
                         <button class="btn btn-primary chat-btn" id="sendBtn">Send</button>
                     </div>
                 </div>

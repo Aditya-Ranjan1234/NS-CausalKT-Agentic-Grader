@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q Answer - NS-CausalKT</title>
+    <link rel="stylesheet" href="css/shared.css">
+    <style>
+        .qa-shell {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        .qa-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 24px;
+        }
+        .qa-topic {
+            color: #22d3ee;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+        .qa-toolbar {
+            display: grid;
+            grid-template-columns: 1fr 220px;
+            gap: 16px;
+            align-items: end;
+        }
+        .qa-card {
+            background: #020617;
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            padding: 22px;
+            margin-bottom: 16px;
+        }
+        .qa-card label {
+            display: block;
+            color: #f8fafc;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .qa-card small {
+            display: block;
+            color: #94a3b8;
+            margin-bottom: 8px;
+        }
+        .qa-input,
+        .qa-seed,
+        .qa-select {
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 8px;
+            border: 1px solid #1e293b;
+            background: #0f172a;
+            color: #e2e8f0;
+            font-size: 1rem;
+        }
+        .qa-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .qa-result {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(34, 211, 238, 0.25);
+            background: rgba(34, 211, 238, 0.08);
+        }
+        .qa-result strong {
+            color: #22d3ee;
+        }
+        .qa-progress {
+            color: #94a3b8;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .qa-feedback-list {
+            margin-top: 12px;
+            color: #cbd5e1;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <nav class="top-nav">
+            <div class="logo">
+                <h1>NS-CausalKT</h1>
+            </div>
+            <div class="nav-tabs">
+                <a href="dashboard.html" class="nav-tab">Dashboard</a>
+                <a href="causal.html" class="nav-tab">Causal Analysis</a>
+                <a href="inference.html" class="nav-tab">Inference</a>
+                <a href="qanswer.html" class="nav-tab active">Q Answer</a>
+                <a href="tutor.html" class="nav-tab">AI Tutor</a>
+            </div>
+            <div class="status-bar">
+                <span id="system-status" class="status-indicator ready">● Practice Ready</span>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="qa-shell">
+                <div class="qa-header">
+                    <div>
+                        <h2>Question Answer Practice</h2>
+                        <p style="color:#94a3b8; margin-top:8px;">Answer all 5 questions. Your score will update the AI Tutor graph.</p>
+                        <div class="qa-topic" id="qaTopic">Preparing practice...</div>
+                    </div>
+                    <button class="btn btn-secondary" id="backTutorBtn">Back to AI Tutor</button>
+                </div>
+
+                <div class="qa-card">
+                    <div class="qa-toolbar">
+                        <div>
+                            <label for="seedQuestion">Enter question or topic</label>
+                            <input id="seedQuestion" class="qa-seed" type="text" placeholder="Example: Generate questions about fractions">
+                        </div>
+                        <div>
+                            <label for="userSelect">Learner</label>
+                            <select id="userSelect" class="qa-select"></select>
+                        </div>
+                    </div>
+                    <div class="qa-actions">
+                        <button class="btn btn-primary" id="generateBtn">Generate 5 Questions</button>
+                    </div>
+                </div>
+
+                <div class="qa-card" id="questionCard" style="display:none;">
+                    <div class="qa-progress" id="qaProgress">Question 1 of 5</div>
+                    <small id="qaConceptHint"></small>
+                    <label id="questionPrompt" for="currentAnswer"></label>
+                    <input id="currentAnswer" class="qa-input" type="text" autocomplete="off" placeholder="Type your answer">
+                    <div class="qa-actions">
+                        <button class="btn btn-secondary" id="prevBtn">Previous</button>
+                        <button class="btn btn-primary" id="nextBtn">Next</button>
+                    </div>
+                </div>
+
+                <div class="qa-result" id="qaResult"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/qanswer.js"></script>
+</body>
+</html>
