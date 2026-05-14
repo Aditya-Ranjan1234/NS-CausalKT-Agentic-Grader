@@ -10,7 +10,19 @@
       "use": "@vercel/static"
     },
     {
-      "src": "api/**/*.py",
+      "src": "api/dashboard.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "api/causal.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "api/analyze.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "api/tutor.py",
       "use": "@vercel/python"
     }
   ],
@@ -24,7 +36,15 @@
       "dest": "agentic_ui/dashboard.html"
     },
     {
+      "src": "/dashboard.html",
+      "dest": "agentic_ui/dashboard.html"
+    },
+    {
       "src": "/causal",
+      "dest": "agentic_ui/causal.html"
+    },
+    {
+      "src": "/causal.html",
       "dest": "agentic_ui/causal.html"
     },
     {
@@ -32,11 +52,23 @@
       "dest": "agentic_ui/inference.html"
     },
     {
+      "src": "/inference.html",
+      "dest": "agentic_ui/inference.html"
+    },
+    {
       "src": "/qanswer",
       "dest": "agentic_ui/qanswer.html"
     },
     {
+      "src": "/qanswer.html",
+      "dest": "agentic_ui/qanswer.html"
+    },
+    {
       "src": "/tutor",
+      "dest": "agentic_ui/tutor.html"
+    },
+    {
+      "src": "/tutor.html",
       "dest": "agentic_ui/tutor.html"
     },
     {
