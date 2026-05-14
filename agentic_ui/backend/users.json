@@ -1,0 +1,58 @@
+{
+    "aditya_ranjan": {
+        "id": "aditya_ranjan",
+        "name": "Aditya Ranjan",
+        "mastery": {
+            "Fractions": 0.85,
+            "Decimals": 0.90,
+            "Basic Operations": 0.95,
+            "Linear Equations": 0.40
+        },
+        "weak_areas": ["Linear Equations", "Sign Management"],
+        "learning_goals": ["Master Algebra Basics"],
+        "interaction_history": [],
+        "concepts_learned": ["Fractions", "Decimals", "Basic Operations"]
+    },
+    "yashmitha_desai": {
+        "id": "yashmitha_desai",
+        "name": "Yashmitha Desai",
+        "mastery": {
+            "Fractions": 0.70,
+            "Decimals": 0.85,
+            "Basic Operations": 0.92,
+            "Linear Equations": 0.55
+        },
+        "weak_areas": ["Fractions", "Linear Equations"],
+        "learning_goals": ["Improve in Fractions"],
+        "interaction_history": [],
+        "concepts_learned": ["Decimals", "Basic Operations"]
+    },
+    "gnanendra_naidu_n": {
+        "id": "gnanendra_naidu_n",
+        "name": "Gnanendra Naidu N",
+        "mastery": {
+            "Fractions": 0.95,
+            "Decimals": 0.88,
+            "Basic Operations": 0.98,
+            "Linear Equations": 0.75
+        },
+        "weak_areas": ["Sign Management"],
+        "learning_goals": ["Master Quadratic Functions"],
+        "interaction_history": [],
+        "concepts_learned": ["Fractions", "Decimals", "Basic Operations", "Linear Equations"]
+    },
+    "janani_s": {
+        "id": "janani_s",
+        "name": "Janani S",
+        "mastery": {
+            "Fractions": 0.78,
+            "Decimals": 0.92,
+            "Basic Operations": 0.90,
+            "Linear Equations": 0.60
+        },
+        "weak_areas": ["Linear Equations", "Algebra Basics"],
+        "learning_goals": ["Complete Algebra Basics"],
+        "interaction_history": [],
+        "concepts_learned": ["Fractions", "Decimals", "Basic Operations"]
+    }
+}

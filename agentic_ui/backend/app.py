@@ -327,7 +327,118 @@ def analyze():
         import traceback
         print(f"Traceback: {traceback.format_exc()}")
         return jsonify({"error": str(e)}), 500
+# --- AI Tutor Endpoints ---
+def get_user_profile(user_id="aditya_ranjan"):
+    users_file = os.path.join(script_dir, 'users.json')
+    try:
+        with open(users_file, 'r') as f:
+            users = json.load(f)
+            return users.get(user_id)
+    except Exception:
+        return None
 
+def save_user_profile(user_id, data):
+    users_file = os.path.join(script_dir, 'users.json')
+    try:
+        with open(users_file, 'r') as f:
+            users = json.load(f)
+        users[user_id] = data
+        with open(users_file, 'w') as f:
+            json.dump(users, f, indent=4)
+        return True
+    except Exception:
+        return False
+
+@app.route('/api/tutor/users', methods=['GET'])
+def tutor_users():
+    users_file = os.path.join(script_dir, 'users.json')
+    try:
+        with open(users_file, 'r') as f:
+            users = json.load(f)
+            return jsonify(list(users.values()))
+    except Exception as e:
+        return jsonify([])
+
+@app.route('/api/tutor/profile', methods=['GET'])
+def tutor_profile():
+    user_id = request.args.get('user_id', 'aditya_ranjan')
+    user = get_user_profile(user_id)
+    if user:
+        return jsonify(user)
+    return jsonify({"error": "User not found"}), 404
+
+@app.route('/api/tutor/goal', methods=['POST'])
+def update_goal():
+    data = request.json
+    goal = data.get('goal')
+    user = get_user_profile()
+    if user and goal:
+        user['learning_goals'] = [goal]
+        save_user_profile(user['id'], user)
+        return jsonify({"success": True, "user": user})
+    return jsonify({"error": "Failed to update goal"}), 400
+
+@app.route('/api/tutor/chat', methods=['POST'])
+def tutor_chat():
+    data = request.json
+    message = data.get('message')
+    user = get_user_profile()
+    
+    if not client:
+        return jsonify({
+            "reply": "I am operating in offline mode. Please set OPENAI_API_KEY to enable AI chat.",
+            "updated_mastery": False
+        })
+        
+    messages = [
+        {"role": "system", "content": "You are an AI Tutor. The student's current profile is: " + json.dumps(user) + ". Provide short, encouraging, and pedagogically sound advice. If they ask to learn a concept, explain it briefly."},
+        {"role": "user", "content": message}
+    ]
+    
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=messages
+        )
+        reply = response.choices[0].message.content
+        
+        # Log interaction
+        user['interaction_history'].append({"user": message, "bot": reply})
+        save_user_profile(user['id'], user)
+        
+        return jsonify({
+            "reply": reply,
+            "updated_mastery": False # In a real system, you'd extract intent and update mastery here
+        })
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/tutor/graph', methods=['GET'])
+def tutor_graph():
+    user = get_user_profile()
+    
+    # Dynamic Prerequisite Graph based on NS-CausalKT Logic
+    # This is a sample personalized DAG showing what's mastered, pending, and current focus
+    nodes = [
+        {"id": "Fractions", "status": "mastered"},
+        {"id": "Decimals", "status": "mastered"},
+        {"id": "Basic Operations", "status": "mastered"},
+        {"id": "Linear Equations", "status": "weak"},
+        {"id": "Sign Management", "status": "pending"},
+        {"id": "Algebra Basics", "status": "pending"},
+        {"id": "Quadratic Functions", "status": "pending"}
+    ]
+    
+    edges = [
+        {"source": "Basic Operations", "target": "Linear Equations"},
+        {"source": "Fractions", "target": "Linear Equations"},
+        {"source": "Decimals", "target": "Linear Equations"},
+        {"source": "Linear Equations", "target": "Sign Management"},
+        {"source": "Linear Equations", "target": "Algebra Basics"},
+        {"source": "Algebra Basics", "target": "Quadratic Functions"}
+    ]
+    
+    return jsonify({"nodes": nodes, "edges": edges, "recommended_next": "Linear Equations"})
 
 if __name__ == '__main__':
     load_openai_client()

@@ -17,6 +17,9 @@ class AgenticGraderUI {
         this.fileInput = document.getElementById('fileInput');
         this.browseBtn = document.getElementById('browseBtn');
         this.uploadedFilesContainer = document.getElementById('uploadedFiles');
+        this.uploadActionContainer = document.getElementById('uploadActionContainer');
+        this.previewSection = document.getElementById('previewSection');
+        this.filePreview = document.getElementById('filePreview');
         this.startAnalysisBtn = document.getElementById('startAnalysisBtn');
         this.systemStatus = document.getElementById('system-status');
         this.uploadSection = document.querySelector('.upload-section');
@@ -107,7 +110,8 @@ class AgenticGraderUI {
 
     showFilePreview(file) {
         console.log('Showing preview for file:', file.name, file.type);
-        this.previewSection.style.display = 'block';
+        this.uploadActionContainer.style.display = 'block';
+        this.previewSection.style.display = 'flex'; // it is inside the container
         this.filePreview.innerHTML = '';
         
         if (file.type.startsWith('image/')) {
@@ -154,7 +158,7 @@ class AgenticGraderUI {
 
     async startAnalysis() {
         this.uploadSection.style.display = 'none';
-        this.loadingSection.style.display = 'flex';
+        this.loadingSection.style.setProperty('display', 'flex', 'important');
         this.systemStatus.textContent = '● Processing...';
         this.systemStatus.className = 'status-indicator processing';
         
@@ -213,7 +217,7 @@ class AgenticGraderUI {
 
     async showAnalysis() {
         this.loadingSection.style.display = 'none';
-        this.analysisSection.style.display = 'grid';
+        this.analysisSection.style.setProperty('display', 'grid', 'important');
         this.systemStatus.textContent = '● Analysis Complete';
         this.systemStatus.className = 'status-indicator ready';
         

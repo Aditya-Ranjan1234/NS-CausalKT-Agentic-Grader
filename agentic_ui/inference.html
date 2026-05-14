@@ -18,6 +18,7 @@
                 <a href="dashboard.html" class="nav-tab">Dashboard</a>
                 <a href="causal.html" class="nav-tab">Causal Analysis</a>
                 <a href="inference.html" class="nav-tab active">Inference</a>
+                <a href="tutor.html" class="nav-tab">AI Tutor</a>
             </div>
             <div class="status-bar">
                 <span id="system-status" class="status-indicator ready">● System Ready</span>
@@ -41,12 +42,20 @@
 
                     <div class="uploaded-files" id="uploadedFiles"></div>
 
-                    <div class="preview-section" id="previewSection" style="display: none; margin-top: 24px;">
-                        <h3 style="color: #cbd5e1; margin-bottom: 16px;">File Preview</h3>
-                        <div class="file-preview" id="filePreview"></div>
+                    <div id="uploadActionContainer" style="display: none; margin-top: 24px;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; min-height: 400px;">
+                            <div class="preview-section" id="previewSection" style="display: flex; flex-direction: column; height: 100%;">
+                                <h3 style="color: #cbd5e1; margin-bottom: 16px;">File Preview</h3>
+                                <div class="file-preview" id="filePreview" style="flex: 1; min-height: 400px; display: flex; align-items: center; justify-content: center; background: #0f172a; border-radius: 12px; border: 1px solid rgba(34, 211, 238, 0.2);"></div>
+                            </div>
+                            
+                            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(15, 23, 42, 0.5); border-radius: 12px; border: 1px solid rgba(34, 211, 238, 0.2); padding: 40px;">
+                                <h3 style="color: #cbd5e1; margin-bottom: 24px; font-size: 24px; text-align: center;">Ready for AI Diagnostic</h3>
+                                <p style="color: #94a3b8; text-align: center; margin-bottom: 32px; max-width: 400px;">The document is loaded and ready for analysis. The system will use NS-CausalKT to determine the root cause of any mistakes.</p>
+                                <button class="btn btn-large btn-primary" id="startAnalysisBtn" disabled style="margin-top: 0; font-size: 1.5rem; padding: 20px 40px; border-radius: 12px; width: 100%; box-shadow: 0 10px 20px rgba(34, 211, 238, 0.2);">🚀 Start Agentic Analysis</button>
+                            </div>
+                        </div>
                     </div>
-
-                    <button class="btn btn-large btn-primary" id="startAnalysisBtn" disabled style="margin-top: 24px;">🚀 Start Agentic Analysis</button>
                 </section>
 
                 <section class="analysis-section" id="analysisSection" style="display: none;">
