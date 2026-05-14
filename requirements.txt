@@ -1,11 +1,3 @@
-flask
-flask-cors
-torch
-torchvision
-torchaudio
-numpy
-pandas
-pypdf2
-pillow
+# Minimal dependencies used by the Vercel serverless functions in api/.
+# Keep heavyweight local training/backend dependencies in requirements-local.txt.
 openai
-python-dotenv

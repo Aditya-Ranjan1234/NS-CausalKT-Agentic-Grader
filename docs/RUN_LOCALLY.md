@@ -12,6 +12,12 @@ cd agentic_ui/backend
 pip install -r requirements.txt
 ```
 
+If you are running from the repository root, install the full local stack instead:
+
+```bash
+pip install -r requirements-local.txt
+```
+
 ### Step 3: Set OpenAI API Key (optional for inference page)
 ```bash
 set OPENAI_API_KEY=your-api-key-here

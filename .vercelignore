@@ -1,0 +1,12 @@
+.git
+.venv
+__pycache__
+**/__pycache__
+*.pyc
+
+# Local ML/runtime artifacts are too large for Vercel Python lambdas.
+checkpoints/*.pt
+checkpoints/*_latest.pt
+uploads/**
+agentic_ui/backend/uploads/**
+report.zip

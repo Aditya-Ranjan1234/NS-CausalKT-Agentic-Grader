@@ -70,8 +70,8 @@ NS-CausalKT-Agentic-Grader/
 git clone https://github.com/Aditya-Ranjan1234/NS-CausalKT-Agentic-Grader.git
 cd NS-CausalKT-Agentic-Grader
 
-# Install dependencies
-pip install -r requirements.txt
+# Install local training/backend dependencies
+pip install -r requirements-local.txt
 
 # Run the backend
 python agentic_ui/backend/app.py
