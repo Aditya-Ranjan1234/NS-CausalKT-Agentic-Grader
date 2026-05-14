@@ -1,0 +1,472 @@
+source	target	weight	kind	origin
+ackermann function	inverse ackermann function	100.0	seed	label
+acyclic graph	adjacency lists	100.0	seed	label
+acyclic graph	breadth first search	100.0	seed	label
+acyclic graph	connected component	150.0	seed	wiki_label
+acyclic graph	connected graph	100.0	seed	label
+acyclic graph	depth first search	100.0	seed	label
+acyclic graph	directed acyclic graph	150.0	seed	wiki_label
+acyclic graph	graph algorithms	100.0	seed	label
+acyclic graph	graph search	100.0	seed	label
+adjacency lists	adjacency matrix	100.0	seed	label
+asymptotic analysis	o notation	100.0	seed	label
+asymptotic notation	big omega	100.0	seed	label
+asymptotic notation	o notation	100.0	seed	label
+asymptotic notation	theta notation	100.0	seed	label
+avl trees	red black tree	100.0	seed	label
+avl trees	splay trees	100.0	seed	label
+backwards search	bidirectional search	100.0	seed	label
+balance trees	red black tree	100.0	seed	label
+balanced binary search	avl trees	100.0	seed	label
+balanced binary search	red black tree	100.0	seed	label
+balanced binary search	splay trees	100.0	seed	label
+balanced search	avl trees	100.0	seed	label
+balanced search	balanced binary search	100.0	seed	label
+balanced search	balanced search tree	100.0	seed	label
+balanced search	red black tree	100.0	seed	label
+balanced search	splay trees	100.0	seed	label
+balanced search tree	avl trees	100.0	seed	label
+balanced search tree	balanced binary search	100.0	seed	label
+balanced search tree	red black tree	100.0	seed	label
+balanced search tree	splay trees	100.0	seed	label
+bidirectional search	bidirectional dijkstra algorithm	100.0	seed	label
+big omega	sort algorithm	100.0	seed	label
+big-o notation	binary search	100.0	seed	label
+big-o notation	breadth first search	100.0	seed	label
+big-o notation	brute force approach	100.0	seed	label
+big-o notation	depth first search	100.0	seed	label
+big-o notation	heap sort	100.0	seed	label
+big-o notation	knockout tournament	100.0	seed	label
+big-o notation	kruskal algorithm	100.0	seed	label
+big-o notation	linear time algorithm	100.0	seed	label
+big-o notation	merge sort	100.0	seed	label
+big-o notation	mst algorithm	100.0	seed	label
+big-o notation	programming algorithms	100.0	seed	label
+big-o notation	quadratic time algorithm	100.0	seed	label
+big-o notation	quick sort	100.0	seed	label
+big-o notation	randomized algorithm	100.0	seed	label
+big-o notation	randomized selection algorithm	100.0	seed	label
+big-o notation	select algorithm	100.0	seed	label
+big-o notation	sort algorithm	100.0	seed	label
+big-o notation	spanning tree algorithm	100.0	seed	label
+binary code	binary search tree	150.0	seed	wiki_label
+binary code	binary tree	150.0	seed	wiki_label
+binary heap	priority queue	150.0	seed	wiki_label
+binary max heap	heap sort	100.0	seed	label
+binary max heap	priority queue	100.0	seed	label
+binary search	avl trees	100.0	seed	label
+binary search	balanced binary search	100.0	seed	label
+binary search	binary heap	150.0	seed	wiki_label
+binary search	binary search tree	150.0	seed	wiki_label
+binary search	optimal binary search	100.0	seed	label
+binary search tree	avl trees	100.0	seed	label
+binary search tree	balance trees	100.0	seed	label
+binary search tree	balanced binary search	100.0	seed	label
+binary search tree	balanced search tree	100.0	seed	label
+binary search tree	optimal binary search	100.0	seed	label
+binary tree	2d tree	100.0	seed	label
+binary tree	avl trees	100.0	seed	label
+binary tree	balanced binary search	100.0	seed	label
+binary tree	balanced search tree	100.0	seed	label
+binary tree	binary heap	150.0	seed	wiki_label
+binary tree	binary max heap	100.0	seed	label
+binary tree	binary search tree	150.0	seed	wiki_label
+binary tree	complete binary tree	100.0	seed	label
+binary tree	heap sort	100.0	seed	label
+binary tree	interval search tree	100.0	seed	label
+binary tree	optimal binary search	100.0	seed	label
+binary tree	red black tree	100.0	seed	label
+binary tree	splay trees	100.0	seed	label
+birthday paradox	hash tables	100.0	seed	label
+breadth first search	a star	100.0	seed	label
+breadth first search	bellman-ford algorithm	100.0	seed	label
+breadth first search	edmonds-karp algorithm	100.0	seed	label
+breadth first search	ford-fulkerson algorithm	100.0	seed	label
+breadth first search	mst algorithm	100.0	seed	label
+brute force approach	a star	100.0	seed	label
+brute force approach	asymptotic notation	100.0	seed	label
+brute force approach	dynamic program	100.0	seed	label
+brute force approach	dynamic programming paradigm	100.0	seed	label
+brute force approach	optimal binary search	100.0	seed	label
+brute force approach	optimal substructure lemma	100.0	seed	label
+brute force approach	traveling salesman problem	100.0	seed	label
+clustering problem	greedy clustering	100.0	seed	label
+comparison based algorithm	heap sort	100.0	seed	label
+comparison based algorithm	merge sort	100.0	seed	label
+comparison based algorithm	quick sort	100.0	seed	label
+comparison based algorithm	randomized quick sort	100.0	seed	label
+comparison based algorithm	selection sort	100.0	seed	label
+comparison based sort	binary search	100.0	seed	label
+comparison based sort	binary search tree	100.0	seed	label
+comparison based sort	heap sort	100.0	seed	label
+comparison based sort	merge sort	100.0	seed	label
+comparison based sort	quick sort	100.0	seed	label
+comparison based sort	select algorithm	100.0	seed	label
+complete binary tree	binary heap	100.0	seed	label
+complete binary tree	binary max heap	100.0	seed	label
+compression optimization	inverse ackermann function	100.0	seed	label
+compression optimization	union find	100.0	seed	label
+connected component	contraction algorithm	100.0	seed	label
+connected component	empty cut lemma	100.0	seed	label
+connected component	greedy clustering	100.0	seed	label
+connected component	inverse ackermann function	100.0	seed	label
+connected component	kruskal algorithm	100.0	seed	label
+connected graph	complete binary tree	100.0	seed	label
+connected graph	connected component	100.0	seed	label
+connected graph	contraction algorithm	100.0	seed	label
+connected graph	empty cut lemma	100.0	seed	label
+connected graph	spanning tree	100.0	seed	label
+contraction algorithm	random contraction algorithm	100.0	seed	label
+decomposition principle	deterministic algorithm	100.0	seed	label
+decomposition principle	divide-and-conquer algorithm	100.0	seed	label
+depth first search	a star	100.0	seed	label
+depth first search	edmonds-karp algorithm	100.0	seed	label
+depth first search	ford-fulkerson algorithm	100.0	seed	label
+depth first search	mst algorithm	100.0	seed	label
+deterministic algorithm	bucket sort	150.0	seed	wiki_label
+deterministic algorithm	merge sort	150.0	seed	wiki_label
+dijkstra algorithm	bidirectional dijkstra algorithm	100.0	seed	label
+dijkstra algorithm	contraction hierarchies	100.0	seed	label
+directed acyclic graph	breadth first search	100.0	seed	label
+directed acyclic graph	connected component	150.0	seed	wiki_label
+directed acyclic graph	depth first search	100.0	seed	label
+directed acyclic graph	graph algorithms	100.0	seed	label
+directed edge	bellman-ford algorithm	100.0	seed	label
+directed edge	breadth first search	100.0	seed	label
+directed edge	connected component	100.0	seed	label
+directed edge	contraction hierarchies	100.0	seed	label
+directed edge	de bruijn graph	100.0	seed	label
+directed edge	depth first search	100.0	seed	label
+directed edge	directed acyclic graph	100.0	seed	label
+directed edge	directed graph	100.0	seed	label
+directed graph	bellman-ford algorithm	100.0	seed	label
+directed graph	bidirectional search	100.0	seed	label
+directed graph	bipartite graph	150.0	seed	wiki_label
+directed graph	breadth first search	100.0	seed	label
+directed graph	connected component	150.0	seed	wiki_label
+directed graph	de bruijn graph	150.0	seed	wiki_label
+directed graph	depth first search	100.0	seed	label
+directed graph	dijkstra algorithm	100.0	seed	label
+directed graph	directed acyclic graph	150.0	seed	wiki_label
+directed graph	directional search	100.0	seed	label
+directed graph	eulerian cycle	100.0	seed	label
+directed graph	eulerian path	150.0	seed	wiki_label
+directed graph	graph algorithms	100.0	seed	label
+directed graph	hamiltonian cycle	150.0	seed	wiki_label
+directional search	bidirectional dijkstra algorithm	100.0	seed	label
+directional search	bidirectional search	100.0	seed	label
+directional search	contraction hierarchies	100.0	seed	label
+directional search	dijkstra algorithm	100.0	seed	label
+discrete probability	programming algorithms	100.0	seed	label
+divide-and-conquer algorithm	dynamic program	100.0	seed	label
+doubly linked list	binary heap	150.0	seed	wiki_label
+dynamic programming matrix	dynamic program	100.0	seed	label
+dynamic programming paradigm	dynamic program	100.0	seed	label
+edge weight	bellman-ford algorithm	100.0	seed	label
+edge weight	breadth first search	100.0	seed	label
+edge weight	connected graph	100.0	seed	label
+edge weight	depth first search	100.0	seed	label
+edge weight	dijkstra algorithm	100.0	seed	label
+edge weight	directed graph	100.0	seed	label
+edge weight	minimum cut problem	100.0	seed	label
+edge weight	minimum dist	100.0	seed	label
+edge weight	minimum spanning tree	100.0	seed	label
+edge weight	shortest path	100.0	seed	label
+edge weight	shortest path algorithm	100.0	seed	label
+edge weight	shortest path problem	100.0	seed	label
+edge weight	traveling salesman problem	100.0	seed	label
+edit distance problem	dynamic program	100.0	seed	label
+euclidean distance	closest pair algorithm	100.0	seed	label
+euclidean distance	clustering problem	100.0	seed	label
+euclidean distance	minimum spanning tree	150.0	seed	wiki_label
+euclidean distance	shortest path	150.0	seed	wiki_label
+euclidean distance	shortest path algorithm	100.0	seed	label
+eulerian cycle	de bruijn graph	100.0	seed	label
+eulerian path	de bruijn graph	150.0	seed	wiki_label
+eulerian path	eulerian cycle	100.0	seed	label
+exact pattern matching	approximate pattern matching	100.0	seed	label
+exact pattern matching	knuth-morris-pratt algorithm	100.0	seed	label
+exact pattern matching	suffix tree	100.0	seed	label
+ford-fulkerson algorithm	edmonds-karp algorithm	100.0	seed	label
+fractional knapsack	dynamic program	100.0	seed	label
+fractional knapsack	greedy algorithm	100.0	seed	label
+generic graph search	breadth first search	100.0	seed	label
+generic graph search	depth first search	100.0	seed	label
+graph algorithms	adjacency lists	100.0	seed	label
+graph algorithms	adjacency matrix	100.0	seed	label
+graph algorithms	breadth first search	100.0	seed	label
+graph algorithms	depth first search	100.0	seed	label
+graph algorithms	dynamic program	100.0	seed	label
+graph algorithms	mst algorithm	100.0	seed	label
+graph algorithms	search tree	100.0	seed	label
+graph algorithms	shortest path algorithm	100.0	seed	label
+graph search	bellman-ford algorithm	100.0	seed	label
+graph search	breadth first search	100.0	seed	label
+graph search	depth first search	100.0	seed	label
+graph search	dynamic program	100.0	seed	label
+graph search	generic graph search	100.0	seed	label
+graph search	graph algorithms	100.0	seed	label
+greedy algorithm	greedy clustering	100.0	seed	label
+greedy algorithm	greedy heuristic	100.0	seed	label
+greedy algorithm	mst algorithm	100.0	seed	label
+greedy algorithm	shortest path algorithm	100.0	seed	label
+hamiltonian cycle	de bruijn graph	150.0	seed	wiki_label
+hash tables	cryptographic hash	100.0	seed	label
+hash tables	deterministic hash function	100.0	seed	label
+hash tables	random hash	100.0	seed	label
+hash tables	random hash function	100.0	seed	label
+image segmentation	minimum cut problem	100.0	seed	label
+increasing order	bubble sort	100.0	seed	label
+increasing order	merge sort	100.0	seed	label
+increasing order	quick sort	100.0	seed	label
+increasing order	randomized quick sort	100.0	seed	label
+increasing order	select algorithm	100.0	seed	label
+increasing order	selection sort	100.0	seed	label
+increasing order	sort algorithm	100.0	seed	label
+increasing order	sorting problem	100.0	seed	label
+independence set problem	dynamic program	100.0	seed	label
+interval search	interval search tree	100.0	seed	label
+iterative algorithm	dynamic program	100.0	seed	label
+knockout tournament	select algorithm	150.0	seed	wiki_label
+line segments	range search	100.0	seed	label
+line segments	sweep line algorithm	100.0	seed	label
+linear function	linear inequality	150.0	seed	wiki_label
+linear function	linear program	150.0	seed	wiki_label
+linear problem	linear function	100.0	seed	label
+linear problem	linear program	100.0	seed	label
+linear programming problems	linear function	100.0	seed	label
+linear programming problems	linear program	100.0	seed	label
+linear time algorithm	asymptotic analysis	100.0	seed	label
+linked list	2d tree	100.0	seed	label
+linked list	avl trees	100.0	seed	label
+linked list	balanced binary search	100.0	seed	label
+linked list	balanced search tree	100.0	seed	label
+linked list	binary heap	150.0	seed	wiki_label
+linked list	doubly linked list	150.0	seed	wiki_label
+linked list	priority queue	150.0	seed	wiki_label
+linked list	red black tree	100.0	seed	label
+linked list	search tree	150.0	seed	wiki_label
+linked list	splay trees	100.0	seed	label
+linked list	sub tree	100.0	seed	label
+merge sort	divide-and-conquer algorithm	100.0	seed	label
+minimum cut problem	contraction algorithm	100.0	seed	label
+minimum cut problem	random contraction algorithm	100.0	seed	label
+minimum dist	minimum spanning tree	100.0	seed	label
+minimum spanning tree	kruskal algorithm	100.0	seed	label
+minimum spanning tree	mst algorithm	100.0	seed	label
+minimum spanning tree	mst problem	100.0	seed	label
+minimum spanning tree	mst verification	100.0	seed	label
+mst algorithm	ackermann function	100.0	seed	label
+mst algorithm	inverse ackermann function	100.0	seed	label
+mst algorithm	mst verification	100.0	seed	label
+mst problem	ackermann function	100.0	seed	label
+mst problem	graph algorithms	100.0	seed	label
+mst problem	greedy algorithm	100.0	seed	label
+mst problem	inverse ackermann function	100.0	seed	label
+mst problem	mst algorithm	100.0	seed	label
+network flows	bipartite matching	100.0	seed	label
+network flows	edmonds-karp algorithm	100.0	seed	label
+network flows	ford-fulkerson algorithm	100.0	seed	label
+network flows	shortest path	100.0	seed	label
+o notation	big omega	100.0	seed	label
+optimal substructure lemma	greedy algorithm	100.0	seed	label
+optimal substructure lemma	optimal binary search	100.0	seed	label
+pattern matching	approximate pattern matching	100.0	seed	label
+pattern matching	exact pattern matching	100.0	seed	label
+pattern matching	knuth-morris-pratt algorithm	100.0	seed	label
+pattern matching	suffix tree	150.0	seed	wiki_label
+pattern matching	suffix trie	100.0	seed	label
+polynomial algorithm	dynamic program	100.0	seed	label
+polynomial time	dynamic program	100.0	seed	label
+polynomial time	polynomial algorithm	100.0	seed	label
+polynomial time	polynomial time algorithm	100.0	seed	label
+polynomial time	quadratic time algorithm	100.0	seed	label
+polynomial time algorithm	dynamic program	100.0	seed	label
+polynomial time algorithm	polynomial algorithm	100.0	seed	label
+priority queue	heap sort	100.0	seed	label
+priority queue	merge sort	150.0	seed	wiki_label
+programming algorithms	dynamic program	100.0	seed	label
+programming algorithms	greedy algorithm	100.0	seed	label
+programming algorithms	linear program	100.0	seed	label
+programming problems	dual program	100.0	seed	label
+programming problems	linear function	100.0	seed	label
+programming problems	linear program	100.0	seed	label
+programming problems	linear programming problems	100.0	seed	label
+programming problems	minimum cut problem	100.0	seed	label
+programming problems	residual network	100.0	seed	label
+quadratic algorithm	bubble sort	100.0	seed	label
+quadratic time algorithm	a star	100.0	seed	label
+quadratic time algorithm	asymptotic analysis	100.0	seed	label
+quadratic time algorithm	closest pair algorithm	100.0	seed	label
+quadratic time algorithm	quadratic algorithm	100.0	seed	label
+quick sort	randomized quick sort	100.0	seed	label
+random hash	polynomial hash	100.0	seed	label
+random hash function	random hash	100.0	seed	label
+random permutation	sort algorithm	150.0	seed	wiki_label
+random variable	linear probing	150.0	seed	wiki_label
+random variable	random hash	100.0	seed	label
+random variable	random hash function	100.0	seed	label
+random variable	randomized selection algorithm	100.0	seed	label
+randomized algorithm	closest pair algorithm	100.0	seed	label
+randomized algorithm	contraction algorithm	100.0	seed	label
+randomized algorithm	random contraction algorithm	100.0	seed	label
+randomized algorithm	randomized quick sort	100.0	seed	label
+randomized algorithm	randomized selection algorithm	100.0	seed	label
+range search	2d tree	100.0	seed	label
+range search	interval search	100.0	seed	label
+range search	interval search tree	100.0	seed	label
+recursive algorithm	closest pair algorithm	100.0	seed	label
+recursive algorithm	karatsuba multiplication	100.0	seed	label
+recursive algorithm	naive recursive algorithm	100.0	seed	label
+recursive algorithm	quick sort	100.0	seed	label
+recursive call	closest pair algorithm	100.0	seed	label
+recursive call	karatsuba multiplication	100.0	seed	label
+recursive call	quick sort	100.0	seed	label
+recursive call	recursive algorithm	100.0	seed	label
+red black tree	left-leaning red-black tree	100.0	seed	label
+regular binary search	left-leaning red-black tree	100.0	seed	label
+residual graph	edmonds-karp algorithm	100.0	seed	label
+residual graph	ford-fulkerson algorithm	100.0	seed	label
+residual graph	network flows	100.0	seed	label
+residual graph	residual network	100.0	seed	label
+residual network	edmonds-karp algorithm	100.0	seed	label
+residual network	ford-fulkerson algorithm	100.0	seed	label
+residual network	network flows	100.0	seed	label
+search algorithm	a star	100.0	seed	label
+search algorithm	bellman-ford algorithm	100.0	seed	label
+search algorithm	binary search	150.0	seed	wiki_label
+search algorithm	breadth first search	100.0	seed	label
+search algorithm	depth first search	100.0	seed	label
+search algorithm	directional search	100.0	seed	label
+search algorithm	graph search	100.0	seed	label
+search algorithm	linear search	150.0	seed	wiki_label
+search problem	2d tree	100.0	seed	label
+search problem	approximation algorithm	150.0	seed	wiki_label
+search problem	avl trees	100.0	seed	label
+search problem	hamiltonian cycle	150.0	seed	wiki_label
+search problem	independence set problem	100.0	seed	label
+search problem	intersection search	100.0	seed	label
+search problem	interval search	100.0	seed	label
+search problem	range search	100.0	seed	label
+search problem	regular binary search	100.0	seed	label
+search problem	search algorithm	150.0	seed	wiki_label
+search problem	search tree	150.0	seed	wiki_label
+search problem	search tree algorithm	100.0	seed	label
+search problem	traveling salesman problem	100.0	seed	label
+search tree	avl trees	100.0	seed	label
+search tree	balanced binary search	100.0	seed	label
+search tree	balanced search tree	100.0	seed	label
+search tree	binary search tree	150.0	seed	wiki_label
+search tree	binary tree	150.0	seed	wiki_label
+search tree	interval search tree	100.0	seed	label
+search tree	left-leaning red-black tree	100.0	seed	label
+search tree	optimal binary search	100.0	seed	label
+search tree	search tree algorithm	100.0	seed	label
+search tree	search tree problem	100.0	seed	label
+search tree	union find	100.0	seed	label
+search tree algorithm	binary search tree	100.0	seed	label
+search tree algorithm	optimal binary search	100.0	seed	label
+search tree problem	balanced binary search	100.0	seed	label
+search tree problem	balanced search	100.0	seed	label
+search tree problem	balanced search tree	100.0	seed	label
+search tree problem	optimal binary search	100.0	seed	label
+search tree problem	search tree algorithm	100.0	seed	label
+select algorithm	randomized selection algorithm	100.0	seed	label
+select algorithm	selection sort	150.0	seed	wiki_label
+selection problem	knockout tournament	100.0	seed	label
+selection problem	randomized selection algorithm	100.0	seed	label
+selection problem	select algorithm	100.0	seed	label
+selection sort	divide-and-conquer algorithm	100.0	seed	label
+shortest path	a star	100.0	seed	label
+shortest path	bellman-ford algorithm	100.0	seed	label
+shortest path	bidirectional dijkstra algorithm	100.0	seed	label
+shortest path	bidirectional search	100.0	seed	label
+shortest path	contraction hierarchies	150.0	seed	wiki_label
+shortest path	dijkstra algorithm	100.0	seed	label
+shortest path	shortest path algorithm	100.0	seed	label
+shortest path	shortest path problem	150.0	seed	wiki_label
+shortest path	shortest path tree	100.0	seed	label
+shortest path algorithm	a star	100.0	seed	label
+shortest path algorithm	bellman-ford algorithm	100.0	seed	label
+shortest path algorithm	bidirectional search	100.0	seed	label
+shortest path problem	graph algorithms	100.0	seed	label
+shortest path problem	greedy algorithm	150.0	seed	wiki_label
+shortest path problem	shortest path algorithm	100.0	seed	label
+smallest greedy	shortest path algorithm	100.0	seed	label
+sort algorithm	balanced binary search	100.0	seed	label
+sort algorithm	bubble sort	150.0	seed	wiki_label
+sort algorithm	bucket sort	150.0	seed	wiki_label
+sort algorithm	comparison based algorithm	100.0	seed	label
+sort algorithm	comparison based sort	100.0	seed	label
+sort algorithm	deterministic algorithm	150.0	seed	wiki_label
+sort algorithm	heap sort	100.0	seed	label
+sort algorithm	priority queue	150.0	seed	wiki_label
+sort algorithm	randomized quick sort	100.0	seed	label
+sort algorithm	randomized selection algorithm	100.0	seed	label
+sort algorithm	select algorithm	150.0	seed	wiki_label
+sort algorithm	selection sort	150.0	seed	wiki_label
+sort algorithm	stable sort	100.0	seed	label
+sorting problem	bubble sort	100.0	seed	label
+sorting problem	randomized quick sort	100.0	seed	label
+sorting problem	randomized selection algorithm	100.0	seed	label
+sorting problem	selection sort	100.0	seed	label
+sorting problem	sort algorithm	100.0	seed	label
+spanning tree	kruskal algorithm	100.0	seed	label
+spanning tree	minimum spanning tree	150.0	seed	wiki_label
+spanning tree	mst algorithm	100.0	seed	label
+spanning tree	mst problem	100.0	seed	label
+spanning tree	mst verification	100.0	seed	label
+spanning tree	spanning tree algorithm	100.0	seed	label
+spanning tree	spanning tree problem	100.0	seed	label
+spanning tree algorithm	minimum spanning tree	100.0	seed	label
+spanning tree algorithm	mst algorithm	100.0	seed	label
+spanning tree problem	graph algorithms	100.0	seed	label
+spanning tree problem	greedy algorithm	100.0	seed	label
+spanning tree problem	minimum spanning tree	100.0	seed	label
+spanning tree problem	mst algorithm	100.0	seed	label
+spanning tree problem	mst problem	100.0	seed	label
+spanning tree problem	spanning tree algorithm	100.0	seed	label
+stable sort	deterministic algorithm	100.0	seed	label
+string algorithms	approximate pattern matching	100.0	seed	label
+string algorithms	exact pattern matching	100.0	seed	label
+string algorithms	pattern matching	100.0	seed	label
+sub graph	mst algorithm	100.0	seed	label
+sub graph	mst problem	100.0	seed	label
+sub graph	shortest path problem	100.0	seed	label
+sub graph	spanning tree	100.0	seed	label
+sub tree	interval search tree	100.0	seed	label
+sub tree	optimal substructure lemma	100.0	seed	label
+suffix tree	suffix trie	100.0	seed	label
+traveling salesman problem	approximation algorithm	100.0	seed	label
+traveling salesman problem	dynamic program	100.0	seed	label
+traveling salesman problem	hamiltonian cycle	100.0	seed	label
+traveling salesman problem	np-complete problem	100.0	seed	label
+traveling salesman problem	shortest path problem	100.0	seed	label
+unbalanced tree	search tree	100.0	seed	label
+undirected graph	adjacency lists	100.0	seed	label
+undirected graph	adjacency matrix	100.0	seed	label
+undirected graph	bellman-ford algorithm	100.0	seed	label
+undirected graph	breadth first search	100.0	seed	label
+undirected graph	connected graph	100.0	seed	label
+undirected graph	contraction algorithm	100.0	seed	label
+undirected graph	depth first search	100.0	seed	label
+undirected graph	dijkstra algorithm	100.0	seed	label
+undirected graph	eulerian cycle	100.0	seed	label
+undirected graph	graph search	100.0	seed	label
+undirected graph	hamiltonian cycle	100.0	seed	label
+undirected graph	image segmentation	100.0	seed	label
+undirected graph	minimum cut problem	100.0	seed	label
+undirected graph	mst algorithm	100.0	seed	label
+undirected graph	mst problem	100.0	seed	label
+undirected graph	random contraction algorithm	100.0	seed	label
+undirected graph	residual graph	100.0	seed	label
+undirected graph	shortest path	100.0	seed	label
+undirected graph	shortest path algorithm	100.0	seed	label
+undirected graph	shortest path tree	100.0	seed	label
+undirected graph	spanning tree	100.0	seed	label
+undirected graph	spanning tree algorithm	100.0	seed	label
+undirected graph	traveling salesman problem	100.0	seed	label
+union approach	lazy union approach	100.0	seed	label
+union approach	union find	100.0	seed	label
+union find	lazy union approach	100.0	seed	label
+weighted search	optimal binary search	100.0	seed	label

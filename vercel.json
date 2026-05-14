@@ -6,6 +6,10 @@
       "use": "@vercel/static"
     },
     {
+      "src": "Graph/**",
+      "use": "@vercel/static"
+    },
+    {
       "src": "api/**/*.py",
       "use": "@vercel/python"
     }
@@ -28,12 +32,28 @@
       "dest": "agentic_ui/inference.html"
     },
     {
+      "src": "/qanswer",
+      "dest": "agentic_ui/qanswer.html"
+    },
+    {
+      "src": "/tutor",
+      "dest": "agentic_ui/tutor.html"
+    },
+    {
       "src": "/css/(.*)",
       "dest": "agentic_ui/css/$1"
     },
     {
       "src": "/js/(.*)",
       "dest": "agentic_ui/js/$1"
+    },
+    {
+      "src": "/api/graphs/(.*)",
+      "dest": "Graph/$1/knowledge_graph.json"
+    },
+    {
+      "src": "/api/tutor/(.*)",
+      "dest": "api/tutor.py"
     },
     {
       "src": "/api/dashboard",

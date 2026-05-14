@@ -1,0 +1,16 @@
+{
+  "output_root": "/Users/gnanendranaidun/Downloads/data_rar/ACL 2017/graphs_test",
+  "summaries": [
+    {
+      "caption_file_count": 2,
+      "concept_count": 244,
+      "domain": "ML",
+      "final_edge_count": 1727,
+      "inference_threshold": 0.75,
+      "inferred_edge_count": 0,
+      "min_cooccurrence": 2,
+      "removed_cycle_edges": 8,
+      "seed_edge_count": 2011
+    }
+  ]
+}

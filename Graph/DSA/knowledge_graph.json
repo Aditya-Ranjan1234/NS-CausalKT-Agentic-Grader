@@ -1,0 +1,3516 @@
+{
+  "domain": "DSA",
+  "edges": [
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "ackermann function",
+      "target": "inverse ackermann function",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "acyclic graph",
+      "target": "adjacency lists",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "acyclic graph",
+      "target": "breadth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "acyclic graph",
+      "target": "connected component",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "acyclic graph",
+      "target": "connected graph",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "acyclic graph",
+      "target": "depth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "acyclic graph",
+      "target": "directed acyclic graph",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "acyclic graph",
+      "target": "graph algorithms",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "acyclic graph",
+      "target": "graph search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "adjacency lists",
+      "target": "adjacency matrix",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "asymptotic analysis",
+      "target": "o notation",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "asymptotic notation",
+      "target": "big omega",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "asymptotic notation",
+      "target": "o notation",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "asymptotic notation",
+      "target": "theta notation",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "avl trees",
+      "target": "red black tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "avl trees",
+      "target": "splay trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "backwards search",
+      "target": "bidirectional search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "balance trees",
+      "target": "red black tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "balanced binary search",
+      "target": "avl trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "balanced binary search",
+      "target": "red black tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "balanced binary search",
+      "target": "splay trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "balanced search",
+      "target": "avl trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "balanced search",
+      "target": "balanced binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "balanced search",
+      "target": "balanced search tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "balanced search",
+      "target": "red black tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "balanced search",
+      "target": "splay trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "balanced search tree",
+      "target": "avl trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "balanced search tree",
+      "target": "balanced binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "balanced search tree",
+      "target": "red black tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "balanced search tree",
+      "target": "splay trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "bidirectional search",
+      "target": "bidirectional dijkstra algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big omega",
+      "target": "sort algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "breadth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "brute force approach",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "depth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "heap sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "knockout tournament",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "kruskal algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "linear time algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "merge sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "mst algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "programming algorithms",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "quadratic time algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "quick sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "randomized algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "randomized selection algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "select algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "sort algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "big-o notation",
+      "target": "spanning tree algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "binary code",
+      "target": "binary search tree",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "binary code",
+      "target": "binary tree",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "binary heap",
+      "target": "priority queue",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary max heap",
+      "target": "heap sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary max heap",
+      "target": "priority queue",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary search",
+      "target": "avl trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary search",
+      "target": "balanced binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "binary search",
+      "target": "binary heap",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "binary search",
+      "target": "binary search tree",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary search",
+      "target": "optimal binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary search tree",
+      "target": "avl trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary search tree",
+      "target": "balance trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary search tree",
+      "target": "balanced binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary search tree",
+      "target": "balanced search tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary search tree",
+      "target": "optimal binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary tree",
+      "target": "2d tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary tree",
+      "target": "avl trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary tree",
+      "target": "balanced binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary tree",
+      "target": "balanced search tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "binary tree",
+      "target": "binary heap",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary tree",
+      "target": "binary max heap",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "binary tree",
+      "target": "binary search tree",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary tree",
+      "target": "complete binary tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary tree",
+      "target": "heap sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary tree",
+      "target": "interval search tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary tree",
+      "target": "optimal binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary tree",
+      "target": "red black tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "binary tree",
+      "target": "splay trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "birthday paradox",
+      "target": "hash tables",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "breadth first search",
+      "target": "a star",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "breadth first search",
+      "target": "bellman-ford algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "breadth first search",
+      "target": "edmonds-karp algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "breadth first search",
+      "target": "ford-fulkerson algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "breadth first search",
+      "target": "mst algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "brute force approach",
+      "target": "a star",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "brute force approach",
+      "target": "asymptotic notation",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "brute force approach",
+      "target": "dynamic program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "brute force approach",
+      "target": "dynamic programming paradigm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "brute force approach",
+      "target": "optimal binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "brute force approach",
+      "target": "optimal substructure lemma",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "brute force approach",
+      "target": "traveling salesman problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "clustering problem",
+      "target": "greedy clustering",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "comparison based algorithm",
+      "target": "heap sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "comparison based algorithm",
+      "target": "merge sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "comparison based algorithm",
+      "target": "quick sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "comparison based algorithm",
+      "target": "randomized quick sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "comparison based algorithm",
+      "target": "selection sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "comparison based sort",
+      "target": "binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "comparison based sort",
+      "target": "binary search tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "comparison based sort",
+      "target": "heap sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "comparison based sort",
+      "target": "merge sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "comparison based sort",
+      "target": "quick sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "comparison based sort",
+      "target": "select algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "complete binary tree",
+      "target": "binary heap",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "complete binary tree",
+      "target": "binary max heap",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "compression optimization",
+      "target": "inverse ackermann function",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "compression optimization",
+      "target": "union find",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "connected component",
+      "target": "contraction algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "connected component",
+      "target": "empty cut lemma",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "connected component",
+      "target": "greedy clustering",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "connected component",
+      "target": "inverse ackermann function",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "connected component",
+      "target": "kruskal algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "connected graph",
+      "target": "complete binary tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "connected graph",
+      "target": "connected component",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "connected graph",
+      "target": "contraction algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "connected graph",
+      "target": "empty cut lemma",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "connected graph",
+      "target": "spanning tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "contraction algorithm",
+      "target": "random contraction algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "decomposition principle",
+      "target": "deterministic algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "decomposition principle",
+      "target": "divide-and-conquer algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "depth first search",
+      "target": "a star",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "depth first search",
+      "target": "edmonds-karp algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "depth first search",
+      "target": "ford-fulkerson algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "depth first search",
+      "target": "mst algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "deterministic algorithm",
+      "target": "bucket sort",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "deterministic algorithm",
+      "target": "merge sort",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "dijkstra algorithm",
+      "target": "bidirectional dijkstra algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "dijkstra algorithm",
+      "target": "contraction hierarchies",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed acyclic graph",
+      "target": "breadth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "directed acyclic graph",
+      "target": "connected component",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed acyclic graph",
+      "target": "depth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed acyclic graph",
+      "target": "graph algorithms",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed edge",
+      "target": "bellman-ford algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed edge",
+      "target": "breadth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed edge",
+      "target": "connected component",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed edge",
+      "target": "contraction hierarchies",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed edge",
+      "target": "de bruijn graph",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed edge",
+      "target": "depth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed edge",
+      "target": "directed acyclic graph",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed edge",
+      "target": "directed graph",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed graph",
+      "target": "bellman-ford algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed graph",
+      "target": "bidirectional search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "directed graph",
+      "target": "bipartite graph",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed graph",
+      "target": "breadth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "directed graph",
+      "target": "connected component",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "directed graph",
+      "target": "de bruijn graph",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed graph",
+      "target": "depth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed graph",
+      "target": "dijkstra algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "directed graph",
+      "target": "directed acyclic graph",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed graph",
+      "target": "directional search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed graph",
+      "target": "eulerian cycle",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "directed graph",
+      "target": "eulerian path",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directed graph",
+      "target": "graph algorithms",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "directed graph",
+      "target": "hamiltonian cycle",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directional search",
+      "target": "bidirectional dijkstra algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directional search",
+      "target": "bidirectional search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directional search",
+      "target": "contraction hierarchies",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "directional search",
+      "target": "dijkstra algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "discrete probability",
+      "target": "programming algorithms",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "divide-and-conquer algorithm",
+      "target": "dynamic program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "doubly linked list",
+      "target": "binary heap",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "dynamic programming matrix",
+      "target": "dynamic program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "dynamic programming paradigm",
+      "target": "dynamic program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "edge weight",
+      "target": "bellman-ford algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "edge weight",
+      "target": "breadth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "edge weight",
+      "target": "connected graph",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "edge weight",
+      "target": "depth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "edge weight",
+      "target": "dijkstra algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "edge weight",
+      "target": "directed graph",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "edge weight",
+      "target": "minimum cut problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "edge weight",
+      "target": "minimum dist",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "edge weight",
+      "target": "minimum spanning tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "edge weight",
+      "target": "shortest path",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "edge weight",
+      "target": "shortest path algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "edge weight",
+      "target": "shortest path problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "edge weight",
+      "target": "traveling salesman problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "edit distance problem",
+      "target": "dynamic program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "euclidean distance",
+      "target": "closest pair algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "euclidean distance",
+      "target": "clustering problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "euclidean distance",
+      "target": "minimum spanning tree",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "euclidean distance",
+      "target": "shortest path",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "euclidean distance",
+      "target": "shortest path algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "eulerian cycle",
+      "target": "de bruijn graph",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "eulerian path",
+      "target": "de bruijn graph",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "eulerian path",
+      "target": "eulerian cycle",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "exact pattern matching",
+      "target": "approximate pattern matching",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "exact pattern matching",
+      "target": "knuth-morris-pratt algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "exact pattern matching",
+      "target": "suffix tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "ford-fulkerson algorithm",
+      "target": "edmonds-karp algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "fractional knapsack",
+      "target": "dynamic program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "fractional knapsack",
+      "target": "greedy algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "generic graph search",
+      "target": "breadth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "generic graph search",
+      "target": "depth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "graph algorithms",
+      "target": "adjacency lists",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "graph algorithms",
+      "target": "adjacency matrix",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "graph algorithms",
+      "target": "breadth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "graph algorithms",
+      "target": "depth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "graph algorithms",
+      "target": "dynamic program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "graph algorithms",
+      "target": "mst algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "graph algorithms",
+      "target": "search tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "graph algorithms",
+      "target": "shortest path algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "graph search",
+      "target": "bellman-ford algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "graph search",
+      "target": "breadth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "graph search",
+      "target": "depth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "graph search",
+      "target": "dynamic program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "graph search",
+      "target": "generic graph search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "graph search",
+      "target": "graph algorithms",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "greedy algorithm",
+      "target": "greedy clustering",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "greedy algorithm",
+      "target": "greedy heuristic",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "greedy algorithm",
+      "target": "mst algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "greedy algorithm",
+      "target": "shortest path algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "hamiltonian cycle",
+      "target": "de bruijn graph",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "hash tables",
+      "target": "cryptographic hash",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "hash tables",
+      "target": "deterministic hash function",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "hash tables",
+      "target": "random hash",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "hash tables",
+      "target": "random hash function",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "image segmentation",
+      "target": "minimum cut problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "increasing order",
+      "target": "bubble sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "increasing order",
+      "target": "merge sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "increasing order",
+      "target": "quick sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "increasing order",
+      "target": "randomized quick sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "increasing order",
+      "target": "select algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "increasing order",
+      "target": "selection sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "increasing order",
+      "target": "sort algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "increasing order",
+      "target": "sorting problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "independence set problem",
+      "target": "dynamic program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "interval search",
+      "target": "interval search tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "iterative algorithm",
+      "target": "dynamic program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "knockout tournament",
+      "target": "select algorithm",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "line segments",
+      "target": "range search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "line segments",
+      "target": "sweep line algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "linear function",
+      "target": "linear inequality",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "linear function",
+      "target": "linear program",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "linear problem",
+      "target": "linear function",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "linear problem",
+      "target": "linear program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "linear programming problems",
+      "target": "linear function",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "linear programming problems",
+      "target": "linear program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "linear time algorithm",
+      "target": "asymptotic analysis",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "linked list",
+      "target": "2d tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "linked list",
+      "target": "avl trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "linked list",
+      "target": "balanced binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "linked list",
+      "target": "balanced search tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "linked list",
+      "target": "binary heap",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "linked list",
+      "target": "doubly linked list",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "linked list",
+      "target": "priority queue",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "linked list",
+      "target": "red black tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "linked list",
+      "target": "search tree",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "linked list",
+      "target": "splay trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "linked list",
+      "target": "sub tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "merge sort",
+      "target": "divide-and-conquer algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "minimum cut problem",
+      "target": "contraction algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "minimum cut problem",
+      "target": "random contraction algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "minimum dist",
+      "target": "minimum spanning tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "minimum spanning tree",
+      "target": "kruskal algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "minimum spanning tree",
+      "target": "mst algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "minimum spanning tree",
+      "target": "mst problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "minimum spanning tree",
+      "target": "mst verification",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "mst algorithm",
+      "target": "ackermann function",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "mst algorithm",
+      "target": "inverse ackermann function",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "mst algorithm",
+      "target": "mst verification",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "mst problem",
+      "target": "ackermann function",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "mst problem",
+      "target": "graph algorithms",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "mst problem",
+      "target": "greedy algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "mst problem",
+      "target": "inverse ackermann function",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "mst problem",
+      "target": "mst algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "network flows",
+      "target": "bipartite matching",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "network flows",
+      "target": "edmonds-karp algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "network flows",
+      "target": "ford-fulkerson algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "network flows",
+      "target": "shortest path",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "o notation",
+      "target": "big omega",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "optimal substructure lemma",
+      "target": "greedy algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "optimal substructure lemma",
+      "target": "optimal binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "pattern matching",
+      "target": "approximate pattern matching",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "pattern matching",
+      "target": "exact pattern matching",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "pattern matching",
+      "target": "knuth-morris-pratt algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "pattern matching",
+      "target": "suffix tree",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "pattern matching",
+      "target": "suffix trie",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "polynomial algorithm",
+      "target": "dynamic program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "polynomial time",
+      "target": "dynamic program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "polynomial time",
+      "target": "polynomial algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "polynomial time",
+      "target": "polynomial time algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "polynomial time",
+      "target": "quadratic time algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "polynomial time algorithm",
+      "target": "dynamic program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "polynomial time algorithm",
+      "target": "polynomial algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "priority queue",
+      "target": "heap sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "priority queue",
+      "target": "merge sort",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "programming algorithms",
+      "target": "dynamic program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "programming algorithms",
+      "target": "greedy algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "programming algorithms",
+      "target": "linear program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "programming problems",
+      "target": "dual program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "programming problems",
+      "target": "linear function",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "programming problems",
+      "target": "linear program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "programming problems",
+      "target": "linear programming problems",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "programming problems",
+      "target": "minimum cut problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "programming problems",
+      "target": "residual network",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "quadratic algorithm",
+      "target": "bubble sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "quadratic time algorithm",
+      "target": "a star",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "quadratic time algorithm",
+      "target": "asymptotic analysis",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "quadratic time algorithm",
+      "target": "closest pair algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "quadratic time algorithm",
+      "target": "quadratic algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "quick sort",
+      "target": "randomized quick sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "random hash",
+      "target": "polynomial hash",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "random hash function",
+      "target": "random hash",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "random permutation",
+      "target": "sort algorithm",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "random variable",
+      "target": "linear probing",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "random variable",
+      "target": "random hash",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "random variable",
+      "target": "random hash function",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "random variable",
+      "target": "randomized selection algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "randomized algorithm",
+      "target": "closest pair algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "randomized algorithm",
+      "target": "contraction algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "randomized algorithm",
+      "target": "random contraction algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "randomized algorithm",
+      "target": "randomized quick sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "randomized algorithm",
+      "target": "randomized selection algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "range search",
+      "target": "2d tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "range search",
+      "target": "interval search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "range search",
+      "target": "interval search tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "recursive algorithm",
+      "target": "closest pair algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "recursive algorithm",
+      "target": "karatsuba multiplication",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "recursive algorithm",
+      "target": "naive recursive algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "recursive algorithm",
+      "target": "quick sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "recursive call",
+      "target": "closest pair algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "recursive call",
+      "target": "karatsuba multiplication",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "recursive call",
+      "target": "quick sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "recursive call",
+      "target": "recursive algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "red black tree",
+      "target": "left-leaning red-black tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "regular binary search",
+      "target": "left-leaning red-black tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "residual graph",
+      "target": "edmonds-karp algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "residual graph",
+      "target": "ford-fulkerson algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "residual graph",
+      "target": "network flows",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "residual graph",
+      "target": "residual network",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "residual network",
+      "target": "edmonds-karp algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "residual network",
+      "target": "ford-fulkerson algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "residual network",
+      "target": "network flows",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search algorithm",
+      "target": "a star",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search algorithm",
+      "target": "bellman-ford algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "search algorithm",
+      "target": "binary search",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search algorithm",
+      "target": "breadth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search algorithm",
+      "target": "depth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search algorithm",
+      "target": "directional search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search algorithm",
+      "target": "graph search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "search algorithm",
+      "target": "linear search",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search problem",
+      "target": "2d tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "search problem",
+      "target": "approximation algorithm",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search problem",
+      "target": "avl trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "search problem",
+      "target": "hamiltonian cycle",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search problem",
+      "target": "independence set problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search problem",
+      "target": "intersection search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search problem",
+      "target": "interval search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search problem",
+      "target": "range search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search problem",
+      "target": "regular binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "search problem",
+      "target": "search algorithm",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "search problem",
+      "target": "search tree",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search problem",
+      "target": "search tree algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search problem",
+      "target": "traveling salesman problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree",
+      "target": "avl trees",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree",
+      "target": "balanced binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree",
+      "target": "balanced search tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "search tree",
+      "target": "binary search tree",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "search tree",
+      "target": "binary tree",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree",
+      "target": "interval search tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree",
+      "target": "left-leaning red-black tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree",
+      "target": "optimal binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree",
+      "target": "search tree algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree",
+      "target": "search tree problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree",
+      "target": "union find",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree algorithm",
+      "target": "binary search tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree algorithm",
+      "target": "optimal binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree problem",
+      "target": "balanced binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree problem",
+      "target": "balanced search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree problem",
+      "target": "balanced search tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree problem",
+      "target": "optimal binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "search tree problem",
+      "target": "search tree algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "select algorithm",
+      "target": "randomized selection algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "select algorithm",
+      "target": "selection sort",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "selection problem",
+      "target": "knockout tournament",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "selection problem",
+      "target": "randomized selection algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "selection problem",
+      "target": "select algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "selection sort",
+      "target": "divide-and-conquer algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "shortest path",
+      "target": "a star",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "shortest path",
+      "target": "bellman-ford algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "shortest path",
+      "target": "bidirectional dijkstra algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "shortest path",
+      "target": "bidirectional search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "shortest path",
+      "target": "contraction hierarchies",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "shortest path",
+      "target": "dijkstra algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "shortest path",
+      "target": "shortest path algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "shortest path",
+      "target": "shortest path problem",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "shortest path",
+      "target": "shortest path tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "shortest path algorithm",
+      "target": "a star",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "shortest path algorithm",
+      "target": "bellman-ford algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "shortest path algorithm",
+      "target": "bidirectional search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "shortest path problem",
+      "target": "graph algorithms",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "shortest path problem",
+      "target": "greedy algorithm",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "shortest path problem",
+      "target": "shortest path algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "smallest greedy",
+      "target": "shortest path algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sort algorithm",
+      "target": "balanced binary search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "sort algorithm",
+      "target": "bubble sort",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "sort algorithm",
+      "target": "bucket sort",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sort algorithm",
+      "target": "comparison based algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sort algorithm",
+      "target": "comparison based sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "sort algorithm",
+      "target": "deterministic algorithm",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sort algorithm",
+      "target": "heap sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "sort algorithm",
+      "target": "priority queue",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sort algorithm",
+      "target": "randomized quick sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sort algorithm",
+      "target": "randomized selection algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "sort algorithm",
+      "target": "select algorithm",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "sort algorithm",
+      "target": "selection sort",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sort algorithm",
+      "target": "stable sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sorting problem",
+      "target": "bubble sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sorting problem",
+      "target": "randomized quick sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sorting problem",
+      "target": "randomized selection algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sorting problem",
+      "target": "selection sort",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sorting problem",
+      "target": "sort algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "spanning tree",
+      "target": "kruskal algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "wiki_label",
+      "source": "spanning tree",
+      "target": "minimum spanning tree",
+      "weight": 150.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "spanning tree",
+      "target": "mst algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "spanning tree",
+      "target": "mst problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "spanning tree",
+      "target": "mst verification",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "spanning tree",
+      "target": "spanning tree algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "spanning tree",
+      "target": "spanning tree problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "spanning tree algorithm",
+      "target": "minimum spanning tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "spanning tree algorithm",
+      "target": "mst algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "spanning tree problem",
+      "target": "graph algorithms",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "spanning tree problem",
+      "target": "greedy algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "spanning tree problem",
+      "target": "minimum spanning tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "spanning tree problem",
+      "target": "mst algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "spanning tree problem",
+      "target": "mst problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "spanning tree problem",
+      "target": "spanning tree algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "stable sort",
+      "target": "deterministic algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "string algorithms",
+      "target": "approximate pattern matching",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "string algorithms",
+      "target": "exact pattern matching",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "string algorithms",
+      "target": "pattern matching",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sub graph",
+      "target": "mst algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sub graph",
+      "target": "mst problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sub graph",
+      "target": "shortest path problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sub graph",
+      "target": "spanning tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sub tree",
+      "target": "interval search tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "sub tree",
+      "target": "optimal substructure lemma",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "suffix tree",
+      "target": "suffix trie",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "traveling salesman problem",
+      "target": "approximation algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "traveling salesman problem",
+      "target": "dynamic program",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "traveling salesman problem",
+      "target": "hamiltonian cycle",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "traveling salesman problem",
+      "target": "np-complete problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "traveling salesman problem",
+      "target": "shortest path problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "unbalanced tree",
+      "target": "search tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "adjacency lists",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "adjacency matrix",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "bellman-ford algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "breadth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "connected graph",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "contraction algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "depth first search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "dijkstra algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "eulerian cycle",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "graph search",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "hamiltonian cycle",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "image segmentation",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "minimum cut problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "mst algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "mst problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "random contraction algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "residual graph",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "shortest path",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "shortest path algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "shortest path tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "spanning tree",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "spanning tree algorithm",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "undirected graph",
+      "target": "traveling salesman problem",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "union approach",
+      "target": "lazy union approach",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "union approach",
+      "target": "union find",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "union find",
+      "target": "lazy union approach",
+      "weight": 100.0
+    },
+    {
+      "kind": "seed",
+      "origin": "label",
+      "source": "weighted search",
+      "target": "optimal binary search",
+      "weight": 100.0
+    }
+  ],
+  "nodes": [
+    "2d tree",
+    "a star",
+    "ackermann function",
+    "acyclic graph",
+    "adjacency lists",
+    "adjacency matrix",
+    "approximate pattern matching",
+    "approximation algorithm",
+    "asymptotic analysis",
+    "asymptotic notation",
+    "avl trees",
+    "backwards search",
+    "balance trees",
+    "balanced binary search",
+    "balanced search",
+    "balanced search tree",
+    "bellman-ford algorithm",
+    "bidirectional dijkstra algorithm",
+    "bidirectional search",
+    "big-o notation",
+    "big omega",
+    "binary code",
+    "binary heap",
+    "binary max heap",
+    "binary search",
+    "binary search tree",
+    "binary tree",
+    "bipartite graph",
+    "bipartite matching",
+    "birthday paradox",
+    "breadth first search",
+    "brute force approach",
+    "bubble sort",
+    "bucket sort",
+    "child tree",
+    "closest pair algorithm",
+    "clustering problem",
+    "cnf formula",
+    "comparison based algorithm",
+    "comparison based sort",
+    "complete binary tree",
+    "compression optimization",
+    "connected component",
+    "connected graph",
+    "contraction algorithm",
+    "contraction hierarchies",
+    "cryptographic hash",
+    "cyclic rotations",
+    "de bruijn graph",
+    "decomposition principle",
+    "depth first search",
+    "deterministic algorithm",
+    "deterministic hash function",
+    "dijkstra algorithm",
+    "directed acyclic graph",
+    "directed edge",
+    "directed graph",
+    "directional search",
+    "discrete probability",
+    "divide-and-conquer algorithm",
+    "double crossing lemma",
+    "doubly linked list",
+    "dual program",
+    "dynamic connectivity problem",
+    "dynamic program",
+    "dynamic programming matrix",
+    "dynamic programming paradigm",
+    "edge weight",
+    "edit distance problem",
+    "edmonds-karp algorithm",
+    "ellipsoid algorithm",
+    "empty cut lemma",
+    "euclidean distance",
+    "eulerian cycle",
+    "eulerian path",
+    "exact pattern matching",
+    "exhaustive search",
+    "ford-fulkerson algorithm",
+    "fractional knapsack",
+    "generic graph search",
+    "geometric series",
+    "grade algorithm",
+    "graham scan",
+    "graph algorithms",
+    "graph search",
+    "greatest common divisor",
+    "greedy algorithm",
+    "greedy clustering",
+    "greedy heuristic",
+    "hamiltonian cycle",
+    "hash buckets",
+    "hash tables",
+    "heap sort",
+    "image segmentation",
+    "increasing order",
+    "independence set problem",
+    "intersection search",
+    "interval search",
+    "interval search tree",
+    "inverse ackermann function",
+    "iterative algorithm",
+    "karatsuba multiplication",
+    "knockout tournament",
+    "knuth-morris-pratt algorithm",
+    "kruskal algorithm",
+    "lazy union approach",
+    "left-leaning red-black tree",
+    "line segments",
+    "linear function",
+    "linear inequality",
+    "linear probing",
+    "linear problem",
+    "linear program",
+    "linear programming problems",
+    "linear search",
+    "linear time algorithm",
+    "linked list",
+    "log star function",
+    "longest path problem",
+    "memory footprint",
+    "merge sort",
+    "minimum cut problem",
+    "minimum dist",
+    "minimum spanning tree",
+    "mst algorithm",
+    "mst problem",
+    "mst verification",
+    "naive recursive algorithm",
+    "nearest neighbor",
+    "network flows",
+    "np-complete problem",
+    "o notation",
+    "optimal binary search",
+    "optimal substructure lemma",
+    "pattern matching",
+    "phage genome",
+    "polynomial algorithm",
+    "polynomial hash",
+    "polynomial time",
+    "polynomial time algorithm",
+    "priority queue",
+    "programming algorithms",
+    "programming problems",
+    "quadratic algorithm",
+    "quadratic time algorithm",
+    "quick sort",
+    "random contraction algorithm",
+    "random hash",
+    "random hash function",
+    "random permutation",
+    "random variable",
+    "randomized algorithm",
+    "randomized quick sort",
+    "randomized selection algorithm",
+    "range search",
+    "recurrence tree",
+    "recursive algorithm",
+    "recursive call",
+    "red black tree",
+    "regular binary search",
+    "residual graph",
+    "residual network",
+    "reverse search",
+    "satisfiability problem",
+    "search algorithm",
+    "search problem",
+    "search tree",
+    "search tree algorithm",
+    "search tree problem",
+    "select algorithm",
+    "selection problem",
+    "selection sort",
+    "sequence alignment problem",
+    "shortest path",
+    "shortest path algorithm",
+    "shortest path problem",
+    "shortest path tree",
+    "smallest greedy",
+    "sort algorithm",
+    "sorting problem",
+    "spanning tree",
+    "spanning tree algorithm",
+    "spanning tree problem",
+    "sparse graphs",
+    "splay trees",
+    "stable sort",
+    "string algorithms",
+    "sub graph",
+    "sub tree",
+    "suffix tree",
+    "suffix trie",
+    "sweep line algorithm",
+    "theta notation",
+    "tilde notation",
+    "traveling salesman problem",
+    "triangle inequality",
+    "unbalanced tree",
+    "undirected graph",
+    "union approach",
+    "union find",
+    "weighted search"
+  ],
+  "summary": {
+    "caption_file_count": 3,
+    "concept_count": 201,
+    "domain": "DSA",
+    "final_edge_count": 471,
+    "inference_threshold": 0.75,
+    "inferred_edge_count": 0,
+    "min_cooccurrence": 2,
+    "removed_cycle_edges": 8,
+    "seed_edge_count": 532
+  }
+}

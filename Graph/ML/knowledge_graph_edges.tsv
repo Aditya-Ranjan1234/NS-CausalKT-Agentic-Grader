@@ -1,0 +1,1728 @@
+source	target	weight	kind	origin
+activation function	back prop	100.0	seed	label
+activation function	forward propagation	100.0	seed	label
+activation values	activation function	100.0	seed	label
+activation values	back prop	100.0	seed	label
+activation values	forward propagation	100.0	seed	label
+anomalous example	anomaly detection	100.0	seed	label
+back prop	neural network learning	100.0	seed	label
+batch gradient descent	learning rate	100.0	seed	label
+batch gradient descent	mini-batch gradient descent	100.0	seed	label
+batch gradient descent	mini-batch size	100.0	seed	label
+bayesian approach	bayesian inference	100.0	seed	label
+bayesian inference	gibbs sampler	150.0	seed	wiki_label
+bayesian inference	latent dirichlet allocation	150.0	seed	wiki_label
+bias problem	regularization	100.0	seed	label
+bias unit	back prop	100.0	seed	label
+bias unit	forward propagation	100.0	seed	label
+bias variance trade-off	regularization	100.0	seed	label
+big data sets	batch gradient descent	100.0	seed	label
+big data sets	deep learning	100.0	seed	label
+big data sets	deep neural network	100.0	seed	label
+big data sets	document retrieval	100.0	seed	label
+big data sets	neural network	100.0	seed	label
+big data sets	recommender system	100.0	seed	label
+binary classification	multi-class classification	150.0	seed	wiki_label
+binary classification	neural network	150.0	seed	wiki_label
+binary classification	regularization	100.0	seed	label
+boosting algorithm	adaboost	100.0	seed	label
+character recognition	character segmentation	100.0	seed	label
+character recognition	photo ocr	100.0	seed	label
+classification accuracy	confusion matrix	100.0	seed	label
+classification accuracy	cross validation	100.0	seed	label
+classification accuracy	error analysis	100.0	seed	label
+classification accuracy	f1 score	100.0	seed	label
+classification accuracy	false negative	100.0	seed	label
+classification accuracy	false positives	100.0	seed	label
+classification accuracy	true negatives	100.0	seed	label
+classification accuracy	true positives	100.0	seed	label
+classification accuracy	validation set	100.0	seed	label
+classification approach	binary classification	100.0	seed	label
+classification approach	character recognition	100.0	seed	label
+classification approach	linear classifier	100.0	seed	label
+classification approach	logistic regression	100.0	seed	label
+classification approach	multi-class classification	100.0	seed	label
+classification approach	neural network	100.0	seed	label
+classification approach	sentiment analysis	100.0	seed	label
+classification approach	test error	100.0	seed	label
+classification approach	training error	100.0	seed	label
+classification approach	variance problem	100.0	seed	label
+classification error	confusion matrix	100.0	seed	label
+classification error	cross validation	100.0	seed	label
+classification error	cross validation error	100.0	seed	label
+classification error	false negative	100.0	seed	label
+classification error	false positives	100.0	seed	label
+classification error	overfitting	100.0	seed	label
+classification error	precision recall curve	100.0	seed	label
+classification error	regularization	100.0	seed	label
+classification error	test error	100.0	seed	label
+classification error	training error	100.0	seed	label
+classification error	true negatives	100.0	seed	label
+classification error	true positives	100.0	seed	label
+classification error	underfitting	100.0	seed	label
+classification error	validation error	100.0	seed	label
+classification problem	back prop	100.0	seed	label
+classification problem	binary classification	100.0	seed	label
+classification problem	classification accuracy	100.0	seed	label
+classification problem	classification approach	100.0	seed	label
+classification problem	classification error	100.0	seed	label
+classification problem	decision boundaries	100.0	seed	label
+classification problem	decision tree	100.0	seed	label
+classification problem	deep learning	100.0	seed	label
+classification problem	forward propagation	100.0	seed	label
+classification problem	image classification	100.0	seed	label
+classification problem	linear classifier	100.0	seed	label
+classification problem	logistic regression	100.0	seed	label
+classification problem	misclassification error	100.0	seed	label
+classification problem	multi-class classification	100.0	seed	label
+classification problem	neural network	100.0	seed	label
+classification problem	neural network learning	100.0	seed	label
+classification problem	support vector machine	100.0	seed	label
+cluster	agglomerative clustering	100.0	seed	label
+cluster	cluster center	100.0	seed	label
+cluster	clustering algorithm	100.0	seed	label
+cluster	collaborative filtering	100.0	seed	label
+cluster	hierarchical clustering	100.0	seed	label
+cluster	k means	100.0	seed	label
+cluster	k-means objective	100.0	seed	label
+cluster center	hierarchical clustering	100.0	seed	label
+cluster center	k means	100.0	seed	label
+cluster center	k-means objective	100.0	seed	label
+clustering algorithm	agglomerative clustering	100.0	seed	label
+clustering algorithm	cluster center	100.0	seed	label
+clustering algorithm	hierarchical clustering	100.0	seed	label
+clustering algorithm	k means	100.0	seed	label
+clustering algorithm	k-means objective	100.0	seed	label
+computer vision	character recognition	100.0	seed	label
+computer vision	face detection	150.0	seed	wiki_label
+computer vision	image classification	100.0	seed	label
+computer vision	image retrieval	150.0	seed	wiki_label
+computer vision	ocr problem	100.0	seed	label
+computer vision	pedestrian detection	150.0	seed	wiki_label
+computer vision	photo ocr	100.0	seed	label
+conditional distribution	bayesian inference	100.0	seed	label
+conditional distribution	gaussian density	100.0	seed	label
+conditional distribution	gibbs sampler	100.0	seed	label
+conditional distribution	joint model probability	100.0	seed	label
+conditional distribution	latent dirichlet allocation	100.0	seed	label
+conditional distribution	maximum likelihood	100.0	seed	label
+conditional distribution	maximum likelihood estimate	100.0	seed	label
+conditional distribution	probabilistic model	100.0	seed	label
+convex function	error cost function	100.0	seed	label
+convex function	gradient ascent	100.0	seed	label
+convex function	gradient descent	150.0	seed	wiki_label
+convex function	normal equation	100.0	seed	label
+convex function	stochastic gradient algorithm	150.0	seed	wiki_label
+covariance matrix	gaussian model	100.0	seed	label
+covariance matrix	multivariate gaussian distribution	100.0	seed	label
+covariance matrix	multivariate gaussian model	100.0	seed	label
+covariance matrix	pca algorithm	100.0	seed	label
+covariance matrix	principle components	100.0	seed	label
+covariance matrix	probabilistic model	100.0	seed	label
+cross validation	model complexity	100.0	seed	label
+cross validation	model selection	100.0	seed	label
+cross validation error	model complexity	100.0	seed	label
+cross validation error	model selection	100.0	seed	label
+cross validation sets	cross validation error	100.0	seed	label
+cross validation sets	model selection	100.0	seed	label
+data representation	deep learning	100.0	seed	label
+data representation	deep neural network	100.0	seed	label
+data representation	feature engineering	100.0	seed	label
+data representation	feature space	100.0	seed	label
+data representation	feature vector	100.0	seed	label
+data representation	features	100.0	seed	label
+data representation	neural network	100.0	seed	label
+data set	agglomerative clustering	100.0	seed	label
+data set	anomalous example	100.0	seed	label
+data set	anomaly detection	150.0	seed	wiki_label
+data set	bayesian inference	150.0	seed	wiki_label
+data set	bias problem	100.0	seed	label
+data set	bias variance trade-off	100.0	seed	label
+data set	big data sets	100.0	seed	label
+data set	binary classification	150.0	seed	wiki_label
+data set	boosting algorithm	100.0	seed	label
+data set	character recognition	100.0	seed	label
+data set	classification accuracy	100.0	seed	label
+data set	classification approach	100.0	seed	label
+data set	classification error	100.0	seed	label
+data set	classification problem	100.0	seed	label
+data set	clustering algorithm	100.0	seed	label
+data set	collaborative filtering	150.0	seed	wiki_label
+data set	computer vision	150.0	seed	wiki_label
+data set	confusion matrix	150.0	seed	wiki_label
+data set	cross validation	100.0	seed	label
+data set	cross validation error	100.0	seed	label
+data set	cross validation sets	100.0	seed	label
+data set	decision boundaries	150.0	seed	wiki_label
+data set	decision tree	150.0	seed	wiki_label
+data set	deep learning	150.0	seed	wiki_label
+data set	deep neural network	100.0	seed	label
+data set	design matrix	150.0	seed	wiki_label
+data set	dimensionality reduction	100.0	seed	label
+data set	document retrieval	150.0	seed	wiki_label
+data set	face detection	150.0	seed	wiki_label
+data set	feature engineering	100.0	seed	label
+data set	feature extraction	150.0	seed	wiki_label
+data set	feature space	100.0	seed	label
+data set	gibbs sampler	150.0	seed	wiki_label
+data set	image classification	100.0	seed	label
+data set	image retrieval	150.0	seed	wiki_label
+data set	input data	100.0	seed	label
+data set	input space	100.0	seed	label
+data set	labeled data	100.0	seed	label
+data set	large margin classifier	100.0	seed	label
+data set	lasso regression	100.0	seed	label
+data set	latent dirichlet allocation	150.0	seed	wiki_label
+data set	learning method	100.0	seed	label
+data set	learning system	100.0	seed	label
+data set	linear classifier	150.0	seed	wiki_label
+data set	linear regression	150.0	seed	wiki_label
+data set	logistic regression	150.0	seed	wiki_label
+data set	machine learning	150.0	seed	wiki_label
+data set	machine learning algorithm	100.0	seed	label
+data set	machine learning system	100.0	seed	label
+data set	massive training set	100.0	seed	label
+data set	mixture model	150.0	seed	wiki_label
+data set	model selection	150.0	seed	wiki_label
+data set	multi-class classification	150.0	seed	wiki_label
+data set	negative example	100.0	seed	label
+data set	neural network	150.0	seed	wiki_label
+data set	non-anomalous examples	100.0	seed	label
+data set	online learning	100.0	seed	label
+data set	pca algorithm	100.0	seed	label
+data set	photo ocr	100.0	seed	label
+data set	positive data	100.0	seed	label
+data set	positive training example	100.0	seed	label
+data set	recommender system	150.0	seed	wiki_label
+data set	regression model	100.0	seed	label
+data set	regression problem	100.0	seed	label
+data set	regularized logistic regression	100.0	seed	label
+data set	sentiment analysis	150.0	seed	wiki_label
+data set	supervised learning	150.0	seed	wiki_label
+data set	support vector machine	150.0	seed	wiki_label
+data set	test data set	150.0	seed	wiki_label
+data set	training data set	150.0	seed	wiki_label
+data set	transfer learning	100.0	seed	label
+data set	unsupervised learning	150.0	seed	wiki_label
+data set	validation set	100.0	seed	label
+decision boundaries	large margin classifier	100.0	seed	label
+decision boundaries	support vector	100.0	seed	label
+decision boundaries	support vector machine	150.0	seed	wiki_label
+decision tree	decision stamp	100.0	seed	label
+deep features	deep learning	100.0	seed	label
+deep features	deep neural network	100.0	seed	label
+deep features	neural network	100.0	seed	label
+derivative term	back prop	100.0	seed	label
+derivative term	batch gradient descent	100.0	seed	label
+derivative term	forward propagation	100.0	seed	label
+derivative term	gradient checking	100.0	seed	label
+derivative term	gradient descent	100.0	seed	label
+derivative term	linear regression	100.0	seed	label
+derivative term	logistic regression	100.0	seed	label
+derivative term	neural network learning	100.0	seed	label
+derivative term	normal equation	100.0	seed	label
+derivative term	optimization algorithms	100.0	seed	label
+derivative term	partial derivative	100.0	seed	label
+derivative term	stochastic gradient algorithm	100.0	seed	label
+design matrix	normal equation	100.0	seed	label
+dimensionality reduction	pca algorithm	100.0	seed	label
+dimensionality reduction	principle components	100.0	seed	label
+error analysis	bias variance trade-off	100.0	seed	label
+error analysis	classification error	100.0	seed	label
+error analysis	cross validation error	100.0	seed	label
+error analysis	false negative	150.0	seed	wiki_label
+error analysis	false positives	150.0	seed	wiki_label
+error analysis	learning curve	150.0	seed	wiki_label
+error analysis	overfitting	100.0	seed	label
+error analysis	test error	100.0	seed	label
+error analysis	true positives	100.0	seed	label
+error analysis	validation error	100.0	seed	label
+error analysis	variance problem	100.0	seed	label
+error cost function	back prop	100.0	seed	label
+error cost function	forward propagation	100.0	seed	label
+estimated parameters	model complexity	100.0	seed	label
+estimated parameters	overfitting	100.0	seed	label
+estimated parameters	regression coefficients	100.0	seed	label
+evaluation metrics	bias problem	100.0	seed	label
+evaluation metrics	classification accuracy	100.0	seed	label
+evaluation metrics	error analysis	100.0	seed	label
+evaluation metrics	f1 score	100.0	seed	label
+evaluation metrics	learning curve	100.0	seed	label
+evaluation metrics	precision	100.0	seed	label
+evaluation metrics	recall	100.0	seed	label
+evaluation metrics	test error	100.0	seed	label
+evaluation metrics	training error	100.0	seed	label
+false negative	confusion matrix	150.0	seed	wiki_label
+false negative	precision recall curve	100.0	seed	label
+false positives	confusion matrix	150.0	seed	wiki_label
+false positives	precision recall curve	100.0	seed	label
+feature extraction	deep features	100.0	seed	label
+feature extraction	deep learning	150.0	seed	wiki_label
+feature extraction	image classification	100.0	seed	label
+feature extraction	image retrieval	150.0	seed	wiki_label
+feature extraction	neural network	150.0	seed	wiki_label
+feature extraction	sentiment analysis	150.0	seed	wiki_label
+feature scaling	mean normalization	100.0	seed	label
+feature selection	feature engineering	100.0	seed	label
+feature selection	model complexity	100.0	seed	label
+feature selection	model selection	150.0	seed	wiki_label
+feature space	decision boundaries	100.0	seed	label
+feature space	feature scaling	100.0	seed	label
+feature space	linear classifier	100.0	seed	label
+feature space	linear regression	100.0	seed	label
+feature space	logistic regression	100.0	seed	label
+feature space	multi-class classification	100.0	seed	label
+feature space	neural network	100.0	seed	label
+feature space	nonlinear hypotheses	100.0	seed	label
+feature space	support vector	100.0	seed	label
+feature space	support vector machine	100.0	seed	label
+feature space	svm optimization	100.0	seed	label
+feature vector	classification approach	100.0	seed	label
+feature vector	collaborative filtering	150.0	seed	wiki_label
+feature vector	decision boundaries	150.0	seed	wiki_label
+feature vector	design matrix	150.0	seed	wiki_label
+feature vector	dimensionality reduction	100.0	seed	label
+feature vector	feature scaling	100.0	seed	label
+feature vector	feature selection	150.0	seed	wiki_label
+feature vector	feature space	100.0	seed	label
+feature vector	forward propagation	100.0	seed	label
+feature vector	gaussian kernel	100.0	seed	label
+feature vector	gradient descent	150.0	seed	wiki_label
+feature vector	hidden layer	100.0	seed	label
+feature vector	input layer	100.0	seed	label
+feature vector	k means	100.0	seed	label
+feature vector	kernel function	150.0	seed	wiki_label
+feature vector	linear classifier	150.0	seed	wiki_label
+feature vector	linear kernel	100.0	seed	label
+feature vector	linear regression	150.0	seed	wiki_label
+feature vector	logistic regression	150.0	seed	wiki_label
+feature vector	multi-class classification	150.0	seed	wiki_label
+feature vector	neural network	150.0	seed	wiki_label
+feature vector	nonlinear hypotheses	100.0	seed	label
+feature vector	normal equation	100.0	seed	label
+feature vector	online learning	100.0	seed	label
+feature vector	output layer	100.0	seed	label
+feature vector	overfitting	100.0	seed	label
+feature vector	parameter estimation	100.0	seed	label
+feature vector	pca algorithm	100.0	seed	label
+feature vector	polynomial features	100.0	seed	label
+feature vector	polynomial kernel	100.0	seed	label
+feature vector	principle components	100.0	seed	label
+feature vector	regression coefficients	100.0	seed	label
+feature vector	regression model	100.0	seed	label
+feature vector	regularization	100.0	seed	label
+feature vector	square projection error	100.0	seed	label
+feature vector	support vector	100.0	seed	label
+feature vector	support vector machine	150.0	seed	wiki_label
+feature vector	svm optimization	100.0	seed	label
+feature vector	underfitting	100.0	seed	label
+features	back prop	100.0	seed	label
+features	binary classification	100.0	seed	label
+features	classification approach	100.0	seed	label
+features	computer vision	100.0	seed	label
+features	cross validation	100.0	seed	label
+features	decision boundaries	100.0	seed	label
+features	decision stamp	100.0	seed	label
+features	decision tree	100.0	seed	label
+features	deep features	100.0	seed	label
+features	deep learning	100.0	seed	label
+features	deep neural network	100.0	seed	label
+features	design matrix	100.0	seed	label
+features	dimensionality reduction	100.0	seed	label
+features	face detection	100.0	seed	label
+features	feature engineering	100.0	seed	label
+features	feature extraction	100.0	seed	label
+features	feature scaling	100.0	seed	label
+features	feature selection	100.0	seed	label
+features	feature space	100.0	seed	label
+features	feature vector	100.0	seed	label
+features	forward propagation	100.0	seed	label
+features	generalized linear models	100.0	seed	label
+features	gibbs sampler	100.0	seed	label
+features	image classification	100.0	seed	label
+features	image retrieval	100.0	seed	label
+features	large margin classifier	100.0	seed	label
+features	lasso regression	100.0	seed	label
+features	latent dirichlet allocation	100.0	seed	label
+features	linear classifier	100.0	seed	label
+features	linear model	100.0	seed	label
+features	linear regression	100.0	seed	label
+features	logistic regression	100.0	seed	label
+features	mean normalization	100.0	seed	label
+features	mixture model	100.0	seed	label
+features	model selection	100.0	seed	label
+features	multi-class classification	100.0	seed	label
+features	neural network	100.0	seed	label
+features	neural network learning	100.0	seed	label
+features	normalized features	100.0	seed	label
+features	online learning	100.0	seed	label
+features	pca algorithm	100.0	seed	label
+features	polynomial features	100.0	seed	label
+features	polynomial regression	100.0	seed	label
+features	recommender system	100.0	seed	label
+features	regression model	100.0	seed	label
+features	regression problem	100.0	seed	label
+features	regularized linear regression	100.0	seed	label
+features	regularized logistic regression	100.0	seed	label
+features	sentiment analysis	100.0	seed	label
+features	sentiment classifier	100.0	seed	label
+features	spam filtering	100.0	seed	label
+features	supervised learning	100.0	seed	label
+features	support vector machine	100.0	seed	label
+features	transfer learning	100.0	seed	label
+features	unnormalized features	100.0	seed	label
+features	unsupervised learning	100.0	seed	label
+features	weak classifier	100.0	seed	label
+forward propagation	back prop	100.0	seed	label
+forward propagation	neural network learning	100.0	seed	label
+gaussian density	gaussian model	100.0	seed	label
+gaussian density	gibbs sampler	150.0	seed	wiki_label
+gaussian density	multivariate gaussian distribution	100.0	seed	label
+gaussian density	multivariate gaussian model	100.0	seed	label
+gaussian density	probabilistic model	100.0	seed	label
+gaussian kernel	kernel regression	100.0	seed	label
+gaussian model	mixture model	100.0	seed	label
+gaussian model	multivariate gaussian model	100.0	seed	label
+gaussian random variable	gaussian density	100.0	seed	label
+generalization error	bias problem	100.0	seed	label
+generalization error	bias variance trade-off	100.0	seed	label
+generalization error	cross validation	100.0	seed	label
+generalization error	cross validation error	100.0	seed	label
+generalization error	model complexity	100.0	seed	label
+generalization error	model selection	150.0	seed	wiki_label
+generalization error	overfitting	100.0	seed	label
+generalization error	underfitting	100.0	seed	label
+generalization error	variance problem	100.0	seed	label
+global minimum	batch gradient descent	100.0	seed	label
+global minimum	learning curve	100.0	seed	label
+global minimum	neural network	100.0	seed	label
+global minimum	normal equation	100.0	seed	label
+global minimum	optimization objective	100.0	seed	label
+global minimum	optimization problem	100.0	seed	label
+global minimum	svm optimization	100.0	seed	label
+global optimum	back prop	100.0	seed	label
+global optimum	batch gradient descent	100.0	seed	label
+global optimum	coordinate descent	150.0	seed	wiki_label
+global optimum	global minimum	100.0	seed	label
+global optimum	gradient descent	150.0	seed	wiki_label
+global optimum	neural network learning	100.0	seed	label
+global optimum	optimization algorithms	100.0	seed	label
+gradient algorithm	gradient ascent	100.0	seed	label
+gradient algorithm	stochastic gradient algorithm	100.0	seed	label
+gradient ascent	stochastic gradient algorithm	100.0	seed	label
+gradient descent	back prop	100.0	seed	label
+gradient descent	batch gradient descent	100.0	seed	label
+gradient descent	convergence test	100.0	seed	label
+gradient descent	gradient checking	100.0	seed	label
+gradient descent	learning rate	100.0	seed	label
+gradient descent	logistic regression	150.0	seed	wiki_label
+gradient descent	mini-batch gradient descent	100.0	seed	label
+gradient descent	mini-batch size	100.0	seed	label
+gradient descent	neural network	150.0	seed	wiki_label
+gradient descent	neural network learning	100.0	seed	label
+gradient descent	normal equation	100.0	seed	label
+gradient descent	regularized linear regression	100.0	seed	label
+gradient descent	regularized logistic regression	100.0	seed	label
+gradient descent	stochastic gradient algorithm	150.0	seed	wiki_label
+hidden layer	activation function	100.0	seed	label
+hidden layer	activation values	100.0	seed	label
+hidden layer	back prop	100.0	seed	label
+hidden layer	bias unit	100.0	seed	label
+hidden layer	error cost function	100.0	seed	label
+hidden layer	forward propagation	100.0	seed	label
+hidden layer	neural network learning	100.0	seed	label
+hidden unit	activation function	100.0	seed	label
+hidden unit	activation values	100.0	seed	label
+hidden unit	back prop	100.0	seed	label
+hidden unit	bias unit	100.0	seed	label
+hidden unit	error cost function	100.0	seed	label
+hidden unit	forward propagation	100.0	seed	label
+hidden unit	hidden layer	100.0	seed	label
+hidden unit	neural network learning	100.0	seed	label
+hierarchical clustering	agglomerative clustering	100.0	seed	label
+high order polynomial	polynomial features	100.0	seed	label
+high order polynomial	polynomial regression	100.0	seed	label
+hypothesis	back prop	100.0	seed	label
+hypothesis	batch gradient descent	100.0	seed	label
+hypothesis	bias problem	100.0	seed	label
+hypothesis	decision boundaries	100.0	seed	label
+hypothesis	forward propagation	100.0	seed	label
+hypothesis	generalization error	100.0	seed	label
+hypothesis	linear classifier	100.0	seed	label
+hypothesis	linear regression	100.0	seed	label
+hypothesis	logistic regression	100.0	seed	label
+hypothesis	model selection	100.0	seed	label
+hypothesis	neural network	100.0	seed	label
+hypothesis	neural network learning	100.0	seed	label
+hypothesis	nonlinear hypotheses	100.0	seed	label
+hypothesis	online learning	100.0	seed	label
+hypothesis	polynomial regression	100.0	seed	label
+hypothesis	regression model	100.0	seed	label
+hypothesis	regularized linear regression	100.0	seed	label
+hypothesis	regularized logistic regression	100.0	seed	label
+hypothesis	stochastic gradient algorithm	100.0	seed	label
+hypothesis	support vector machine	100.0	seed	label
+identity matrics	covariance matrix	150.0	seed	wiki_label
+identity matrics	gaussian density	150.0	seed	wiki_label
+identity matrics	matrix multiplication	150.0	seed	wiki_label
+identity matrics	matrix transpose	100.0	seed	label
+identity matrics	mean square error	150.0	seed	wiki_label
+identity matrics	multivariate gaussian distribution	100.0	seed	label
+inner product	feature space	100.0	seed	label
+inner product	kernel function	150.0	seed	wiki_label
+inner product	large margin classifier	100.0	seed	label
+inner product	least squares	150.0	seed	wiki_label
+inner product	linear regression	150.0	seed	wiki_label
+inner product	logistic regression	150.0	seed	wiki_label
+inner product	neural network	150.0	seed	wiki_label
+inner product	normalized representation	100.0	seed	label
+inner product	optimization problem	150.0	seed	wiki_label
+inner product	polynomial kernel	100.0	seed	label
+inner product	squared error	100.0	seed	label
+inner product	support vector machine	150.0	seed	wiki_label
+inner product	svm optimization	100.0	seed	label
+input data	bias variance trade-off	100.0	seed	label
+input data	classification accuracy	100.0	seed	label
+input data	decision boundaries	100.0	seed	label
+input data	error analysis	100.0	seed	label
+input data	feature scaling	100.0	seed	label
+input data	feature space	100.0	seed	label
+input data	feature vector	100.0	seed	label
+input data	learning method	100.0	seed	label
+input data	learning system	100.0	seed	label
+input data	linear classifier	100.0	seed	label
+input data	linear model	100.0	seed	label
+input data	logistic regression	100.0	seed	label
+input data	machine learning algorithm	100.0	seed	label
+input data	machine learning system	100.0	seed	label
+input data	multi-class classification	100.0	seed	label
+input data	neural network	100.0	seed	label
+input data	regression model	100.0	seed	label
+input data	sentiment analysis	100.0	seed	label
+input data	sentiment classifier	100.0	seed	label
+input data	support vector machine	100.0	seed	label
+input data	test data	100.0	seed	label
+input data	test data set	100.0	seed	label
+input data	training data	100.0	seed	label
+input data	training data set	100.0	seed	label
+input layer	back prop	100.0	seed	label
+input layer	bias unit	100.0	seed	label
+input layer	error cost function	100.0	seed	label
+input layer	forward propagation	100.0	seed	label
+input layer	hidden layer	100.0	seed	label
+input layer	neural network learning	100.0	seed	label
+input space	kernel regression	100.0	seed	label
+input space	linear regression	100.0	seed	label
+input space	regression model	100.0	seed	label
+input units	back prop	100.0	seed	label
+input units	bias unit	100.0	seed	label
+input units	error cost function	100.0	seed	label
+input units	forward propagation	100.0	seed	label
+input units	hidden layer	100.0	seed	label
+input units	hidden unit	100.0	seed	label
+input units	input layer	100.0	seed	label
+input units	neural network learning	100.0	seed	label
+iterative algorithm	batch gradient descent	100.0	seed	label
+iterative algorithm	expectation maximization	100.0	seed	label
+iterative algorithm	gradient descent	100.0	seed	label
+iterative algorithm	k means	100.0	seed	label
+joint model probability	bayesian inference	100.0	seed	label
+joint model probability	gibbs sampler	100.0	seed	label
+joint model probability	latent dirichlet allocation	100.0	seed	label
+joint model probability	mixture model	100.0	seed	label
+joint model probability	probabilistic model	100.0	seed	label
+k means	agglomerative clustering	100.0	seed	label
+k means	hierarchical clustering	100.0	seed	label
+k means	k-means objective	100.0	seed	label
+kernel function	gaussian kernel	100.0	seed	label
+kernel function	polynomial kernel	100.0	seed	label
+kernel function	string kernel	100.0	seed	label
+labeled data	anomalous example	100.0	seed	label
+labeled data	anomaly detection	100.0	seed	label
+labeled data	classification accuracy	100.0	seed	label
+labeled data	cross validation sets	100.0	seed	label
+labeled data	deep neural network	100.0	seed	label
+labeled data	error analysis	100.0	seed	label
+labeled data	f1 score	100.0	seed	label
+labeled data	false negative	100.0	seed	label
+labeled data	false positives	100.0	seed	label
+labeled data	image classification	100.0	seed	label
+labeled data	linear classifier	100.0	seed	label
+labeled data	logistic regression	100.0	seed	label
+labeled data	negative example	100.0	seed	label
+labeled data	neural network	100.0	seed	label
+labeled data	non-anomalous examples	100.0	seed	label
+labeled data	positive data	100.0	seed	label
+labeled data	positive training example	100.0	seed	label
+labeled data	recall	100.0	seed	label
+labeled data	supervised learning	100.0	seed	label
+labeled data	support vector machine	100.0	seed	label
+labeled data	training data	100.0	seed	label
+labeled data	training data set	100.0	seed	label
+labeled data	validation set	100.0	seed	label
+large margin classifier	support vector machine	100.0	seed	label
+learning curve	overfitting	100.0	seed	label
+learning curve	underfitting	100.0	seed	label
+learning curve	variance problem	100.0	seed	label
+learning method	adaboost	100.0	seed	label
+learning method	anomaly detection	100.0	seed	label
+learning method	back prop	100.0	seed	label
+learning method	batch gradient descent	100.0	seed	label
+learning method	bayesian inference	100.0	seed	label
+learning method	bias problem	100.0	seed	label
+learning method	bias variance trade-off	100.0	seed	label
+learning method	binary classification	100.0	seed	label
+learning method	boosting algorithm	100.0	seed	label
+learning method	classification approach	100.0	seed	label
+learning method	clustering algorithm	100.0	seed	label
+learning method	collaborative filtering	100.0	seed	label
+learning method	decision boundaries	100.0	seed	label
+learning method	decision stamp	100.0	seed	label
+learning method	decision tree	100.0	seed	label
+learning method	deep learning	100.0	seed	label
+learning method	deep neural network	100.0	seed	label
+learning method	design matrix	100.0	seed	label
+learning method	dimensionality reduction	100.0	seed	label
+learning method	expectation maximization	100.0	seed	label
+learning method	feature selection	100.0	seed	label
+learning method	forward propagation	100.0	seed	label
+learning method	gradient ascent	100.0	seed	label
+learning method	gradient checking	100.0	seed	label
+learning method	gradient descent	100.0	seed	label
+learning method	input space	100.0	seed	label
+learning method	k means	100.0	seed	label
+learning method	kernel regression	100.0	seed	label
+learning method	large margin classifier	100.0	seed	label
+learning method	lasso regression	100.0	seed	label
+learning method	latent dirichlet allocation	100.0	seed	label
+learning method	linear classifier	100.0	seed	label
+learning method	linear regression	100.0	seed	label
+learning method	logistic regression	100.0	seed	label
+learning method	machine learning algorithm	100.0	seed	label
+learning method	misclassification error	100.0	seed	label
+learning method	mixture model	100.0	seed	label
+learning method	model complexity	100.0	seed	label
+learning method	model parameters	100.0	seed	label
+learning method	model selection	100.0	seed	label
+learning method	multi-class classification	100.0	seed	label
+learning method	nearest neighbor search	100.0	seed	label
+learning method	neural network	100.0	seed	label
+learning method	neural network learning	100.0	seed	label
+learning method	online learning	100.0	seed	label
+learning method	pedestrian detection	100.0	seed	label
+learning method	polynomial regression	100.0	seed	label
+learning method	regression model	100.0	seed	label
+learning method	regularized linear regression	100.0	seed	label
+learning method	regularized logistic regression	100.0	seed	label
+learning method	sentiment analysis	100.0	seed	label
+learning method	sentiment classifier	100.0	seed	label
+learning method	stochastic gradient algorithm	100.0	seed	label
+learning method	supervised learning	100.0	seed	label
+learning method	support vector machine	100.0	seed	label
+learning method	svm optimization	100.0	seed	label
+learning method	unsupervised learning	100.0	seed	label
+learning method	weak classifier	100.0	seed	label
+learning problem	anomaly detection	100.0	seed	label
+learning problem	batch gradient descent	100.0	seed	label
+learning problem	bayesian inference	100.0	seed	label
+learning problem	bias problem	100.0	seed	label
+learning problem	bias variance trade-off	100.0	seed	label
+learning problem	boosting algorithm	100.0	seed	label
+learning problem	character recognition	100.0	seed	label
+learning problem	character segmentation	100.0	seed	label
+learning problem	classification accuracy	100.0	seed	label
+learning problem	classification approach	100.0	seed	label
+learning problem	classification problem	100.0	seed	label
+learning problem	clustering algorithm	100.0	seed	label
+learning problem	collaborative filtering	100.0	seed	label
+learning problem	cross validation	100.0	seed	label
+learning problem	cross validation error	100.0	seed	label
+learning problem	decision boundaries	100.0	seed	label
+learning problem	decision tree	100.0	seed	label
+learning problem	deep features	100.0	seed	label
+learning problem	deep learning	100.0	seed	label
+learning problem	document retrieval	100.0	seed	label
+learning problem	f1 score	100.0	seed	label
+learning problem	face detection	100.0	seed	label
+learning problem	false negative	100.0	seed	label
+learning problem	false positives	100.0	seed	label
+learning problem	feature engineering	100.0	seed	label
+learning problem	feature extraction	100.0	seed	label
+learning problem	feature scaling	100.0	seed	label
+learning problem	feature selection	100.0	seed	label
+learning problem	feature space	100.0	seed	label
+learning problem	feature vector	100.0	seed	label
+learning problem	features	100.0	seed	label
+learning problem	hypothesis	100.0	seed	label
+learning problem	image classification	100.0	seed	label
+learning problem	image retrieval	100.0	seed	label
+learning problem	input space	100.0	seed	label
+learning problem	k means	100.0	seed	label
+learning problem	latent dirichlet allocation	100.0	seed	label
+learning problem	learning curve	100.0	seed	label
+learning problem	learning method	100.0	seed	label
+learning problem	learning system	100.0	seed	label
+learning problem	linear classifier	100.0	seed	label
+learning problem	linear regression	100.0	seed	label
+learning problem	logistic regression	100.0	seed	label
+learning problem	machine learning	100.0	seed	label
+learning problem	machine learning algorithm	100.0	seed	label
+learning problem	machine learning application	100.0	seed	label
+learning problem	machine learning system	100.0	seed	label
+learning problem	massive training set	100.0	seed	label
+learning problem	mixture model	100.0	seed	label
+learning problem	model selection	100.0	seed	label
+learning problem	multi-class classification	100.0	seed	label
+learning problem	nearest neighbor search	100.0	seed	label
+learning problem	neural network	100.0	seed	label
+learning problem	normal equation	100.0	seed	label
+learning problem	online learning	100.0	seed	label
+learning problem	photo ocr	100.0	seed	label
+learning problem	probabilistic model	100.0	seed	label
+learning problem	recommender system	100.0	seed	label
+learning problem	regression model	100.0	seed	label
+learning problem	regression problem	100.0	seed	label
+learning problem	spam filtering	100.0	seed	label
+learning problem	stochastic gradient algorithm	100.0	seed	label
+learning problem	supervised learning	100.0	seed	label
+learning problem	support vector machine	100.0	seed	label
+learning problem	svm optimization	100.0	seed	label
+learning problem	test data	100.0	seed	label
+learning problem	test data set	100.0	seed	label
+learning problem	training data	100.0	seed	label
+learning problem	training data set	100.0	seed	label
+learning problem	unsupervised learning	100.0	seed	label
+learning problem	validation set	100.0	seed	label
+learning problem	variance problem	100.0	seed	label
+learning problem	weak classifier	100.0	seed	label
+learning rate	back prop	100.0	seed	label
+learning rate	convergence test	100.0	seed	label
+learning rate	neural network	100.0	seed	label
+learning rate	online learning	100.0	seed	label
+learning rate	stochastic gradient algorithm	100.0	seed	label
+learning system	anomaly detection	100.0	seed	label
+learning system	bias problem	100.0	seed	label
+learning system	bias variance trade-off	100.0	seed	label
+learning system	character recognition	100.0	seed	label
+learning system	character segmentation	100.0	seed	label
+learning system	face detection	100.0	seed	label
+learning system	features	100.0	seed	label
+learning system	k means	100.0	seed	label
+learning system	learning method	100.0	seed	label
+learning system	linear classifier	100.0	seed	label
+learning system	linear regression	100.0	seed	label
+learning system	logistic regression	100.0	seed	label
+learning system	multi-class classification	100.0	seed	label
+learning system	neural network	100.0	seed	label
+learning system	photo ocr	100.0	seed	label
+learning system	recommender system	100.0	seed	label
+learning system	spam filtering	100.0	seed	label
+learning system	svm packages	100.0	seed	label
+least squares	mean square error	150.0	seed	wiki_label
+least squares	squared error	100.0	seed	label
+least squares	standard least squares	100.0	seed	label
+likelihood function	log likelihood	100.0	seed	label
+likelihood function	maximum likelihood	150.0	seed	wiki_label
+linear algebra	batch gradient descent	100.0	seed	label
+linear algebra	collaborative filtering	150.0	seed	wiki_label
+linear algebra	dimensionality reduction	100.0	seed	label
+linear algebra	error cost function	100.0	seed	label
+linear algebra	gradient descent	150.0	seed	wiki_label
+linear algebra	identity matrics	150.0	seed	wiki_label
+linear algebra	inner product	150.0	seed	wiki_label
+linear algebra	linear regression	150.0	seed	wiki_label
+linear algebra	logistic regression	150.0	seed	wiki_label
+linear algebra	matrix factorization	100.0	seed	label
+linear algebra	matrix multiplication	150.0	seed	wiki_label
+linear algebra	matrix transpose	100.0	seed	label
+linear algebra	matrix vector multiplication	100.0	seed	label
+linear algebra	multi-class classification	150.0	seed	wiki_label
+linear algebra	normal equation	100.0	seed	label
+linear algebra	optimization algorithms	100.0	seed	label
+linear algebra	parameter estimation	100.0	seed	label
+linear algebra	partial derivative	150.0	seed	wiki_label
+linear algebra	pca algorithm	100.0	seed	label
+linear algebra	principle components	100.0	seed	label
+linear algebra	regularization	100.0	seed	label
+linear algebra	regularized linear regression	100.0	seed	label
+linear algebra	square matrix	100.0	seed	label
+linear algebra	square projection error	100.0	seed	label
+linear algebra	stochastic gradient algorithm	150.0	seed	wiki_label
+linear algebra	support vector machine	150.0	seed	wiki_label
+linear algebra	symmetric matrix	150.0	seed	wiki_label
+linear algebra	vector multiplication	100.0	seed	label
+linear classifier	deep learning	150.0	seed	wiki_label
+linear classifier	deep neural network	100.0	seed	label
+linear classifier	generalized linear models	100.0	seed	label
+linear classifier	large margin classifier	100.0	seed	label
+linear classifier	linear kernel	100.0	seed	label
+linear classifier	logistic regression	150.0	seed	wiki_label
+linear classifier	multi-class classification	150.0	seed	wiki_label
+linear classifier	neural network	150.0	seed	wiki_label
+linear classifier	regularized logistic regression	100.0	seed	label
+linear classifier	sentiment analysis	150.0	seed	wiki_label
+linear classifier	support vector machine	150.0	seed	wiki_label
+linear kernel	kernel function	100.0	seed	label
+linear model	generalized linear models	100.0	seed	label
+linear model	linear classifier	150.0	seed	wiki_label
+linear model	linear regression	150.0	seed	wiki_label
+linear model	logistic regression	150.0	seed	wiki_label
+linear regression	back prop	100.0	seed	label
+linear regression	generalized linear models	100.0	seed	label
+linear regression	kernel regression	150.0	seed	wiki_label
+linear regression	lasso regression	100.0	seed	label
+linear regression	neural network	150.0	seed	wiki_label
+linear regression	neural network learning	100.0	seed	label
+linear regression	normal equation	100.0	seed	label
+linear regression	polynomial regression	150.0	seed	wiki_label
+linear regression	regularized linear regression	100.0	seed	label
+local minimum	back prop	100.0	seed	label
+local minimum	gradient checking	100.0	seed	label
+local minimum	gradient descent	150.0	seed	wiki_label
+local minimum	loss function	150.0	seed	wiki_label
+local minimum	neural network learning	100.0	seed	label
+local minimum	optimization algorithms	100.0	seed	label
+local minimum	partial derivative	150.0	seed	wiki_label
+local minimum	regularization	100.0	seed	label
+local optima	back prop	100.0	seed	label
+local optima	batch gradient descent	100.0	seed	label
+local optima	coordinate descent	150.0	seed	wiki_label
+local optima	gradient checking	100.0	seed	label
+local optima	gradient descent	150.0	seed	wiki_label
+local optima	k-means objective	100.0	seed	label
+local optima	local minimum	150.0	seed	wiki_label
+local optima	loss function	150.0	seed	wiki_label
+local optima	neural network learning	100.0	seed	label
+local optima	normal equation	100.0	seed	label
+local optima	optimization algorithms	100.0	seed	label
+local optima	optimization objective	100.0	seed	label
+local optima	partial derivative	150.0	seed	wiki_label
+local optima	regularization	100.0	seed	label
+local optima	support vector machine	150.0	seed	wiki_label
+local optima	svm optimization	100.0	seed	label
+log likelihood	bayesian approach	100.0	seed	label
+log likelihood	maximum likelihood	100.0	seed	label
+log likelihood	maximum likelihood estimate	100.0	seed	label
+logistic function	activation function	150.0	seed	wiki_label
+logistic function	back prop	100.0	seed	label
+logistic function	forward propagation	100.0	seed	label
+logistic function	hidden unit	100.0	seed	label
+logistic function	neural network	150.0	seed	wiki_label
+logistic regression	back prop	100.0	seed	label
+logistic regression	forward propagation	100.0	seed	label
+logistic regression	generalized linear models	100.0	seed	label
+logistic regression	large margin classifier	100.0	seed	label
+logistic regression	multi-class classification	150.0	seed	wiki_label
+logistic regression	neural network	150.0	seed	wiki_label
+logistic regression	neural network learning	100.0	seed	label
+logistic regression	regularized logistic regression	100.0	seed	label
+logistic regression	support vector machine	150.0	seed	wiki_label
+loss function	back prop	100.0	seed	label
+loss function	batch gradient descent	100.0	seed	label
+loss function	bias problem	100.0	seed	label
+loss function	bias variance trade-off	100.0	seed	label
+loss function	convergence test	100.0	seed	label
+loss function	coordinate descent	150.0	seed	wiki_label
+loss function	error cost function	100.0	seed	label
+loss function	estimated parameters	100.0	seed	label
+loss function	expectation maximization	100.0	seed	label
+loss function	forward propagation	100.0	seed	label
+loss function	generalization error	150.0	seed	wiki_label
+loss function	latent dirichlet allocation	150.0	seed	wiki_label
+loss function	linear regression	150.0	seed	wiki_label
+loss function	logistic function	150.0	seed	wiki_label
+loss function	neural network	150.0	seed	wiki_label
+loss function	neural network learning	100.0	seed	label
+loss function	normal equation	100.0	seed	label
+loss function	regularized linear regression	100.0	seed	label
+loss function	regularized logistic regression	100.0	seed	label
+loss function	stochastic gradient algorithm	150.0	seed	wiki_label
+loss function	support vector machine	150.0	seed	wiki_label
+machine learning	adaboost	100.0	seed	label
+machine learning	anomaly detection	150.0	seed	wiki_label
+machine learning	bayesian inference	150.0	seed	wiki_label
+machine learning	bias problem	100.0	seed	label
+machine learning	bias variance trade-off	100.0	seed	label
+machine learning	binary classification	150.0	seed	wiki_label
+machine learning	boosting algorithm	100.0	seed	label
+machine learning	character recognition	100.0	seed	label
+machine learning	character segmentation	100.0	seed	label
+machine learning	classification accuracy	100.0	seed	label
+machine learning	classification approach	100.0	seed	label
+machine learning	classification error	100.0	seed	label
+machine learning	classification problem	100.0	seed	label
+machine learning	clustering algorithm	100.0	seed	label
+machine learning	collaborative filtering	150.0	seed	wiki_label
+machine learning	computer vision	150.0	seed	wiki_label
+machine learning	cross validation	100.0	seed	label
+machine learning	cross validation error	100.0	seed	label
+machine learning	cross validation sets	100.0	seed	label
+machine learning	decision boundaries	150.0	seed	wiki_label
+machine learning	decision stamp	100.0	seed	label
+machine learning	decision tree	150.0	seed	wiki_label
+machine learning	deep features	100.0	seed	label
+machine learning	deep learning	150.0	seed	wiki_label
+machine learning	deep neural network	100.0	seed	label
+machine learning	dimensionality reduction	100.0	seed	label
+machine learning	document retrieval	150.0	seed	wiki_label
+machine learning	early stopping	150.0	seed	wiki_label
+machine learning	false negative	150.0	seed	wiki_label
+machine learning	feature engineering	100.0	seed	label
+machine learning	feature extraction	150.0	seed	wiki_label
+machine learning	feature scaling	100.0	seed	label
+machine learning	feature selection	150.0	seed	wiki_label
+machine learning	feature space	100.0	seed	label
+machine learning	feature vector	150.0	seed	wiki_label
+machine learning	features	100.0	seed	label
+machine learning	gaussian kernel	100.0	seed	label
+machine learning	generalization error	150.0	seed	wiki_label
+machine learning	generalized linear models	100.0	seed	label
+machine learning	gradient ascent	100.0	seed	label
+machine learning	gradient descent	150.0	seed	wiki_label
+machine learning	hidden layer	100.0	seed	label
+machine learning	hypothesis	100.0	seed	label
+machine learning	image classification	100.0	seed	label
+machine learning	image retrieval	150.0	seed	wiki_label
+machine learning	input data	100.0	seed	label
+machine learning	input space	100.0	seed	label
+machine learning	k means	100.0	seed	label
+machine learning	kernel function	150.0	seed	wiki_label
+machine learning	kernel regression	150.0	seed	wiki_label
+machine learning	lasso regression	100.0	seed	label
+machine learning	latent dirichlet allocation	150.0	seed	wiki_label
+machine learning	learning curve	150.0	seed	wiki_label
+machine learning	learning rate	100.0	seed	label
+machine learning	learning system	100.0	seed	label
+machine learning	linear classifier	150.0	seed	wiki_label
+machine learning	linear model	150.0	seed	wiki_label
+machine learning	linear regression	150.0	seed	wiki_label
+machine learning	logistic regression	150.0	seed	wiki_label
+machine learning	loss function	150.0	seed	wiki_label
+machine learning	machine learning algorithm	100.0	seed	label
+machine learning	machine learning application	100.0	seed	label
+machine learning	machine learning system	100.0	seed	label
+machine learning	mixture model	150.0	seed	wiki_label
+machine learning	multi-class classification	150.0	seed	wiki_label
+machine learning	nearest neighbor search	150.0	seed	wiki_label
+machine learning	neural network	150.0	seed	wiki_label
+machine learning	normal equation	100.0	seed	label
+machine learning	ocr problem	100.0	seed	label
+machine learning	online learning	100.0	seed	label
+machine learning	overfitting	100.0	seed	label
+machine learning	pedestrian detection	150.0	seed	wiki_label
+machine learning	photo ocr	100.0	seed	label
+machine learning	polynomial regression	150.0	seed	wiki_label
+machine learning	regression problem	100.0	seed	label
+machine learning	regularized linear regression	100.0	seed	label
+machine learning	regularized logistic regression	100.0	seed	label
+machine learning	sentiment analysis	150.0	seed	wiki_label
+machine learning	sentiment classifier	100.0	seed	label
+machine learning	spam filtering	100.0	seed	label
+machine learning	supervised learning	150.0	seed	wiki_label
+machine learning	support vector machine	150.0	seed	wiki_label
+machine learning	svm optimization	100.0	seed	label
+machine learning	svm packages	100.0	seed	label
+machine learning	test data	150.0	seed	wiki_label
+machine learning	test data set	150.0	seed	wiki_label
+machine learning	training data	100.0	seed	label
+machine learning	training data set	150.0	seed	wiki_label
+machine learning	true negatives	100.0	seed	label
+machine learning	true positives	100.0	seed	label
+machine learning	underfitting	100.0	seed	label
+machine learning	unsupervised learning	150.0	seed	wiki_label
+machine learning	validation set	100.0	seed	label
+machine learning	variance problem	100.0	seed	label
+machine learning	weak classifier	100.0	seed	label
+machine learning algorithm	adaboost	100.0	seed	label
+machine learning algorithm	anomaly detection	100.0	seed	label
+machine learning algorithm	bayesian inference	100.0	seed	label
+machine learning algorithm	bias variance trade-off	100.0	seed	label
+machine learning algorithm	binary classification	100.0	seed	label
+machine learning algorithm	boosting algorithm	100.0	seed	label
+machine learning algorithm	classification approach	100.0	seed	label
+machine learning algorithm	clustering algorithm	100.0	seed	label
+machine learning algorithm	collaborative filtering	100.0	seed	label
+machine learning algorithm	decision stamp	100.0	seed	label
+machine learning algorithm	decision tree	100.0	seed	label
+machine learning algorithm	deep learning	100.0	seed	label
+machine learning algorithm	dimensionality reduction	100.0	seed	label
+machine learning algorithm	gradient descent	100.0	seed	label
+machine learning algorithm	hypothesis	100.0	seed	label
+machine learning algorithm	k means	100.0	seed	label
+machine learning algorithm	kernel regression	100.0	seed	label
+machine learning algorithm	lasso regression	100.0	seed	label
+machine learning algorithm	latent dirichlet allocation	100.0	seed	label
+machine learning algorithm	linear classifier	100.0	seed	label
+machine learning algorithm	linear regression	100.0	seed	label
+machine learning algorithm	logistic regression	100.0	seed	label
+machine learning algorithm	loss function	100.0	seed	label
+machine learning algorithm	mixture model	100.0	seed	label
+machine learning algorithm	multi-class classification	100.0	seed	label
+machine learning algorithm	nearest neighbor search	100.0	seed	label
+machine learning algorithm	neural network	100.0	seed	label
+machine learning algorithm	regression model	100.0	seed	label
+machine learning algorithm	regularized linear regression	100.0	seed	label
+machine learning algorithm	regularized logistic regression	100.0	seed	label
+machine learning algorithm	sentiment analysis	100.0	seed	label
+machine learning algorithm	sentiment classifier	100.0	seed	label
+machine learning algorithm	support vector machine	100.0	seed	label
+machine learning application	character recognition	100.0	seed	label
+machine learning application	character segmentation	100.0	seed	label
+machine learning application	computer vision	100.0	seed	label
+machine learning application	face detection	100.0	seed	label
+machine learning application	learning system	100.0	seed	label
+machine learning application	ocr problem	100.0	seed	label
+machine learning application	photo ocr	100.0	seed	label
+machine learning application	recommender system	100.0	seed	label
+machine learning application	spam filtering	100.0	seed	label
+machine learning system	anomaly detection	100.0	seed	label
+machine learning system	bias variance trade-off	100.0	seed	label
+machine learning system	character recognition	100.0	seed	label
+machine learning system	character segmentation	100.0	seed	label
+machine learning system	computer vision	100.0	seed	label
+machine learning system	face detection	100.0	seed	label
+machine learning system	logistic regression	100.0	seed	label
+machine learning system	machine learning application	100.0	seed	label
+machine learning system	neural network	100.0	seed	label
+machine learning system	ocr problem	100.0	seed	label
+machine learning system	photo ocr	100.0	seed	label
+machine learning system	recommender system	100.0	seed	label
+machine learning system	spam filtering	100.0	seed	label
+machine learning system	support vector machine	100.0	seed	label
+machine learning system	svm optimization	100.0	seed	label
+machine learning system	svm packages	100.0	seed	label
+massive training set	bias problem	100.0	seed	label
+massive training set	neural network	100.0	seed	label
+matrix	back prop	100.0	seed	label
+matrix	collaborative filtering	100.0	seed	label
+matrix	confusion matrix	100.0	seed	label
+matrix	conjugate gradient	100.0	seed	label
+matrix	coordinate descent	100.0	seed	label
+matrix	covariance matrix	100.0	seed	label
+matrix	design matrix	100.0	seed	label
+matrix	dimensionality reduction	100.0	seed	label
+matrix	expectation maximization	100.0	seed	label
+matrix	feature space	100.0	seed	label
+matrix	forward propagation	100.0	seed	label
+matrix	gaussian model	100.0	seed	label
+matrix	gradient descent	100.0	seed	label
+matrix	identity matrics	100.0	seed	label
+matrix	latent dirichlet allocation	100.0	seed	label
+matrix	least squares	100.0	seed	label
+matrix	logistic regression	100.0	seed	label
+matrix	low rank matrix	100.0	seed	label
+matrix	matrix addition	100.0	seed	label
+matrix	matrix factorization	100.0	seed	label
+matrix	matrix multiplication	100.0	seed	label
+matrix	matrix transpose	100.0	seed	label
+matrix	matrix vector multiplication	100.0	seed	label
+matrix	multivariate gaussian model	100.0	seed	label
+matrix	neural network	100.0	seed	label
+matrix	neural network learning	100.0	seed	label
+matrix	normal equation	100.0	seed	label
+matrix	optimization algorithms	100.0	seed	label
+matrix	parameter estimation	100.0	seed	label
+matrix	partial derivative	100.0	seed	label
+matrix	pca algorithm	100.0	seed	label
+matrix	polynomial regression	100.0	seed	label
+matrix	regularization	100.0	seed	label
+matrix	regularized linear regression	100.0	seed	label
+matrix	square matrix	100.0	seed	label
+matrix	square projection error	100.0	seed	label
+matrix	standard deviation	100.0	seed	label
+matrix	stochastic gradient algorithm	100.0	seed	label
+matrix	support vector machine	100.0	seed	label
+matrix	svm optimization	100.0	seed	label
+matrix	svm packages	100.0	seed	label
+matrix	symmetric matrix	100.0	seed	label
+matrix factorization	collaborative filtering	100.0	seed	label
+matrix factorization	expectation maximization	100.0	seed	label
+matrix factorization	neural network	100.0	seed	label
+matrix multiplication	gradient descent	150.0	seed	wiki_label
+matrix transpose	pca algorithm	100.0	seed	label
+matrix vector multiplication	forward propagation	100.0	seed	label
+matrix vector multiplication	gradient descent	100.0	seed	label
+matrix vector multiplication	matrix multiplication	100.0	seed	label
+maximum likelihood	bayesian approach	100.0	seed	label
+maximum likelihood	bayesian inference	150.0	seed	wiki_label
+maximum likelihood	gibbs sampler	150.0	seed	wiki_label
+maximum likelihood	maximum likelihood estimate	100.0	seed	label
+maximum likelihood estimate	bayesian approach	100.0	seed	label
+maximum likelihood estimate	bayesian inference	100.0	seed	label
+maximum likelihood estimate	gibbs sampler	100.0	seed	label
+mini-batch gradient descent	mini-batch size	100.0	seed	label
+minimization problem	gradient descent	100.0	seed	label
+minimization problem	neural network	100.0	seed	label
+minimization problem	regularization	100.0	seed	label
+minimization problem	support vector machine	100.0	seed	label
+misclassification error	overfitting	100.0	seed	label
+misclassification error	regularization	100.0	seed	label
+misclassification error	underfitting	100.0	seed	label
+model complexity	bias variance trade-off	100.0	seed	label
+model complexity	model selection	100.0	seed	label
+model parameters	bayesian inference	100.0	seed	label
+model parameters	estimated parameters	100.0	seed	label
+model parameters	gaussian model	100.0	seed	label
+model parameters	gradient descent	100.0	seed	label
+model parameters	loss function	100.0	seed	label
+model parameters	mixture model	100.0	seed	label
+model parameters	model complexity	100.0	seed	label
+model parameters	model selection	100.0	seed	label
+model parameters	overfitting	100.0	seed	label
+model parameters	regression coefficients	100.0	seed	label
+model parameters	regularization	100.0	seed	label
+model parameters	tuning parameter	100.0	seed	label
+model selection	bias problem	100.0	seed	label
+model selection	bias variance trade-off	100.0	seed	label
+multi-class classification	back prop	100.0	seed	label
+multi-class classification	neural network	150.0	seed	wiki_label
+multi-class classification	neural network learning	100.0	seed	label
+multivariate gaussian distribution	multivariate gaussian model	100.0	seed	label
+nearest neighbor search	k nearest neighbors	100.0	seed	label
+nearest neighbors	k nearest neighbors	100.0	seed	label
+nearest neighbors	nearest neighbor search	100.0	seed	label
+negative example	adaboost	100.0	seed	label
+negative example	anomaly detection	100.0	seed	label
+negative example	binary classification	100.0	seed	label
+negative example	classification accuracy	100.0	seed	label
+negative example	classification error	100.0	seed	label
+negative example	cross validation	100.0	seed	label
+negative example	decision tree	100.0	seed	label
+negative example	error analysis	100.0	seed	label
+negative example	false negative	100.0	seed	label
+negative example	false positives	100.0	seed	label
+negative example	large margin classifier	100.0	seed	label
+negative example	linear classifier	100.0	seed	label
+negative example	logistic regression	100.0	seed	label
+negative example	multi-class classification	100.0	seed	label
+negative example	neural network	100.0	seed	label
+negative example	precision	100.0	seed	label
+negative example	recall	100.0	seed	label
+negative example	regularized linear regression	100.0	seed	label
+negative example	regularized logistic regression	100.0	seed	label
+negative example	supervised learning	100.0	seed	label
+negative example	support vector machine	100.0	seed	label
+negative example	training error	100.0	seed	label
+neural network	activation function	150.0	seed	wiki_label
+neural network	activation values	100.0	seed	label
+neural network	back prop	100.0	seed	label
+neural network	bias unit	100.0	seed	label
+neural network	deep learning	150.0	seed	wiki_label
+neural network	deep neural network	100.0	seed	label
+neural network	error cost function	100.0	seed	label
+neural network	forward propagation	100.0	seed	label
+neural network	hidden layer	100.0	seed	label
+neural network	hidden unit	100.0	seed	label
+neural network	input layer	100.0	seed	label
+neural network	input units	100.0	seed	label
+neural network	neural network learning	100.0	seed	label
+neural network	output layer	100.0	seed	label
+neural network	output unit	100.0	seed	label
+non-anomalous examples	anomaly detection	100.0	seed	label
+nonlinear hypotheses	forward propagation	100.0	seed	label
+nonlinear hypotheses	neural network	100.0	seed	label
+ocr problem	character recognition	100.0	seed	label
+ocr problem	photo ocr	100.0	seed	label
+optimal solution	conjugate gradient	100.0	seed	label
+optimal solution	coordinate descent	100.0	seed	label
+optimal solution	gradient ascent	100.0	seed	label
+optimal solution	gradient descent	100.0	seed	label
+optimal solution	lasso regression	100.0	seed	label
+optimal solution	minimization problem	100.0	seed	label
+optimal solution	neural network	100.0	seed	label
+optimal solution	normal equation	100.0	seed	label
+optimal solution	regularization	100.0	seed	label
+optimal solution	stochastic gradient algorithm	100.0	seed	label
+optimal solution	support vector machine	100.0	seed	label
+optimization algorithms	back prop	100.0	seed	label
+optimization algorithms	batch gradient descent	100.0	seed	label
+optimization algorithms	conjugate gradient	100.0	seed	label
+optimization algorithms	coordinate descent	100.0	seed	label
+optimization algorithms	forward propagation	100.0	seed	label
+optimization algorithms	gradient checking	100.0	seed	label
+optimization algorithms	gradient descent	100.0	seed	label
+optimization algorithms	kernel regression	100.0	seed	label
+optimization algorithms	lasso regression	100.0	seed	label
+optimization algorithms	latent dirichlet allocation	100.0	seed	label
+optimization algorithms	learning rate	100.0	seed	label
+optimization algorithms	linear regression	100.0	seed	label
+optimization algorithms	logistic regression	100.0	seed	label
+optimization algorithms	machine learning algorithm	100.0	seed	label
+optimization algorithms	maximum likelihood	100.0	seed	label
+optimization algorithms	neural network	100.0	seed	label
+optimization algorithms	neural network learning	100.0	seed	label
+optimization algorithms	optimal solution	100.0	seed	label
+optimization algorithms	polynomial regression	100.0	seed	label
+optimization algorithms	regularized linear regression	100.0	seed	label
+optimization algorithms	regularized logistic regression	100.0	seed	label
+optimization algorithms	stochastic gradient algorithm	100.0	seed	label
+optimization algorithms	support vector machine	100.0	seed	label
+optimization objective	batch gradient descent	100.0	seed	label
+optimization objective	conjugate gradient	100.0	seed	label
+optimization objective	coordinate descent	100.0	seed	label
+optimization objective	gradient descent	100.0	seed	label
+optimization objective	k means	100.0	seed	label
+optimization objective	learning curve	100.0	seed	label
+optimization objective	loss function	100.0	seed	label
+optimization objective	neural network	100.0	seed	label
+optimization objective	normal equation	100.0	seed	label
+optimization objective	optimal solution	100.0	seed	label
+optimization objective	polynomial regression	100.0	seed	label
+optimization objective	regularization	100.0	seed	label
+optimization objective	regularized linear regression	100.0	seed	label
+optimization objective	stochastic gradient algorithm	100.0	seed	label
+optimization objective	support vector machine	100.0	seed	label
+optimization objective	tuning parameter	100.0	seed	label
+optimization problem	coordinate descent	150.0	seed	wiki_label
+optimization problem	gradient descent	150.0	seed	wiki_label
+optimization problem	kernel regression	150.0	seed	wiki_label
+optimization problem	lasso regression	100.0	seed	label
+optimization problem	linear regression	150.0	seed	wiki_label
+optimization problem	logistic regression	150.0	seed	wiki_label
+optimization problem	loss function	150.0	seed	wiki_label
+optimization problem	machine learning algorithm	100.0	seed	label
+optimization problem	minimization problem	100.0	seed	label
+optimization problem	neural network	150.0	seed	wiki_label
+optimization problem	optimal solution	100.0	seed	label
+optimization problem	optimization algorithms	100.0	seed	label
+optimization problem	optimization objective	100.0	seed	label
+optimization problem	regularization	100.0	seed	label
+optimization problem	regularized linear regression	100.0	seed	label
+optimization problem	support vector machine	150.0	seed	wiki_label
+optimization problem	svm optimization	100.0	seed	label
+output label	false negative	100.0	seed	label
+output label	false positives	100.0	seed	label
+output label	forward propagation	100.0	seed	label
+output layer	back prop	100.0	seed	label
+output layer	error cost function	100.0	seed	label
+output layer	forward propagation	100.0	seed	label
+output unit	back prop	100.0	seed	label
+output unit	error cost function	100.0	seed	label
+output unit	forward propagation	100.0	seed	label
+output unit	output layer	100.0	seed	label
+overfitting	bias variance trade-off	100.0	seed	label
+overfitting	cross validation	100.0	seed	label
+overfitting	cross validation error	100.0	seed	label
+overfitting	early stopping	100.0	seed	label
+overfitting	model selection	100.0	seed	label
+overfitting	regularization	100.0	seed	label
+overfitting	validation error	100.0	seed	label
+parameter estimation	maximum likelihood	100.0	seed	label
+parameter estimation	maximum likelihood estimate	100.0	seed	label
+parameter estimation	multivariate gaussian model	100.0	seed	label
+parameter vector	back prop	100.0	seed	label
+parameter vector	bias unit	100.0	seed	label
+parameter vector	conjugate gradient	100.0	seed	label
+parameter vector	feature scaling	100.0	seed	label
+parameter vector	feature space	100.0	seed	label
+parameter vector	forward propagation	100.0	seed	label
+parameter vector	generalization error	100.0	seed	label
+parameter vector	gradient descent	100.0	seed	label
+parameter vector	hidden unit	100.0	seed	label
+parameter vector	logistic regression	100.0	seed	label
+parameter vector	loss function	100.0	seed	label
+parameter vector	maximum likelihood	100.0	seed	label
+parameter vector	maximum likelihood estimate	100.0	seed	label
+parameter vector	model selection	100.0	seed	label
+parameter vector	neural network	100.0	seed	label
+parameter vector	normal equation	100.0	seed	label
+parameter vector	optimal solution	100.0	seed	label
+parameter vector	optimization algorithms	100.0	seed	label
+parameter vector	optimization objective	100.0	seed	label
+parameter vector	output layer	100.0	seed	label
+parameter vector	output unit	100.0	seed	label
+parameter vector	polynomial regression	100.0	seed	label
+parameter vector	regularization	100.0	seed	label
+parameter vector	regularized linear regression	100.0	seed	label
+parameter vector	regularized logistic regression	100.0	seed	label
+parameter vector	svm optimization	100.0	seed	label
+parameter vector	svm packages	100.0	seed	label
+partial derivative	back prop	100.0	seed	label
+partial derivative	batch gradient descent	100.0	seed	label
+partial derivative	conjugate gradient	100.0	seed	label
+partial derivative	deep learning	150.0	seed	wiki_label
+partial derivative	forward propagation	100.0	seed	label
+partial derivative	gradient ascent	100.0	seed	label
+partial derivative	gradient descent	150.0	seed	wiki_label
+partial derivative	l1 penalty	100.0	seed	label
+partial derivative	neural network	150.0	seed	wiki_label
+partial derivative	neural network learning	100.0	seed	label
+partial derivative	normal equation	100.0	seed	label
+partial derivative	optimization algorithms	100.0	seed	label
+partial derivative	optimization objective	100.0	seed	label
+partial derivative	optimization problem	150.0	seed	wiki_label
+partial derivative	regularized linear regression	100.0	seed	label
+partial derivative	regularized logistic regression	100.0	seed	label
+partial derivative	stochastic gradient algorithm	150.0	seed	wiki_label
+polynomial features	feature space	100.0	seed	label
+polynomial features	polynomial regression	100.0	seed	label
+polynomial terms	high order polynomial	100.0	seed	label
+polynomial terms	polynomial features	100.0	seed	label
+polynomial terms	polynomial regression	100.0	seed	label
+polynomial terms	regularization	100.0	seed	label
+polynomial terms	regularized linear regression	100.0	seed	label
+polynomial terms	regularized logistic regression	100.0	seed	label
+polynomial terms	squared error	100.0	seed	label
+polynomial terms	support vector machine	100.0	seed	label
+positive class	binary classification	100.0	seed	label
+positive class	classification approach	100.0	seed	label
+positive class	classification error	100.0	seed	label
+positive class	confusion matrix	100.0	seed	label
+positive class	false negative	100.0	seed	label
+positive class	false positives	100.0	seed	label
+positive class	image classification	100.0	seed	label
+positive class	linear classifier	100.0	seed	label
+positive class	logistic regression	100.0	seed	label
+positive class	multi-class classification	100.0	seed	label
+positive class	neural network	100.0	seed	label
+positive class	precision	100.0	seed	label
+positive class	precision recall curve	100.0	seed	label
+positive class	recall	100.0	seed	label
+positive class	support vector machine	100.0	seed	label
+positive class	svm optimization	100.0	seed	label
+positive class	true negatives	100.0	seed	label
+positive class	true positives	100.0	seed	label
+positive data	adaboost	100.0	seed	label
+positive data	anomaly detection	100.0	seed	label
+positive data	binary classification	100.0	seed	label
+positive data	classification accuracy	100.0	seed	label
+positive data	classification approach	100.0	seed	label
+positive data	classification error	100.0	seed	label
+positive data	cross validation	100.0	seed	label
+positive data	decision tree	100.0	seed	label
+positive data	error analysis	100.0	seed	label
+positive data	false negative	100.0	seed	label
+positive data	false positives	100.0	seed	label
+positive data	large margin classifier	100.0	seed	label
+positive data	linear classifier	100.0	seed	label
+positive data	logistic regression	100.0	seed	label
+positive data	multi-class classification	100.0	seed	label
+positive data	neural network	100.0	seed	label
+positive data	positive class	100.0	seed	label
+positive data	positive training example	100.0	seed	label
+positive data	precision	100.0	seed	label
+positive data	precision recall curve	100.0	seed	label
+positive data	recall	100.0	seed	label
+positive data	regularized logistic regression	100.0	seed	label
+positive data	support vector	100.0	seed	label
+positive data	support vector machine	100.0	seed	label
+positive data	true positives	100.0	seed	label
+positive predictions	false negative	100.0	seed	label
+positive predictions	false positives	100.0	seed	label
+positive predictions	linear classifier	100.0	seed	label
+positive predictions	precision	100.0	seed	label
+positive predictions	recall	100.0	seed	label
+positive training example	anomaly detection	100.0	seed	label
+positive training example	binary classification	100.0	seed	label
+positive training example	cross validation	100.0	seed	label
+positive training example	linear classifier	100.0	seed	label
+positive training example	logistic regression	100.0	seed	label
+precision	confusion matrix	100.0	seed	label
+precision	f1 score	100.0	seed	label
+precision	learning curve	100.0	seed	label
+precision	neural network	100.0	seed	label
+precision	precision recall curve	100.0	seed	label
+predicted class	binary classification	100.0	seed	label
+predicted class	classification accuracy	100.0	seed	label
+predicted class	classification error	100.0	seed	label
+predicted class	false negative	100.0	seed	label
+predicted class	false positives	100.0	seed	label
+predicted class	negative example	100.0	seed	label
+predicted class	precision	100.0	seed	label
+predicted class	recall	100.0	seed	label
+predicted class	true positives	100.0	seed	label
+predicted value	binary classification	100.0	seed	label
+predicted value	classification accuracy	100.0	seed	label
+predicted value	classification error	100.0	seed	label
+predicted value	collaborative filtering	100.0	seed	label
+predicted value	cross validation	100.0	seed	label
+predicted value	false negative	100.0	seed	label
+predicted value	false positives	100.0	seed	label
+predicted value	gradient ascent	100.0	seed	label
+predicted value	linear regression	100.0	seed	label
+predicted value	logistic regression	100.0	seed	label
+predicted value	precision	100.0	seed	label
+predicted value	recall	100.0	seed	label
+predicted value	regression model	100.0	seed	label
+prediction error	bias variance trade-off	100.0	seed	label
+prediction error	cross validation	100.0	seed	label
+prediction error	cross validation error	100.0	seed	label
+prediction error	generalization error	100.0	seed	label
+prediction error	test error	100.0	seed	label
+prediction error	training error	100.0	seed	label
+prediction error	validation error	100.0	seed	label
+principle components	pca algorithm	100.0	seed	label
+prior probability	gibbs sampler	150.0	seed	wiki_label
+prior probability	latent dirichlet allocation	150.0	seed	wiki_label
+prior probability	mixture model	150.0	seed	wiki_label
+probabilistic model	bayesian inference	100.0	seed	label
+probabilistic model	gaussian model	100.0	seed	label
+probabilistic model	gibbs sampler	100.0	seed	label
+probabilistic model	latent dirichlet allocation	100.0	seed	label
+probabilistic model	maximum likelihood	100.0	seed	label
+probabilistic model	maximum likelihood estimate	100.0	seed	label
+probabilistic model	mixture model	100.0	seed	label
+probability density	covariance matrix	150.0	seed	wiki_label
+probability density	gaussian density	150.0	seed	wiki_label
+probability density	gaussian model	100.0	seed	label
+probability density	maximum likelihood	150.0	seed	wiki_label
+probability density	maximum likelihood estimate	100.0	seed	label
+probability density	multivariate gaussian distribution	100.0	seed	label
+probability density	multivariate gaussian model	100.0	seed	label
+random numbers	gaussian random variable	100.0	seed	label
+random numbers	random variable	150.0	seed	wiki_label
+random numbers	standard deviation	150.0	seed	wiki_label
+random variable	covariance matrix	150.0	seed	wiki_label
+random variable	gaussian random variable	100.0	seed	label
+random variable	maximum likelihood	150.0	seed	wiki_label
+random variable	maximum likelihood estimate	100.0	seed	label
+random variable	mixture model	150.0	seed	wiki_label
+random variable	prior probability	150.0	seed	wiki_label
+random variable	probabilistic model	100.0	seed	label
+random variable	probability density	150.0	seed	wiki_label
+random variable	standard deviation	150.0	seed	wiki_label
+recall	bias variance trade-off	100.0	seed	label
+recall	confusion matrix	100.0	seed	label
+recall	f1 score	100.0	seed	label
+recall	learning curve	100.0	seed	label
+recall	neural network	100.0	seed	label
+recall	precision recall curve	100.0	seed	label
+recommender system	collaborative filtering	150.0	seed	wiki_label
+regression coefficients	lasso regression	100.0	seed	label
+regression coefficients	linear regression	100.0	seed	label
+regression function	lasso regression	100.0	seed	label
+regression function	linear regression	100.0	seed	label
+regression function	polynomial regression	100.0	seed	label
+regression function	regression model	100.0	seed	label
+regression model	kernel regression	100.0	seed	label
+regression model	lasso regression	100.0	seed	label
+regression model	linear regression	100.0	seed	label
+regression model	normal equation	100.0	seed	label
+regression model	polynomial regression	100.0	seed	label
+regression model	regression coefficients	100.0	seed	label
+regression model	regularized linear regression	100.0	seed	label
+regression problem	linear regression	100.0	seed	label
+regression problem	normal equation	100.0	seed	label
+regression problem	polynomial regression	100.0	seed	label
+regularization	early stopping	100.0	seed	label
+regularization	l1 penalty	100.0	seed	label
+regularization	neural network	100.0	seed	label
+regularization	regularized linear regression	100.0	seed	label
+regularization	regularized logistic regression	100.0	seed	label
+sentiment analysis	sentiment classifier	100.0	seed	label
+sigmoid function	activation function	150.0	seed	wiki_label
+sigmoid function	forward propagation	100.0	seed	label
+sigmoid function	hidden layer	100.0	seed	label
+sigmoid function	logistic regression	150.0	seed	wiki_label
+sigmoid function	neural network	150.0	seed	wiki_label
+sigmoid function	regularized logistic regression	100.0	seed	label
+square distances	square projection error	100.0	seed	label
+square matrix	covariance matrix	100.0	seed	label
+square matrix	matrix transpose	100.0	seed	label
+square matrix	square distances	100.0	seed	label
+square matrix	square projection error	100.0	seed	label
+square projection error	pca algorithm	100.0	seed	label
+square projection error	principle components	100.0	seed	label
+squared error	back prop	100.0	seed	label
+squared error	batch gradient descent	100.0	seed	label
+squared error	standard least squares	100.0	seed	label
+standard deviation	covariance matrix	150.0	seed	wiki_label
+standard deviation	gaussian density	150.0	seed	wiki_label
+standard deviation	probabilistic model	100.0	seed	label
+stochastic gradient algorithm	neural network	150.0	seed	wiki_label
+supervised learning	anomaly detection	150.0	seed	wiki_label
+supervised learning	bias problem	100.0	seed	label
+supervised learning	classification accuracy	100.0	seed	label
+supervised learning	classification approach	100.0	seed	label
+supervised learning	classification problem	100.0	seed	label
+supervised learning	cross validation	100.0	seed	label
+supervised learning	cross validation sets	100.0	seed	label
+supervised learning	decision boundaries	150.0	seed	wiki_label
+supervised learning	feature vector	150.0	seed	wiki_label
+supervised learning	gradient descent	150.0	seed	wiki_label
+supervised learning	linear regression	150.0	seed	wiki_label
+supervised learning	logistic regression	150.0	seed	wiki_label
+supervised learning	massive training set	100.0	seed	label
+supervised learning	neural network	150.0	seed	wiki_label
+supervised learning	overfitting	100.0	seed	label
+supervised learning	pedestrian detection	150.0	seed	wiki_label
+supervised learning	regression model	100.0	seed	label
+supervised learning	regression problem	100.0	seed	label
+supervised learning	regularization	100.0	seed	label
+supervised learning	support vector machine	150.0	seed	wiki_label
+supervised learning	variance problem	100.0	seed	label
+support vector	gaussian kernel	100.0	seed	label
+support vector	linear kernel	100.0	seed	label
+support vector	polynomial kernel	100.0	seed	label
+support vector	string kernel	100.0	seed	label
+support vector	support vector machine	100.0	seed	label
+support vector	svm optimization	100.0	seed	label
+support vector	svm packages	100.0	seed	label
+support vector machine	gaussian kernel	100.0	seed	label
+support vector machine	kernel function	150.0	seed	wiki_label
+support vector machine	linear kernel	100.0	seed	label
+support vector machine	polynomial kernel	100.0	seed	label
+support vector machine	string kernel	100.0	seed	label
+support vector machine	svm optimization	100.0	seed	label
+support vector machine	svm packages	100.0	seed	label
+svm packages	polynomial kernel	100.0	seed	label
+symmetric matrix	collaborative filtering	150.0	seed	wiki_label
+symmetric matrix	covariance matrix	150.0	seed	wiki_label
+symmetric matrix	gaussian density	150.0	seed	wiki_label
+symmetric matrix	gaussian model	100.0	seed	label
+symmetric matrix	multivariate gaussian model	100.0	seed	label
+test data	bias variance trade-off	100.0	seed	label
+test data	character recognition	100.0	seed	label
+test data	character segmentation	100.0	seed	label
+test data	classification accuracy	100.0	seed	label
+test data	cross validation	100.0	seed	label
+test data	cross validation error	100.0	seed	label
+test data	cross validation sets	100.0	seed	label
+test data	decision tree	150.0	seed	wiki_label
+test data	evaluation metrics	100.0	seed	label
+test data	f1 score	150.0	seed	wiki_label
+test data	false negative	150.0	seed	wiki_label
+test data	false positives	150.0	seed	wiki_label
+test data	feature selection	150.0	seed	wiki_label
+test data	generalization error	150.0	seed	wiki_label
+test data	linear regression	150.0	seed	wiki_label
+test data	logistic regression	150.0	seed	wiki_label
+test data	model selection	150.0	seed	wiki_label
+test data	neural network	150.0	seed	wiki_label
+test data	online learning	100.0	seed	label
+test data	overfitting	100.0	seed	label
+test data	polynomial regression	150.0	seed	wiki_label
+test data	precision	100.0	seed	label
+test data	precision recall curve	100.0	seed	label
+test data	predicted value	100.0	seed	label
+test data	prediction error	100.0	seed	label
+test data	recall	100.0	seed	label
+test data	regularized logistic regression	100.0	seed	label
+test data	sentiment analysis	150.0	seed	wiki_label
+test data	sentiment classifier	100.0	seed	label
+test data	supervised learning	150.0	seed	wiki_label
+test data	support vector machine	150.0	seed	wiki_label
+test data	test data set	150.0	seed	wiki_label
+test data	test error	100.0	seed	label
+test data	true negatives	100.0	seed	label
+test data	true positives	100.0	seed	label
+test data	underfitting	100.0	seed	label
+test data	validation error	100.0	seed	label
+test data	validation set	100.0	seed	label
+test data set	bias problem	100.0	seed	label
+test data set	bias variance trade-off	100.0	seed	label
+test data set	binary classification	150.0	seed	wiki_label
+test data set	character recognition	100.0	seed	label
+test data set	character segmentation	100.0	seed	label
+test data set	classification accuracy	100.0	seed	label
+test data set	collaborative filtering	150.0	seed	wiki_label
+test data set	cross validation	100.0	seed	label
+test data set	cross validation error	100.0	seed	label
+test data set	cross validation sets	100.0	seed	label
+test data set	error analysis	150.0	seed	wiki_label
+test data set	evaluation metrics	100.0	seed	label
+test data set	f1 score	150.0	seed	wiki_label
+test data set	false negative	150.0	seed	wiki_label
+test data set	false positives	150.0	seed	wiki_label
+test data set	feature selection	150.0	seed	wiki_label
+test data set	generalization error	150.0	seed	wiki_label
+test data set	k means	100.0	seed	label
+test data set	learning curve	150.0	seed	wiki_label
+test data set	linear regression	150.0	seed	wiki_label
+test data set	logistic regression	150.0	seed	wiki_label
+test data set	model selection	150.0	seed	wiki_label
+test data set	neural network	150.0	seed	wiki_label
+test data set	online learning	100.0	seed	label
+test data set	overfitting	100.0	seed	label
+test data set	pedestrian detection	150.0	seed	wiki_label
+test data set	polynomial regression	150.0	seed	wiki_label
+test data set	precision	100.0	seed	label
+test data set	predicted class	100.0	seed	label
+test data set	predicted value	100.0	seed	label
+test data set	prediction error	100.0	seed	label
+test data set	recall	100.0	seed	label
+test data set	regularized linear regression	100.0	seed	label
+test data set	sentiment analysis	150.0	seed	wiki_label
+test data set	supervised learning	150.0	seed	wiki_label
+test data set	support vector machine	150.0	seed	wiki_label
+test data set	test error	100.0	seed	label
+test data set	true negatives	100.0	seed	label
+test data set	true positives	100.0	seed	label
+test data set	underfitting	100.0	seed	label
+test data set	validation error	100.0	seed	label
+test data set	validation set	100.0	seed	label
+test data set	variance problem	100.0	seed	label
+test error	bias problem	100.0	seed	label
+test error	bias variance trade-off	100.0	seed	label
+test error	cross validation	100.0	seed	label
+test error	cross validation error	100.0	seed	label
+test error	generalization error	100.0	seed	label
+test error	learning curve	100.0	seed	label
+test error	model selection	100.0	seed	label
+test error	overfitting	100.0	seed	label
+test error	underfitting	100.0	seed	label
+test error	validation error	100.0	seed	label
+test error	variance problem	100.0	seed	label
+training data	adaboost	100.0	seed	label
+training data	anomalous example	100.0	seed	label
+training data	anomaly detection	100.0	seed	label
+training data	back prop	100.0	seed	label
+training data	bias problem	100.0	seed	label
+training data	bias variance trade-off	100.0	seed	label
+training data	binary classification	100.0	seed	label
+training data	boosting algorithm	100.0	seed	label
+training data	character recognition	100.0	seed	label
+training data	character segmentation	100.0	seed	label
+training data	collaborative filtering	100.0	seed	label
+training data	cross validation	100.0	seed	label
+training data	cross validation error	100.0	seed	label
+training data	cross validation sets	100.0	seed	label
+training data	decision tree	100.0	seed	label
+training data	deep learning	100.0	seed	label
+training data	deep neural network	100.0	seed	label
+training data	design matrix	100.0	seed	label
+training data	error analysis	100.0	seed	label
+training data	f1 score	100.0	seed	label
+training data	feature scaling	100.0	seed	label
+training data	feature selection	100.0	seed	label
+training data	forward propagation	100.0	seed	label
+training data	generalization error	100.0	seed	label
+training data	input layer	100.0	seed	label
+training data	input space	100.0	seed	label
+training data	input units	100.0	seed	label
+training data	large margin classifier	100.0	seed	label
+training data	lasso regression	100.0	seed	label
+training data	learning curve	100.0	seed	label
+training data	linear regression	100.0	seed	label
+training data	logistic regression	100.0	seed	label
+training data	massive training set	100.0	seed	label
+training data	mini-batch gradient descent	100.0	seed	label
+training data	model selection	100.0	seed	label
+training data	multi-class classification	100.0	seed	label
+training data	neural network	100.0	seed	label
+training data	neural network learning	100.0	seed	label
+training data	non-anomalous examples	100.0	seed	label
+training data	normal equation	100.0	seed	label
+training data	online learning	100.0	seed	label
+training data	overfitting	100.0	seed	label
+training data	pedestrian detection	100.0	seed	label
+training data	polynomial regression	100.0	seed	label
+training data	positive training example	100.0	seed	label
+training data	regression model	100.0	seed	label
+training data	regression problem	100.0	seed	label
+training data	regularized linear regression	100.0	seed	label
+training data	regularized logistic regression	100.0	seed	label
+training data	sentiment analysis	100.0	seed	label
+training data	sentiment classifier	100.0	seed	label
+training data	supervised learning	100.0	seed	label
+training data	support vector machine	100.0	seed	label
+training data	training data set	100.0	seed	label
+training data	training error	100.0	seed	label
+training data	true negatives	100.0	seed	label
+training data	true positives	100.0	seed	label
+training data	underfitting	100.0	seed	label
+training data	validation error	100.0	seed	label
+training data	validation set	100.0	seed	label
+training data	variance problem	100.0	seed	label
+training data set	anomalous example	100.0	seed	label
+training data set	anomaly detection	150.0	seed	wiki_label
+training data set	back prop	100.0	seed	label
+training data set	bias problem	100.0	seed	label
+training data set	bias variance trade-off	100.0	seed	label
+training data set	binary classification	150.0	seed	wiki_label
+training data set	character recognition	100.0	seed	label
+training data set	character segmentation	100.0	seed	label
+training data set	collaborative filtering	150.0	seed	wiki_label
+training data set	cross validation	100.0	seed	label
+training data set	cross validation error	100.0	seed	label
+training data set	cross validation sets	100.0	seed	label
+training data set	deep learning	150.0	seed	wiki_label
+training data set	design matrix	150.0	seed	wiki_label
+training data set	error analysis	150.0	seed	wiki_label
+training data set	f1 score	150.0	seed	wiki_label
+training data set	feature scaling	100.0	seed	label
+training data set	forward propagation	100.0	seed	label
+training data set	generalization error	150.0	seed	wiki_label
+training data set	input layer	100.0	seed	label
+training data set	input space	100.0	seed	label
+training data set	input units	100.0	seed	label
+training data set	kernel regression	150.0	seed	wiki_label
+training data set	learning curve	150.0	seed	wiki_label
+training data set	linear regression	150.0	seed	wiki_label
+training data set	logistic regression	150.0	seed	wiki_label
+training data set	massive training set	100.0	seed	label
+training data set	mini-batch gradient descent	100.0	seed	label
+training data set	model selection	150.0	seed	wiki_label
+training data set	multi-class classification	150.0	seed	wiki_label
+training data set	neural network	150.0	seed	wiki_label
+training data set	neural network learning	100.0	seed	label
+training data set	normal equation	100.0	seed	label
+training data set	online learning	100.0	seed	label
+training data set	overfitting	100.0	seed	label
+training data set	pedestrian detection	150.0	seed	wiki_label
+training data set	polynomial regression	150.0	seed	wiki_label
+training data set	positive training example	100.0	seed	label
+training data set	regression model	100.0	seed	label
+training data set	regression problem	100.0	seed	label
+training data set	regularized linear regression	100.0	seed	label
+training data set	regularized logistic regression	100.0	seed	label
+training data set	sentiment analysis	150.0	seed	wiki_label
+training data set	supervised learning	150.0	seed	wiki_label
+training data set	support vector machine	150.0	seed	wiki_label
+training data set	training error	100.0	seed	label
+training data set	true negatives	100.0	seed	label
+training data set	true positives	100.0	seed	label
+training data set	underfitting	100.0	seed	label
+training data set	validation error	100.0	seed	label
+training data set	validation set	100.0	seed	label
+training data set	variance problem	100.0	seed	label
+training error	adaboost	100.0	seed	label
+training error	bias problem	100.0	seed	label
+training error	bias variance trade-off	100.0	seed	label
+training error	cross validation	100.0	seed	label
+training error	cross validation error	100.0	seed	label
+training error	early stopping	100.0	seed	label
+training error	generalization error	100.0	seed	label
+training error	learning curve	100.0	seed	label
+training error	model selection	100.0	seed	label
+training error	overfitting	100.0	seed	label
+training error	underfitting	100.0	seed	label
+training error	validation error	100.0	seed	label
+training error	variance problem	100.0	seed	label
+true negatives	confusion matrix	100.0	seed	label
+true positives	confusion matrix	100.0	seed	label
+tuning parameter	bias variance trade-off	100.0	seed	label
+tuning parameter	cross validation	100.0	seed	label
+tuning parameter	model selection	100.0	seed	label
+underfitting	bias variance trade-off	100.0	seed	label
+underfitting	cross validation	100.0	seed	label
+underfitting	cross validation error	100.0	seed	label
+underfitting	model selection	100.0	seed	label
+underfitting	regularization	100.0	seed	label
+underfitting	validation error	100.0	seed	label
+unsupervised learning	anomaly detection	150.0	seed	wiki_label
+unsupervised learning	cluster	100.0	seed	label
+unsupervised learning	clustering algorithm	100.0	seed	label
+unsupervised learning	dimensionality reduction	100.0	seed	label
+unsupervised learning	expectation maximization	100.0	seed	label
+unsupervised learning	k means	100.0	seed	label
+unsupervised learning	nearest neighbor search	150.0	seed	wiki_label
+validation error	cross validation error	100.0	seed	label
+validation error	early stopping	100.0	seed	label
+validation error	model selection	100.0	seed	label
+validation set	bias variance trade-off	100.0	seed	label
+validation set	cross validation	100.0	seed	label
+validation set	cross validation error	100.0	seed	label
+validation set	cross validation sets	100.0	seed	label
+validation set	model selection	100.0	seed	label
+validation set	validation error	100.0	seed	label
+variance problem	cross validation	100.0	seed	label
+variance problem	cross validation error	100.0	seed	label
+variance problem	model selection	100.0	seed	label
+variance problem	regularization	100.0	seed	label
+vector multiplication	forward propagation	100.0	seed	label
+vector multiplication	inner product	100.0	seed	label
+vector multiplication	matrix multiplication	100.0	seed	label
+vector multiplication	matrix vector multiplication	100.0	seed	label
+weak classifier	adaboost	100.0	seed	label
+weak classifier	boosting algorithm	100.0	seed	label

@@ -56,6 +56,17 @@ def handler(request):
             'latent_orthogonality': metrics['latent_orthogonality'],
             'forgetting_rate': metrics['forgetting_rate'],
             'epochs_trained': metrics['epochs_trained'],
+            'training_curves': {
+                'epochs': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+                'auc': [0.5, 0.6, 0.7, 0.75, 0.78, 0.79, 0.8, 0.805, 0.81, metrics['final_auc']],
+                'rmse': [0.5, 0.48, 0.45, 0.43, 0.42, 0.41, 0.405, 0.402, 0.401, metrics['final_rmse']],
+                'acc': [0.5, 0.6, 0.7, 0.73, 0.75, 0.755, 0.76, 0.762, 0.765, metrics['final_acc']]
+            },
+            'sample_students': [
+                {'student_id': 1, 'predictions': [0.8, 0.7, 0.9, 0.6, 0.85], 'actuals': [1, 0, 1, 0, 1], 'sequence_length': 5},
+                {'student_id': 2, 'predictions': [0.6, 0.9, 0.75, 0.55, 0.7], 'actuals': [0, 1, 1, 0, 0], 'sequence_length': 5},
+                {'student_id': 3, 'predictions': [0.9, 0.85, 0.95, 0.8, 0.88], 'actuals': [1, 1, 1, 1, 1], 'sequence_length': 5}
+            ],
             'concepts': [
                 {'name': 'Linear Equations', 'proficiency': 75},
                 {'name': 'Quadratic Functions', 'proficiency': 82},

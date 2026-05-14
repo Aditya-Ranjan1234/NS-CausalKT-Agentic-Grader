@@ -260,6 +260,24 @@ def get_dashboard_data():
     })
 
 
+@app.route('/api/graphs/<domain>', methods=['GET'])
+def get_graph_data(domain):
+    safe_domain = domain.upper()
+    if safe_domain not in {"DSA", "ML"}:
+        return jsonify({"error": "Unknown graph domain"}), 404
+
+    graph_path = os.path.join(project_root, "Graph", safe_domain, "knowledge_graph.json")
+    if not os.path.exists(graph_path):
+        return jsonify({"error": f"Graph data not found for {safe_domain}"}), 404
+
+    try:
+        with open(graph_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return jsonify(data)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 @app.route('/api/causal', methods=['GET'])
 def get_causal_data():
     return jsonify({
