@@ -1,6 +1,8 @@
 import json
 import os
 import uuid
+from http.server import BaseHTTPRequestHandler
+from urllib.parse import parse_qs, urlparse
 
 try:
     from openai import OpenAI
@@ -183,7 +185,7 @@ def graph_for_user(user):
     return {"nodes": nodes, "edges": edges, "recommended_next": recommended}
 
 
-def handler(request):
+def handle_request(request):
     method = getattr(request, "method", "GET")
     if method == "OPTIONS":
         return response({})
@@ -240,3 +242,40 @@ def handler(request):
         return response({"reply": "Tutor chat is available in local mode for this build.", "updated_mastery": False})
 
     return response({"error": "Unknown tutor endpoint"}, 404)
+
+
+class RequestAdapter:
+    def __init__(self, method, path, args=None, body=None):
+        self.method = method
+        self.path = path
+        self.args = args or {}
+        self.body = body or "{}"
+
+
+class handler(BaseHTTPRequestHandler):
+    def _send_payload(self, payload):
+        status = payload.get("statusCode", 200)
+        headers = payload.get("headers", {})
+        body = payload.get("body", "{}")
+
+        self.send_response(status)
+        for key, value in headers.items():
+            self.send_header(key, value)
+        self.end_headers()
+        self.wfile.write(body.encode("utf-8"))
+
+    def _adapter(self):
+        parsed = urlparse(self.path)
+        args = {key: values[0] for key, values in parse_qs(parsed.query).items()}
+        length = int(self.headers.get("Content-Length", 0) or 0)
+        body = self.rfile.read(length).decode("utf-8") if length else "{}"
+        return RequestAdapter(self.command, parsed.path, args, body)
+
+    def do_OPTIONS(self):
+        self._send_payload(response({}))
+
+    def do_GET(self):
+        self._send_payload(handle_request(self._adapter()))
+
+    def do_POST(self):
+        self._send_payload(handle_request(self._adapter()))
