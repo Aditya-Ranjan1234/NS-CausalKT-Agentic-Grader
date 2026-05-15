@@ -321,13 +321,35 @@ class AgenticGraderUI {
         };
 
         setField('overallScore', data.overall_score);
-        setField('summaryText', data.summary || 'Analysis summary will appear here...');
+        const kt = data.ns_causalkt || {};
+        let summary = data.summary || 'Analysis summary will appear here...';
+        if (kt.active && kt.prediction) {
+            const probability = Math.round((kt.prediction.passing_probability || 0) * 100);
+            const target = kt.prediction.target_skill || 'target concept';
+            const weak = (kt.weakest_concepts || [])
+                .slice(0, 3)
+                .map(item => `${item.skill}: ${Math.round((item.mastery || 0) * 100)}%`)
+                .join(', ');
+            summary += `\n\nNS-CausalKT prediction for ${target}: ${probability}% pass probability.`;
+            if (weak) summary += ` Weakest mapped concepts: ${weak}.`;
+            if (kt.counterfactual) {
+                const after = Math.round((kt.counterfactual.intervened_probability || 0) * 100);
+                summary += ` Counterfactual do(${kt.counterfactual.intervened_concept}=100%) -> ${after}% pass probability.`;
+            }
+        } else if (kt.error) {
+            summary += `\n\nNS-CausalKT could not run: ${kt.error}`;
+        }
+        setField('summaryText', summary);
         
         const modelStatus = document.getElementById('modelStatus');
         if (modelStatus) {
-            if (data.kt_active) {
-                modelStatus.textContent = 'KT-Model: Active (Math Detected)';
+            if (kt.active && kt.prediction) {
+                const probability = Math.round((kt.prediction.passing_probability || 0) * 100);
+                modelStatus.textContent = `KT-Model: Active (${probability}% predicted)`;
                 modelStatus.classList.remove('inactive');
+            } else if (data.kt_active) {
+                modelStatus.textContent = 'KT-Model: Math Detected, No Model Output';
+                modelStatus.classList.add('inactive');
             } else {
                 modelStatus.textContent = 'KT-Model: Inactive (Non-Math Topic)';
                 modelStatus.classList.add('inactive');

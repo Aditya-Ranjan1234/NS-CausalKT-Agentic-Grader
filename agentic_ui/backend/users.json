@@ -8,13 +8,15 @@
             "Basic Operations": 0.95,
             "Linear Equations": 0.6,
             "Explain Componendo": 0.4,
-            "Computer Vision": 0.1
+            "Computer Vision": 0.1,
+            "Nano Material": 0.2
         },
         "weak_areas": [
             "Linear Equations",
             "Sign Management",
             "Explain Componendo",
-            "Computer Vision"
+            "Computer Vision",
+            "Nano Material"
         ],
         "learning_goals": [
             "Master Algebra Basics"
@@ -27,6 +29,10 @@
             {
                 "user": "Q Answer practice: Computer Vision",
                 "bot": "Score 0.5/5. This concept needs more practice, so it was added as a weak node."
+            },
+            {
+                "user": "Q Answer practice: Nano Material",
+                "bot": "Score 1/5. This concept needs more practice, so it was added as a weak node."
             }
         ],
         "concepts_learned": [
@@ -54,6 +60,13 @@
                 "concept": "Computer Vision",
                 "score": 0.5,
                 "mastery": 0.1,
+                "status": "weak"
+            },
+            {
+                "id": "Practice: Nano Material",
+                "concept": "Nano Material",
+                "score": 1,
+                "mastery": 0.2,
                 "status": "weak"
             }
         ],
@@ -187,6 +200,71 @@
                         "difficulty": "easy"
                     }
                 ]
+            },
+            {
+                "type": "q_answer_practice",
+                "concept": "Nano Material",
+                "score": 1,
+                "total": 5,
+                "mastery": 0.2,
+                "node_id": "Practice: Nano Material",
+                "questions": [
+                    {
+                        "prompt": "Explain how the unique properties of nanomaterials can enhance the efficiency of solar cells compared to conventional materials.",
+                        "answer": "by energy",
+                        "expected_answer": "Nanomaterials, such as quantum dots and carbon nanotubes, have distinct optical and electronic properties that allow for better light absorption and charge mobility. This can lead to higher conversion efficiencies in solar cells as they can utilize a broader spectrum of sunlight and improve electron transport.",
+                        "correct": false,
+                        "score": 0,
+                        "feedback": "The answer is incomplete and does not address the prompt regarding the unique properties of nanomaterials that enhance solar cell efficiency. It lacks detail and clarity.",
+                        "misconception": "The student may not understand the specific properties of nanomaterials relevant to solar cells.",
+                        "authenticity_penalty": false,
+                        "difficulty": "medium"
+                    },
+                    {
+                        "prompt": "What is one property of nanomaterials that allows them to have greater strength compared to their bulk material counterparts?",
+                        "answer": "compact size",
+                        "expected_answer": "Increased surface area to volume ratio leading to enhanced mechanical properties.",
+                        "correct": false,
+                        "score": 0,
+                        "feedback": "The answer 'compact size' does not specifically address the property of nanomaterials that contributes to their greater strength compared to bulk materials. It lacks the detail regarding surface area or other mechanical properties.",
+                        "misconception": "The student may not understand that the strength of nanomaterials is often due to their increased surface area to volume ratio rather than just their size.",
+                        "authenticity_penalty": false,
+                        "difficulty": "easy"
+                    },
+                    {
+                        "prompt": "What is one example of a property of nanomaterials that contributes to their unique capabilities in applications such as drug delivery?",
+                        "answer": "small size and dissolvability",
+                        "expected_answer": "High surface area to volume ratio",
+                        "correct": false,
+                        "score": 0,
+                        "feedback": "The answer focuses on 'small size and dissolvability,' which do not specifically relate to the unique capabilities of nanomaterials in drug delivery as required by the prompt. Consider identifying properties like 'high surface area to volume ratio' or 'enhanced reactivity' that better reflect the question's focus.",
+                        "misconception": "The student may not fully understand specific properties of nanomaterials that contribute to their unique capabilities.",
+                        "authenticity_penalty": false,
+                        "difficulty": "easy"
+                    },
+                    {
+                        "prompt": "What is the term used to describe the measurement of a material's structural features at the nanoscale?",
+                        "answer": "The term used to describe the measurement of a material's structural features at the nanoscale is nanometrology. It encompasses the precise evaluation of dimensions, physical properties, and chemical characteristics within the nanometer range (typically 1 to 100 nm).Because these structural features are so minuscule, this field relies on highly specialized measurement techniques. The most common tools used for these characterizations include:Scanning Electron Microscopy (SEM): Provides high-resolution 2D surface imaging.Atomic Force Microscopy (AFM): Uses a physical probe to map nanoscale topography.Transmission Electron Microscopy (TEM): Preferred for achieving deep structural and chemical analysis.",
+                        "expected_answer": "Nanostructure",
+                        "correct": false,
+                        "score": 0,
+                        "feedback": "Your answer describes a related field (nanometrology) but does not directly identify the term 'nanostructure' as requested. Also, the response is overly detailed and should have been concise.",
+                        "misconception": "The student seems to confuse the measurement techniques with the term describing the structural features themselves.",
+                        "authenticity_penalty": true,
+                        "difficulty": "easy"
+                    },
+                    {
+                        "prompt": "What is one potential application of nanomaterials in medicine?",
+                        "answer": "drug delivery",
+                        "expected_answer": "Targeted drug delivery",
+                        "correct": true,
+                        "score": 1,
+                        "feedback": "Your answer correctly identifies an application of nanomaterials in medicine. Well done!",
+                        "misconception": "",
+                        "authenticity_penalty": false,
+                        "difficulty": "easy"
+                    }
+                ]
             }
         ]
     },
@@ -199,12 +277,14 @@
             "Basic Operations": 0.92,
             "Linear Equations": 0.2,
             "Natural Language Processing": 0.0,
-            "Pythagoras Theorem": 0.8
+            "Pythagoras Theorem": 0.8,
+            "Semiconductors": 0.0
         },
         "weak_areas": [
             "Fractions",
             "Linear Equations",
-            "Natural Language Processing"
+            "Natural Language Processing",
+            "Semiconductors"
         ],
         "learning_goals": [
             "Improve in Fractions"
@@ -217,6 +297,10 @@
             {
                 "user": "Q Answer practice: Pythagoras Theorem",
                 "bot": "Score 4/5. Strong work. This concept was marked as mastered in your learning path."
+            },
+            {
+                "user": "Q Answer practice: Semiconductors",
+                "bot": "Score 0/5. This concept needs more practice, so it was added as a weak node."
             }
         ],
         "concepts_learned": [
@@ -245,6 +329,13 @@
                 "score": 4,
                 "mastery": 0.8,
                 "status": "mastered"
+            },
+            {
+                "id": "Practice: Semiconductors",
+                "concept": "Semiconductors",
+                "score": 0,
+                "mastery": 0.0,
+                "status": "weak"
             }
         ],
         "practice_history": [
@@ -350,6 +441,71 @@
                         "misconception": "",
                         "authenticity_penalty": false,
                         "difficulty": "hard"
+                    }
+                ]
+            },
+            {
+                "type": "q_answer_practice",
+                "concept": "Semiconductors",
+                "score": 0,
+                "total": 5,
+                "mastery": 0.0,
+                "node_id": "Practice: Semiconductors",
+                "questions": [
+                    {
+                        "prompt": "Explain how doping affects the electrical conductivity of semiconductors, and provide an example of a common dopant used in silicon semiconductors.",
+                        "answer": "no",
+                        "expected_answer": "Doping introduces impurities into the semiconductor material, which can either increase the number of free electrons (n-type doping) or create holes (p-type doping), thus enhancing conductivity. A common dopant for silicon is phosphorus, which donates free electrons to the silicon lattice.",
+                        "correct": false,
+                        "score": 0,
+                        "feedback": "The answer is incorrect as it does not address the prompt regarding how doping affects the electrical conductivity of semiconductors or provide an example of a common dopant.",
+                        "misconception": "The student did not provide any information about the effects of doping on semiconductors.",
+                        "authenticity_penalty": false,
+                        "difficulty": "medium"
+                    },
+                    {
+                        "prompt": "What is the primary difference between n-type and p-type semiconductors?",
+                        "answer": "no",
+                        "expected_answer": "N-type semiconductors have extra electrons (negative charge carriers), while p-type semiconductors have 'holes' (positive charge carriers) where electrons are missing.",
+                        "correct": false,
+                        "score": 0,
+                        "feedback": "The response 'no' does not address the question about the primary difference between n-type and p-type semiconductors.",
+                        "misconception": "The student may not understand the basic concepts of n-type and p-type semiconductors.",
+                        "authenticity_penalty": false,
+                        "difficulty": "easy"
+                    },
+                    {
+                        "prompt": "Define a semiconductor and give one example of a common semiconductor material.",
+                        "answer": "idk",
+                        "expected_answer": "A semiconductor is a material whose electrical conductivity falls between that of a conductor and an insulator, typically able to conduct electricity under certain conditions. A common example is silicon.",
+                        "correct": false,
+                        "score": 0,
+                        "feedback": "The response does not provide a definition of a semiconductor or an example. Please try to provide at least a basic understanding of the concept.",
+                        "misconception": "The student may not understand what a semiconductor is or may not have studied it yet.",
+                        "authenticity_penalty": false,
+                        "difficulty": "easy"
+                    },
+                    {
+                        "prompt": "What material is commonly used as a semiconductor in electronic devices?",
+                        "answer": "idk",
+                        "expected_answer": "Silicon",
+                        "correct": false,
+                        "score": 0,
+                        "feedback": "The response does not provide the correct answer.",
+                        "misconception": "The student may not know what a semiconductor is or may not be familiar with common semiconductor materials.",
+                        "authenticity_penalty": false,
+                        "difficulty": "easy"
+                    },
+                    {
+                        "prompt": "What is the primary characteristic of a semiconductor that differentiates it from conductors and insulators?",
+                        "answer": "lop",
+                        "expected_answer": "A semiconductor has electrical conductivity that can be controlled and is in between that of a conductor and an insulator.",
+                        "correct": false,
+                        "score": 0,
+                        "feedback": "The answer provided ('lop') does not address the question about semiconductors and their characteristics. Please provide an answer related to the conductivity of semiconductors.",
+                        "misconception": "Lack of understanding of semiconductor properties.",
+                        "authenticity_penalty": false,
+                        "difficulty": "easy"
                     }
                 ]
             }

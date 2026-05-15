@@ -8,11 +8,14 @@ import base64
 from openai import OpenAI
 import json
 import uuid
+import difflib
 from dotenv import load_dotenv
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 agentic_ui_dir = os.path.dirname(script_dir)
 project_root = os.path.dirname(agentic_ui_dir)
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
 
 dotenv_path = os.path.join(project_root, '.env')
 if os.path.exists(dotenv_path):
@@ -30,6 +33,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 client = None
 PRACTICE_SESSIONS = {}
 LAST_PRACTICE_ERROR = None
+KT_RUNTIME = None
 
 
 def load_openai_client():
@@ -58,6 +62,251 @@ def encode_image(image_path):
         return base64.b64encode(image_file.read()).decode('utf-8')
 
 
+def normalize_topic_name(value):
+    return str(value or "").lower().replace("_", " ").replace("-", " ").strip()
+
+
+def get_text_for_math_detection(result_json):
+    return json.dumps(result_json, ensure_ascii=False).lower()
+
+
+def is_math_kt_candidate(result_json):
+    math_keywords = [
+        'algebra', 'equation', 'math', 'geometry', 'fraction', 'function',
+        'calculation', 'statistics', 'graph', 'line', 'slope', 'percent',
+        'probability', 'integer', 'decimal', 'triangle', 'angle', 'theorem'
+    ]
+    detected_text = get_text_for_math_detection(result_json)
+    return any(kw in detected_text for kw in math_keywords)
+
+
+def load_kt_runtime():
+    global KT_RUNTIME
+    if KT_RUNTIME is not None:
+        return KT_RUNTIME
+
+    import torch
+    from dataset import preprocess_assist09
+    from models.nscausalkt import NSCausalKT
+
+    csv_path = os.path.join(project_root, 'data', 'skill_builder_data.csv')
+    checkpoint_path = os.path.join(project_root, 'checkpoints', 'latest.pt')
+    if not os.path.exists(csv_path):
+        raise FileNotFoundError(f"Missing ASSISTments data at {csv_path}")
+    if not os.path.exists(checkpoint_path):
+        raise FileNotFoundError(f"Missing trained NS-CausalKT checkpoint at {checkpoint_path}")
+
+    df, num_q, num_c, skill_map = preprocess_assist09(csv_path)
+    skill_to_question = df.groupby('concept_id')['question_id'].first().to_dict()
+    inv_skill_map = {v: k for k, v in skill_map.items()}
+
+    edges = [[i, i + 1] for i in range(1, num_c - 1)]
+    device_name = os.getenv('KT_DEVICE') or ('cuda' if torch.cuda.is_available() else 'cpu')
+    device = torch.device(device_name)
+    edge_index = torch.tensor(edges, dtype=torch.long).t().to(device)
+
+    model = NSCausalKT(num_q, num_c, edge_index, d_model=256, n_layers=2).to(device)
+    checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=False)
+    model.load_state_dict(checkpoint['model'])
+    model.eval()
+
+    KT_RUNTIME = {
+        "torch": torch,
+        "model": model,
+        "device": device,
+        "num_q": num_q,
+        "num_c": num_c,
+        "skill_map": skill_map,
+        "inv_skill_map": inv_skill_map,
+        "skill_to_question": skill_to_question,
+        "checkpoint_path": checkpoint_path
+    }
+    return KT_RUNTIME
+
+
+def match_kt_skill(concept, skill_map):
+    requested = normalize_topic_name(concept)
+    if not requested:
+        return None
+
+    scored = []
+    for skill_name, concept_id in skill_map.items():
+        candidate = normalize_topic_name(skill_name)
+        if requested == candidate:
+            score = 1.0
+        elif requested in candidate or candidate in requested:
+            score = 0.92
+        else:
+            score = difflib.SequenceMatcher(None, requested, candidate).ratio()
+        scored.append((score, skill_name, concept_id))
+
+    best = max(scored, key=lambda item: item[0])
+    if best[0] < 0.35:
+        return None
+    return {"requested": concept, "matched_skill": best[1], "concept_id": int(best[2]), "match_score": round(best[0], 3)}
+
+
+def correctness_to_model_answer(value):
+    if isinstance(value, bool):
+        score = 1.0 if value else 0.0
+    else:
+        try:
+            score = float(value)
+        except (TypeError, ValueError):
+            text = str(value or "").lower()
+            score = 1.0 if text in {"correct", "true", "yes"} else (0.5 if "partial" in text else 0.0)
+    return 2 if score >= 0.5 else 1
+
+
+def get_kt_parameters_from_analysis(result_json):
+    kt_params = result_json.get("kt_parameters") or {}
+    interactions = kt_params.get("interactions") or []
+
+    if not interactions:
+        for item in result_json.get("corrections", []):
+            interactions.append({
+                "question_number": item.get("question"),
+                "concept": item.get("title") or item.get("description"),
+                "correctness": 1
+            })
+        for item in result_json.get("mistakes", []):
+            interactions.append({
+                "question_number": item.get("question"),
+                "concept": item.get("title") or item.get("description"),
+                "correctness": 0
+            })
+
+    target_concept = kt_params.get("target_concept")
+    if not target_concept:
+        focus_areas = result_json.get("focus_areas") or result_json.get("weaknesses") or []
+        if focus_areas:
+            target_concept = focus_areas[0].get("title") or focus_areas[0].get("description")
+    if not target_concept and interactions:
+        target_concept = interactions[-1].get("concept")
+
+    return {
+        "student_id": kt_params.get("student_id", "uploaded_answer_sheet"),
+        "target_concept": target_concept,
+        "interactions": interactions[:200],
+        "source": "gpt_extracted_from_answer_sheet"
+    }
+
+
+def run_nscausalkt_from_parameters(kt_parameters):
+    runtime = load_kt_runtime()
+    torch = runtime["torch"]
+    model = runtime["model"]
+    device = runtime["device"]
+    skill_map = runtime["skill_map"]
+    inv_skill_map = runtime["inv_skill_map"]
+    skill_to_question = runtime["skill_to_question"]
+    num_c = runtime["num_c"]
+
+    mapped_interactions = []
+    for interaction in kt_parameters.get("interactions", []):
+        match = match_kt_skill(interaction.get("concept"), skill_map)
+        if not match:
+            continue
+        concept_id = match["concept_id"]
+        mapped_interactions.append({
+            **interaction,
+            **match,
+            "question_id": int(skill_to_question.get(concept_id, 1)),
+            "model_answer": correctness_to_model_answer(interaction.get("correctness"))
+        })
+
+    if not mapped_interactions:
+        return {
+            "active": False,
+            "error": "GPT did not provide any math concepts that could be mapped to the trained ASSISTments skill space.",
+            "kt_parameters": kt_parameters
+        }
+
+    target_match = match_kt_skill(kt_parameters.get("target_concept"), skill_map)
+    if not target_match:
+        target_match = {
+            "requested": kt_parameters.get("target_concept"),
+            "matched_skill": mapped_interactions[-1]["matched_skill"],
+            "concept_id": mapped_interactions[-1]["concept_id"],
+            "match_score": mapped_interactions[-1]["match_score"]
+        }
+    target_c_id = int(target_match["concept_id"])
+
+    seq_len = min(len(mapped_interactions), 200)
+    q_values = [item["question_id"] for item in mapped_interactions[-seq_len:]]
+    c_values = [item["concept_id"] for item in mapped_interactions[-seq_len:]]
+    a_values = [item["model_answer"] for item in mapped_interactions[-seq_len:]]
+
+    q = torch.tensor([q_values], dtype=torch.long, device=device)
+    c = torch.tensor([c_values], dtype=torch.long, device=device)
+    a = torch.tensor([a_values], dtype=torch.long, device=device)
+    delta_t = torch.zeros((1, seq_len, 1), dtype=torch.float, device=device)
+    target_c = torch.full((1, seq_len, 1), target_c_id, dtype=torch.long, device=device)
+
+    with torch.no_grad():
+        y_hat, y_base, mu_tilde, h_t = model(q, a, c, delta_t, target_c=target_c)
+        final_idx = seq_len - 1
+        predicted_probability = float(y_hat[0, final_idx, 0].detach().cpu().item())
+        base_probability = float(y_base[0, final_idx, 0].detach().cpu().item())
+        final_mastery = mu_tilde[0, final_idx, :].detach().cpu()
+
+        encountered = sorted(set(c_values + [target_c_id]))
+        mastery_by_concept = []
+        for concept_id in encountered:
+            if 0 <= concept_id < num_c:
+                mastery_by_concept.append({
+                    "concept_id": int(concept_id),
+                    "skill": str(inv_skill_map.get(concept_id, "Unknown")),
+                    "mastery": round(float(final_mastery[concept_id].item()), 4)
+                })
+
+        weakest = sorted(mastery_by_concept, key=lambda item: item["mastery"])[:5]
+        strongest = sorted(mastery_by_concept, key=lambda item: item["mastery"], reverse=True)[:5]
+
+        intervention = None
+        if weakest:
+            weakest_id = weakest[0]["concept_id"]
+            mu_do_1 = mu_tilde[:, final_idx:final_idx + 1, :].clone()
+            mu_do_1[..., weakest_id] = 1.0
+            mu_do_1 = model.csl.propagate_concept_graph(mu_do_1, model.edge_index, model.scl.W_sym, model.adj_matrix)
+            tc = torch.full((1, 1, 1), target_c_id, dtype=torch.long, device=device)
+            concat_intervened = torch.cat([h_t[:, final_idx:final_idx + 1, :], torch.gather(mu_do_1, 2, tc)], dim=-1)
+            dummy_ace = torch.zeros((1, 1, 1), device=device)
+            y_intervened = torch.sigmoid(model.W_p(torch.cat([concat_intervened, dummy_ace], dim=-1)))
+            intervention = {
+                "intervened_concept": weakest[0]["skill"],
+                "do_value": 1.0,
+                "target_skill": target_match["matched_skill"],
+                "original_probability": round(predicted_probability, 4),
+                "intervened_probability": round(float(y_intervened[0, 0, 0].detach().cpu().item()), 4)
+            }
+
+    return {
+        "active": True,
+        "model": "NS-CausalKT",
+        "checkpoint": os.path.relpath(runtime["checkpoint_path"], project_root),
+        "input_parameters": {
+            "q": q_values,
+            "a": a_values,
+            "c": c_values,
+            "delta_t": [0.0] * seq_len,
+            "target_c": target_c_id,
+            "seq_len": seq_len
+        },
+        "gpt_kt_parameters": kt_parameters,
+        "concept_mapping": mapped_interactions,
+        "target_mapping": target_match,
+        "prediction": {
+            "target_skill": target_match["matched_skill"],
+            "passing_probability": round(predicted_probability, 4),
+            "base_probability": round(base_probability, 4)
+        },
+        "weakest_concepts": weakest,
+        "strongest_concepts": strongest,
+        "counterfactual": intervention
+    }
+
+
 def analyze_with_gpt4o_mini(file_paths, model_insights=None):
     if not client:
         print("No AI client, returning sample data")
@@ -82,6 +331,15 @@ def analyze_with_gpt4o_mini(file_paths, model_insights=None):
             "focus_areas": [
                 {"title": "Quadratic Formula", "description": "Review the quadratic formula and sign conventions."}
             ],
+            "kt_parameters": {
+                "student_id": "sample",
+                "target_concept": "Quadratic Functions",
+                "interactions": [
+                    {"question_number": 1, "concept": "Pythagorean Theorem", "correctness": 1.0},
+                    {"question_number": 2, "concept": "Algebraic Solving", "correctness": 0.0},
+                    {"question_number": 3, "concept": "Linear Equations", "correctness": 1.0}
+                ]
+            },
             "bounding_boxes": [
                 {"page": 1, "x": 100, "y": 150, "width": 200, "height": 80, "type": "error", "description": "Quadratic formula mistake"}
             ]
@@ -122,10 +380,19 @@ Please return a JSON response with the following structure:
     "focus_areas": [
         {{"title": "area title", "description": "what to focus on"}}
     ],
+    "kt_parameters": {{
+        "student_id": "uploaded_answer_sheet",
+        "target_concept": "math concept to predict next, or null for non-math",
+        "interactions": [
+            {{"question_number": 1, "concept": "closest specific math concept tested", "correctness": 1.0}}
+        ]
+    }},
     "bounding_boxes": [
         {{"page": 1, "x": 100, "y": 150, "width": 200, "height": 80, "type": "error/warning/success", "description": "brief description"}}
     ]
-}}"""
+}}
+
+For kt_parameters, include only academic interactions visible in the answer sheet. Use correctness 1.0 for correct, 0.5 for partial, and 0.0 for incorrect. If the work is not math, return an empty interactions list and null target_concept."""
             }
         ]
         
@@ -168,10 +435,19 @@ Please return a JSON response with the following structure:
     "focus_areas": [
         {{"title": "area title", "description": "what to focus on"}}
     ],
+    "kt_parameters": {{
+        "student_id": "uploaded_answer_sheet",
+        "target_concept": "math concept to predict next, or null for non-math",
+        "interactions": [
+            {{"question_number": 1, "concept": "closest specific math concept tested", "correctness": 1.0}}
+        ]
+    }},
     "bounding_boxes": [
         {{"page": 1, "x": 100, "y": 150, "width": 200, "height": 80, "type": "error/warning/success", "description": "brief description"}}
     ]
-}}"""
+}}
+
+For kt_parameters, include only academic interactions visible in the answer sheet. Use correctness 1.0 for correct, 0.5 for partial, and 0.0 for incorrect. If the work is not math, return an empty interactions list and null target_concept."""
         messages.append({"role": "user", "content": prompt})
     
     try:
@@ -181,13 +457,8 @@ Please return a JSON response with the following structure:
             response_format={"type": "json_object"}
         )
         
-        # Identify if this is a math topic the KT model can handle
-        math_keywords = ['algebra', 'equation', 'math', 'geometry', 'fraction', 'function', 'calculation', 'statistics', 'graph', 'line']
-        detected_text = str(response.choices[0].message.content).lower()
-        kt_active = any(kw in detected_text for kw in math_keywords)
-        
         result_json = json.loads(response.choices[0].message.content)
-        result_json['kt_active'] = kt_active
+        result_json['kt_active'] = is_math_kt_candidate(result_json)
         return result_json
     except Exception as e:
         print(f"CRITICAL: AI API error: {e}")
@@ -215,6 +486,15 @@ Please return a JSON response with the following structure:
             "focus_areas": [
                 {"title": "Quadratic Formula", "description": "Review the quadratic formula and sign conventions."}
             ],
+            "kt_parameters": {
+                "student_id": "sample",
+                "target_concept": "Quadratic Functions",
+                "interactions": [
+                    {"question_number": 1, "concept": "Pythagorean Theorem", "correctness": 1.0},
+                    {"question_number": 2, "concept": "Algebraic Solving", "correctness": 0.0},
+                    {"question_number": 3, "concept": "Linear Equations", "correctness": 1.0}
+                ]
+            },
             "bounding_boxes": [
                 {"page": 1, "x": 100, "y": 150, "width": 200, "height": 80, "type": "error", "description": "Quadratic formula mistake"}
             ]
@@ -337,9 +617,30 @@ def analyze():
             if not file.filename.lower().endswith('.pdf'):
                 image_paths.append(file_path)
         
-        # Agentic Part: The LLM acts as the agent informed by the NS-CausalKT framework
-        # We let the LLM identify concepts and causal links from the image itself
+        # GPT grades the sheet and extracts a structured KT payload.
         results = analyze_with_gpt4o_mini(image_paths)
+
+        if results.get("kt_active"):
+            kt_parameters = get_kt_parameters_from_analysis(results)
+            try:
+                results["ns_causalkt"] = run_nscausalkt_from_parameters(kt_parameters)
+                results["kt_active"] = bool(results["ns_causalkt"].get("active"))
+            except Exception as kt_error:
+                print(f"NS-CausalKT inference error: {kt_error}")
+                import traceback
+                print(f"Traceback: {traceback.format_exc()}")
+                results["ns_causalkt"] = {
+                    "active": False,
+                    "error": str(kt_error),
+                    "gpt_kt_parameters": kt_parameters
+                }
+                results["kt_active"] = False
+        else:
+            results["ns_causalkt"] = {
+                "active": False,
+                "reason": "No math topic detected by GPT output.",
+                "gpt_kt_parameters": get_kt_parameters_from_analysis(results)
+            }
         
         return jsonify(results)
         
